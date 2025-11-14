@@ -1,0 +1,44 @@
+name: Upload to Neon DB
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install psycopg2-binary
+
+      - name: Upload to Neon DB
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          python3 upload_bilanturi_to_neon.py
+
+      - name: Verify upload
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          python3 << 'EOF'
+          import psycopg2
+          import os
+
+          conn = psycopg2.connect(os.getenv('DATABASE_URL'))
+          cursor = conn.cursor()
+          cursor.execute("SELECT COUNT(*) FROM companii")
+          count = cursor.fetchone()[0]
+          print(f"✅ Total companies in DB: {count}")
+          cursor.close()
+          conn.close()
+          EOF

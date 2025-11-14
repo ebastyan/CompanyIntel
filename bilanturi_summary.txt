@@ -1,0 +1,257 @@
+================================================================================
+BILANTURI INTEGRÁCIÓ - ÖSSZEFOGLALÓ RIPORT
+================================================================================
+
+Generálva: 2025-11-14 13:33:35
+
+FORRÁS FÁJLOK:
+  - bilant_2013.csv
+  - bilant_2014.csv
+  - bilant_2015.csv
+  - bilant_2016.csv
+  - bilant_2017.csv
+  - bilant_2018.csv
+  - bilant_2019.csv
+  - bilant_2020.csv
+  - bilant_2021.csv
+  - bilant_2022.csv
+  - bilant_2023.csv
+  - bilant_2024.csv
+
+EREDMÉNYEK:
+  - Összes egyedi CIF: 8,390
+  - Oszlopok: 205
+
+ÉVENKÉNTI LEFEDETTSÉG:
+  2013: 4,106 cég (48.94%)
+  2014: 4,414 cég (52.61%)
+  2015: 4,328 cég (51.59%)
+  2016: 4,193 cég (49.98%)
+  2017: 4,150 cég (49.46%)
+  2018: 3,574 cég (42.60%)
+  2019: 4,076 cég (48.58%)
+  2020: 3,236 cég (38.57%)
+  2021: 3,732 cég (44.48%)
+  2022: 4,039 cég (48.14%)
+  2023: 3,651 cég (43.52%)
+  2024: 3,590 cég (42.79%)
+
+CÉGEK MEGOSZLÁSA (évek száma szerint):
+  12 év adat: 1,183 cég ( 14.10%)
+  11 év adat:   391 cég (  4.66%)
+  10 év adat:   315 cég (  3.75%)
+   9 év adat:   366 cég (  4.36%)
+   8 év adat:   424 cég (  5.05%)
+   7 év adat:   475 cég (  5.66%)
+   6 év adat:   516 cég (  6.15%)
+   5 év adat:   601 cég (  7.16%)
+   4 év adat:   746 cég (  8.89%)
+   3 év adat:   967 cég ( 11.53%)
+   2 év adat: 1,039 cég ( 12.38%)
+   1 év adat: 1,367 cég ( 16.29%)
+
+OSZLOPOK (205):
+  - active_circulante_total_2013: 4,106 rekord
+  - active_circulante_total_2014: 4,414 rekord
+  - active_circulante_total_2015: 4,328 rekord
+  - active_circulante_total_2016: 4,193 rekord
+  - active_circulante_total_2017: 4,150 rekord
+  - active_circulante_total_2018: 3,574 rekord
+  - active_circulante_total_2019: 4,076 rekord
+  - active_circulante_total_2020: 3,236 rekord
+  - active_circulante_total_2021: 3,732 rekord
+  - active_circulante_total_2022: 4,039 rekord
+  - active_circulante_total_2023: 3,651 rekord
+  - active_circulante_total_2024: 3,590 rekord
+  - active_imobilizante_total_2013: 4,106 rekord
+  - active_imobilizante_total_2014: 4,414 rekord
+  - active_imobilizante_total_2015: 4,328 rekord
+  - active_imobilizante_total_2016: 4,193 rekord
+  - active_imobilizante_total_2017: 4,150 rekord
+  - active_imobilizante_total_2018: 3,574 rekord
+  - active_imobilizante_total_2019: 4,076 rekord
+  - active_imobilizante_total_2020: 3,236 rekord
+  - active_imobilizante_total_2021: 3,732 rekord
+  - active_imobilizante_total_2022: 4,039 rekord
+  - active_imobilizante_total_2023: 3,651 rekord
+  - active_imobilizante_total_2024: 3,590 rekord
+  - an_2013: 4,106 rekord
+  - an_2014: 4,414 rekord
+  - an_2015: 4,328 rekord
+  - an_2016: 4,193 rekord
+  - an_2017: 4,150 rekord
+  - an_2018: 3,574 rekord
+  - an_2019: 4,076 rekord
+  - an_2020: 3,236 rekord
+  - an_2021: 3,732 rekord
+  - an_2022: 4,039 rekord
+  - an_2023: 3,651 rekord
+  - an_2024: 3,590 rekord
+  - capitaluri_total_2013: 4,106 rekord
+  - capitaluri_total_2014: 4,414 rekord
+  - capitaluri_total_2015: 4,328 rekord
+  - capitaluri_total_2016: 4,193 rekord
+  - capitaluri_total_2017: 4,150 rekord
+  - capitaluri_total_2018: 3,574 rekord
+  - capitaluri_total_2019: 4,076 rekord
+  - capitaluri_total_2020: 3,236 rekord
+  - capitaluri_total_2021: 3,732 rekord
+  - capitaluri_total_2022: 4,039 rekord
+  - capitaluri_total_2023: 3,651 rekord
+  - capitaluri_total_2024: 3,590 rekord
+  - cheltuieli_totate_2013: 4,106 rekord
+  - cheltuieli_totate_2014: 4,414 rekord
+  - cheltuieli_totate_2015: 4,328 rekord
+  - cheltuieli_totate_2016: 4,193 rekord
+  - cheltuieli_totate_2017: 4,150 rekord
+  - cheltuieli_totate_2018: 3,574 rekord
+  - cheltuieli_totate_2019: 4,076 rekord
+  - cheltuieli_totate_2020: 3,236 rekord
+  - cheltuieli_totate_2021: 3,732 rekord
+  - cheltuieli_totate_2022: 4,039 rekord
+  - cheltuieli_totate_2023: 3,651 rekord
+  - cheltuieli_totate_2024: 3,590 rekord
+  - cifra_de_afaceri_neta_2013: 4,106 rekord
+  - cifra_de_afaceri_neta_2014: 4,414 rekord
+  - cifra_de_afaceri_neta_2015: 4,328 rekord
+  - cifra_de_afaceri_neta_2016: 4,193 rekord
+  - cifra_de_afaceri_neta_2017: 4,150 rekord
+  - cifra_de_afaceri_neta_2018: 3,574 rekord
+  - cifra_de_afaceri_neta_2019: 4,076 rekord
+  - cifra_de_afaceri_neta_2020: 3,236 rekord
+  - cifra_de_afaceri_neta_2021: 3,732 rekord
+  - cifra_de_afaceri_neta_2022: 4,039 rekord
+  - cifra_de_afaceri_neta_2023: 3,651 rekord
+  - cifra_de_afaceri_neta_2024: 3,590 rekord
+  - creante_2013: 4,106 rekord
+  - creante_2014: 4,414 rekord
+  - creante_2015: 4,328 rekord
+  - creante_2016: 4,193 rekord
+  - creante_2017: 4,150 rekord
+  - creante_2018: 3,574 rekord
+  - creante_2019: 4,076 rekord
+  - creante_2020: 3,236 rekord
+  - creante_2021: 3,732 rekord
+  - creante_2022: 4,039 rekord
+  - creante_2023: 3,651 rekord
+  - creante_2024: 3,590 rekord
+  - datorii_2013: 4,106 rekord
+  - datorii_2014: 4,414 rekord
+  - datorii_2015: 4,328 rekord
+  - datorii_2016: 4,193 rekord
+  - datorii_2017: 4,150 rekord
+  - datorii_2018: 3,574 rekord
+  - datorii_2019: 4,076 rekord
+  - datorii_2020: 3,236 rekord
+  - datorii_2021: 3,732 rekord
+  - datorii_2022: 4,039 rekord
+  - datorii_2023: 3,651 rekord
+  - datorii_2024: 3,590 rekord
+  - patrimoniul_regiei_2013: 4,106 rekord
+  - patrimoniul_regiei_2014: 4,414 rekord
+  - patrimoniul_regiei_2015: 4,328 rekord
+  - patrimoniul_regiei_2016: 4,193 rekord
+  - patrimoniul_regiei_2017: 4,150 rekord
+  - patrimoniul_regiei_2018: 3,574 rekord
+  - patrimoniul_regiei_2019: 4,076 rekord
+  - patrimoniul_regiei_2020: 3,236 rekord
+  - patrimoniul_regiei_2021: 3,732 rekord
+  - patrimoniul_regiei_2022: 4,039 rekord
+  - patrimoniul_regiei_2023: 3,651 rekord
+  - patrimoniul_regiei_2024: 3,590 rekord
+  - pierdere_brut_2013: 4,106 rekord
+  - pierdere_brut_2014: 4,414 rekord
+  - pierdere_brut_2015: 4,328 rekord
+  - pierdere_brut_2016: 4,193 rekord
+  - pierdere_brut_2017: 4,150 rekord
+  - pierdere_brut_2018: 3,574 rekord
+  - pierdere_brut_2019: 4,076 rekord
+  - pierdere_brut_2020: 3,236 rekord
+  - pierdere_brut_2021: 3,732 rekord
+  - pierdere_brut_2022: 4,039 rekord
+  - pierdere_brut_2023: 3,651 rekord
+  - pierdere_brut_2024: 3,590 rekord
+  - pierdere_net_2013: 4,106 rekord
+  - pierdere_net_2014: 4,414 rekord
+  - pierdere_net_2015: 4,328 rekord
+  - pierdere_net_2016: 4,193 rekord
+  - pierdere_net_2017: 4,150 rekord
+  - pierdere_net_2018: 3,574 rekord
+  - pierdere_net_2019: 4,076 rekord
+  - pierdere_net_2020: 3,236 rekord
+  - pierdere_net_2021: 3,732 rekord
+  - pierdere_net_2022: 4,039 rekord
+  - pierdere_net_2023: 3,651 rekord
+  - pierdere_net_2024: 3,590 rekord
+  - profit_brut_2013: 4,106 rekord
+  - profit_brut_2014: 4,414 rekord
+  - profit_brut_2015: 4,328 rekord
+  - profit_brut_2016: 4,193 rekord
+  - profit_brut_2017: 4,150 rekord
+  - profit_brut_2018: 3,574 rekord
+  - profit_brut_2019: 4,076 rekord
+  - profit_brut_2020: 3,236 rekord
+  - profit_brut_2021: 3,732 rekord
+  - profit_brut_2022: 4,039 rekord
+  - profit_brut_2023: 3,651 rekord
+  - profit_brut_2024: 3,590 rekord
+  - profit_net_2013: 4,106 rekord
+  - profit_net_2014: 4,414 rekord
+  - profit_net_2015: 4,328 rekord
+  - profit_net_2016: 4,193 rekord
+  - profit_net_2017: 4,150 rekord
+  - profit_net_2018: 3,574 rekord
+  - profit_net_2019: 4,076 rekord
+  - profit_net_2020: 3,236 rekord
+  - profit_net_2021: 3,732 rekord
+  - profit_net_2022: 4,039 rekord
+  - profit_net_2023: 3,651 rekord
+  - profit_net_2024: 3,590 rekord
+  - provizioane_2013: 4,106 rekord
+  - provizioane_2014: 4,414 rekord
+  - provizioane_2015: 4,328 rekord
+  - provizioane_2016: 4,193 rekord
+  - provizioane_2017: 4,150 rekord
+  - provizioane_2018: 3,574 rekord
+  - provizioane_2019: 4,076 rekord
+  - provizioane_2020: 3,236 rekord
+  - provizioane_2021: 3,732 rekord
+  - provizioane_2022: 4,039 rekord
+  - provizioane_2023: 3,651 rekord
+  - provizioane_2024: 3,590 rekord
+  - salariati_2013: 4,106 rekord
+  - salariati_2014: 4,414 rekord
+  - salariati_2015: 4,328 rekord
+  - salariati_2016: 4,193 rekord
+  - salariati_2017: 4,150 rekord
+  - salariati_2018: 3,574 rekord
+  - salariati_2019: 4,076 rekord
+  - salariati_2020: 3,236 rekord
+  - salariati_2021: 3,732 rekord
+  - salariati_2022: 4,039 rekord
+  - salariati_2023: 3,651 rekord
+  - salariati_2024: 3,590 rekord
+  - stocuri_2013: 4,106 rekord
+  - stocuri_2014: 4,414 rekord
+  - stocuri_2015: 4,328 rekord
+  - stocuri_2016: 4,193 rekord
+  - stocuri_2017: 4,150 rekord
+  - stocuri_2018: 3,574 rekord
+  - stocuri_2019: 4,076 rekord
+  - stocuri_2020: 3,236 rekord
+  - stocuri_2021: 3,732 rekord
+  - stocuri_2022: 4,039 rekord
+  - stocuri_2023: 3,651 rekord
+  - stocuri_2024: 3,590 rekord
+  - venituri_totale_2013: 4,106 rekord
+  - venituri_totale_2014: 4,414 rekord
+  - venituri_totale_2015: 4,328 rekord
+  - venituri_totale_2016: 4,193 rekord
+  - venituri_totale_2017: 4,150 rekord
+  - venituri_totale_2018: 3,574 rekord
+  - venituri_totale_2019: 4,076 rekord
+  - venituri_totale_2020: 3,236 rekord
+  - venituri_totale_2021: 3,732 rekord
+  - venituri_totale_2022: 4,039 rekord
+  - venituri_totale_2023: 3,651 rekord
+  - venituri_totale_2024: 3,590 rekord
