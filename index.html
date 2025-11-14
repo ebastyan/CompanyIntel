@@ -308,17 +308,31 @@
         .category-header {
             background: linear-gradient(135deg, #0F7CC0 0%, #0a5a8f 100%);
             color: white;
-            padding: 10px 15px;
-            margin: 20px 0 10px;
-            border-radius: 4px;
+            padding: 15px 20px;
+            margin: 40px 0 20px;
+            border-radius: 6px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 15px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(15, 124, 192, 0.3);
         }
 
         .category-header:first-child {
             margin-top: 0;
+        }
+
+        /* Data Section Wrapper */
+        .data-section {
+            background: #fafafa;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .data-section:last-child {
+            margin-bottom: 0;
         }
 
         /* Loading & Error */
@@ -585,7 +599,8 @@
             }
 
             // TAB 2: FINANCIAL DATA - All financial indicators
-            let financialHtml = '<div class="category-header">💰 Venituri și Cheltuieli</div>';
+            let financialHtml = '<div class="data-section">';
+            financialHtml += '<div class="category-header">💰 Venituri și Cheltuieli</div>';
             financialHtml += '<table class="data-table"><thead><tr>';
             financialHtml += '<th>An</th>';
             financialHtml += '<th>Cifra de Afaceri Netă</th>';
@@ -603,7 +618,9 @@
             });
 
             financialHtml += '</tbody></table>';
+            financialHtml += '</div>'; // Close data-section
 
+            financialHtml += '<div class="data-section">';
             financialHtml += '<div class="category-header">📊 Profit și Pierdere</div>';
             financialHtml += '<table class="data-table"><thead><tr>';
             financialHtml += '<th>An</th>';
@@ -624,6 +641,7 @@
             });
 
             financialHtml += '</tbody></table>';
+            financialHtml += '</div>'; // Close data-section
 
             console.log('[DISPLAY] Setting tab-financial innerHTML...');
             const financialTab = document.getElementById('tab-financial');
@@ -635,7 +653,8 @@
             }
 
             // TAB 3: ASSETS & LIABILITIES
-            let assetsHtml = '<div class="category-header">🏢 Active</div>';
+            let assetsHtml = '<div class="data-section">';
+            assetsHtml += '<div class="category-header">🏢 Active</div>';
             assetsHtml += '<table class="data-table"><thead><tr>';
             assetsHtml += '<th>An</th>';
             assetsHtml += '<th>Active Imobilizate</th>';
@@ -655,7 +674,9 @@
             });
 
             assetsHtml += '</tbody></table>';
+            assetsHtml += '</div>'; // Close data-section
 
+            assetsHtml += '<div class="data-section">';
             assetsHtml += '<div class="category-header">💼 Pasive și Capital</div>';
             assetsHtml += '<table class="data-table"><thead><tr>';
             assetsHtml += '<th>An</th>';
@@ -676,6 +697,7 @@
             });
 
             assetsHtml += '</tbody></table>';
+            assetsHtml += '</div>'; // Close data-section
 
             console.log('[DISPLAY] Setting tab-assets innerHTML...');
             const assetsTab = document.getElementById('tab-assets');
