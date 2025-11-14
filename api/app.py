@@ -22,11 +22,6 @@ def get_db_connection():
     """Database kapcsolat"""
     return psycopg2.connect(DATABASE_URL)
 
-@app.route('/')
-def index():
-    """Frontend"""
-    return send_from_directory('../frontend', 'index.html')
-
 @app.route('/api/search', methods=['GET'])
 def search_company():
     """CIF keresés"""
