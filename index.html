@@ -257,41 +257,56 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
+            font-size: 12px;
         }
 
         .data-table thead {
-            background: #f5f5f5;
+            background: linear-gradient(135deg, #0F7CC0 0%, #0a5a8f 100%);
+            color: white;
         }
 
         .data-table th {
-            padding: 12px;
-            text-align: left;
+            padding: 12px 8px;
+            text-align: center;
             font-weight: bold;
-            color: #0F7CC0;
-            border-bottom: 2px solid #e0e0e0;
-            font-size: 13px;
-            text-transform: uppercase;
+            border: 1px solid #0a5a8f;
+            font-size: 12px;
+        }
+
+        .data-table th:first-child {
+            text-align: left;
+            background: #0F7CC0;
+            position: sticky;
+            left: 0;
+            z-index: 10;
+            min-width: 180px;
         }
 
         .data-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 8px;
+            border: 1px solid #e0e0e0;
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+
+        .data-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+            background: #f5f5f5;
+            position: sticky;
+            left: 0;
+            z-index: 5;
+            color: #333;
+            font-family: 'Segoe UI', sans-serif;
         }
 
         .data-table tbody tr:hover {
-            background: #f9f9f9;
+            background: #fffbf0;
         }
 
-        .data-table .year-col {
-            font-weight: bold;
-            color: #0F7CC0;
-            font-size: 16px;
-        }
-
-        .data-table .number-col {
-            text-align: right;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
+        .data-table tbody tr:hover td:first-child {
+            background: #fff3d9;
         }
 
         .positive {
@@ -567,27 +582,46 @@
             data.years.sort((a, b) => b.an - a.an);
             console.log('[DISPLAY] Years sorted, count:', data.years.length);
 
-            // TAB 1: OVERVIEW - Main indicators
+            // TAB 1: OVERVIEW - Main indicators (PIVOT TABLE)
             let overviewHtml = '<div class="category-header">📈 Indicatori Principali</div>';
-            overviewHtml += '<table class="data-table"><thead><tr>';
-            overviewHtml += '<th>An</th>';
-            overviewHtml += '<th>Cifra de Afaceri Netă (RON)</th>';
-            overviewHtml += '<th>Profit Net (RON)</th>';
-            overviewHtml += '<th>Pierdere Net (RON)</th>';
-            overviewHtml += '<th>Salariați</th>';
+            overviewHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
+            overviewHtml += '<th>Indicator</th>';
+
+            // Years as columns (descending)
+            data.years.forEach(year => {
+                overviewHtml += `<th>${year.an}</th>`;
+            });
             overviewHtml += '</tr></thead><tbody>';
 
+            // Row: Cifra de Afaceri
+            overviewHtml += '<tr><td>Cifra de Afaceri Netă (RON)</td>';
             data.years.forEach(year => {
-                overviewHtml += '<tr>';
-                overviewHtml += `<td class="year-col">${year.an}</td>`;
-                overviewHtml += `<td class="number-col">${formatNumber(year.cifra_de_afaceri_neta)}</td>`;
-                overviewHtml += `<td class="number-col positive">${formatNumber(year.profit_net)}</td>`;
-                overviewHtml += `<td class="number-col negative">${formatNumber(year.pierdere_net)}</td>`;
-                overviewHtml += `<td class="number-col">${formatNumber(year.salariati)}</td>`;
-                overviewHtml += '</tr>';
+                overviewHtml += `<td>${formatNumber(year.cifra_de_afaceri_neta)}</td>`;
             });
+            overviewHtml += '</tr>';
 
-            overviewHtml += '</tbody></table>';
+            // Row: Profit Net
+            overviewHtml += '<tr><td>Profit Net (RON)</td>';
+            data.years.forEach(year => {
+                overviewHtml += `<td class="positive">${formatNumber(year.profit_net)}</td>`;
+            });
+            overviewHtml += '</tr>';
+
+            // Row: Pierdere Net
+            overviewHtml += '<tr><td>Pierdere Net (RON)</td>';
+            data.years.forEach(year => {
+                overviewHtml += `<td class="negative">${formatNumber(year.pierdere_net)}</td>`;
+            });
+            overviewHtml += '</tr>';
+
+            // Row: Salariati
+            overviewHtml += '<tr><td>Salariați</td>';
+            data.years.forEach(year => {
+                overviewHtml += `<td>${formatNumber(year.salariati)}</td>`;
+            });
+            overviewHtml += '</tr>';
+
+            overviewHtml += '</tbody></table></div>';
 
             console.log('[DISPLAY] Setting tab-overview innerHTML...');
             const overviewTab = document.getElementById('tab-overview');
@@ -598,50 +632,79 @@
                 console.error('[DISPLAY] ERROR: tab-overview element not found!');
             }
 
-            // TAB 2: FINANCIAL DATA - All financial indicators
+            // TAB 2: FINANCIAL DATA - All financial indicators (PIVOT TABLE)
             let financialHtml = '<div class="data-section">';
             financialHtml += '<div class="category-header">💰 Venituri și Cheltuieli</div>';
-            financialHtml += '<table class="data-table"><thead><tr>';
-            financialHtml += '<th>An</th>';
-            financialHtml += '<th>Cifra de Afaceri Netă</th>';
-            financialHtml += '<th>Venituri Totale</th>';
-            financialHtml += '<th>Cheltuieli Totale</th>';
+            financialHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
+            financialHtml += '<th>Indicator</th>';
+            data.years.forEach(year => {
+                financialHtml += `<th>${year.an}</th>`;
+            });
             financialHtml += '</tr></thead><tbody>';
 
+            // Cifra de Afaceri
+            financialHtml += '<tr><td>Cifra de Afaceri Netă</td>';
             data.years.forEach(year => {
-                financialHtml += '<tr>';
-                financialHtml += `<td class="year-col">${year.an}</td>`;
-                financialHtml += `<td class="number-col">${formatNumber(year.cifra_de_afaceri_neta)}</td>`;
-                financialHtml += `<td class="number-col">${formatNumber(year.venituri_totale)}</td>`;
-                financialHtml += `<td class="number-col">${formatNumber(year.cheltuieli_totale)}</td>`;
-                financialHtml += '</tr>';
+                financialHtml += `<td>${formatNumber(year.cifra_de_afaceri_neta)}</td>`;
             });
+            financialHtml += '</tr>';
 
-            financialHtml += '</tbody></table>';
-            financialHtml += '</div>'; // Close data-section
+            // Venituri Totale
+            financialHtml += '<tr><td>Venituri Totale</td>';
+            data.years.forEach(year => {
+                financialHtml += `<td>${formatNumber(year.venituri_totale)}</td>`;
+            });
+            financialHtml += '</tr>';
+
+            // Cheltuieli Totale
+            financialHtml += '<tr><td>Cheltuieli Totale</td>';
+            data.years.forEach(year => {
+                financialHtml += `<td>${formatNumber(year.cheltuieli_totale)}</td>`;
+            });
+            financialHtml += '</tr>';
+
+            financialHtml += '</tbody></table></div>';
+            financialHtml += '</div>';
 
             financialHtml += '<div class="data-section">';
             financialHtml += '<div class="category-header">📊 Profit și Pierdere</div>';
-            financialHtml += '<table class="data-table"><thead><tr>';
-            financialHtml += '<th>An</th>';
-            financialHtml += '<th>Profit Brut</th>';
-            financialHtml += '<th>Pierdere Brut</th>';
-            financialHtml += '<th>Profit Net</th>';
-            financialHtml += '<th>Pierdere Net</th>';
+            financialHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
+            financialHtml += '<th>Indicator</th>';
+            data.years.forEach(year => {
+                financialHtml += `<th>${year.an}</th>`;
+            });
             financialHtml += '</tr></thead><tbody>';
 
+            // Profit Brut
+            financialHtml += '<tr><td>Profit Brut</td>';
             data.years.forEach(year => {
-                financialHtml += '<tr>';
-                financialHtml += `<td class="year-col">${year.an}</td>`;
-                financialHtml += `<td class="number-col positive">${formatNumber(year.profit_brut)}</td>`;
-                financialHtml += `<td class="number-col negative">${formatNumber(year.pierdere_brut)}</td>`;
-                financialHtml += `<td class="number-col positive">${formatNumber(year.profit_net)}</td>`;
-                financialHtml += `<td class="number-col negative">${formatNumber(year.pierdere_net)}</td>`;
-                financialHtml += '</tr>';
+                financialHtml += `<td class="positive">${formatNumber(year.profit_brut)}</td>`;
             });
+            financialHtml += '</tr>';
 
-            financialHtml += '</tbody></table>';
-            financialHtml += '</div>'; // Close data-section
+            // Pierdere Brut
+            financialHtml += '<tr><td>Pierdere Brut</td>';
+            data.years.forEach(year => {
+                financialHtml += `<td class="negative">${formatNumber(year.pierdere_brut)}</td>`;
+            });
+            financialHtml += '</tr>';
+
+            // Profit Net
+            financialHtml += '<tr><td>Profit Net</td>';
+            data.years.forEach(year => {
+                financialHtml += `<td class="positive">${formatNumber(year.profit_net)}</td>`;
+            });
+            financialHtml += '</tr>';
+
+            // Pierdere Net
+            financialHtml += '<tr><td>Pierdere Net</td>';
+            data.years.forEach(year => {
+                financialHtml += `<td class="negative">${formatNumber(year.pierdere_net)}</td>`;
+            });
+            financialHtml += '</tr>';
+
+            financialHtml += '</tbody></table></div>';
+            financialHtml += '</div>';
 
             console.log('[DISPLAY] Setting tab-financial innerHTML...');
             const financialTab = document.getElementById('tab-financial');
@@ -652,52 +715,86 @@
                 console.error('[DISPLAY] ERROR: tab-financial element not found!');
             }
 
-            // TAB 3: ASSETS & LIABILITIES
+            // TAB 3: ASSETS & LIABILITIES (PIVOT TABLE)
             let assetsHtml = '<div class="data-section">';
             assetsHtml += '<div class="category-header">🏢 Active</div>';
-            assetsHtml += '<table class="data-table"><thead><tr>';
-            assetsHtml += '<th>An</th>';
-            assetsHtml += '<th>Active Imobilizate</th>';
-            assetsHtml += '<th>Active Circulante</th>';
-            assetsHtml += '<th>Stocuri</th>';
-            assetsHtml += '<th>Creanțe</th>';
+            assetsHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
+            assetsHtml += '<th>Indicator</th>';
+            data.years.forEach(year => {
+                assetsHtml += `<th>${year.an}</th>`;
+            });
             assetsHtml += '</tr></thead><tbody>';
 
+            // Active Imobilizate
+            assetsHtml += '<tr><td>Active Imobilizate</td>';
             data.years.forEach(year => {
-                assetsHtml += '<tr>';
-                assetsHtml += `<td class="year-col">${year.an}</td>`;
-                assetsHtml += `<td class="number-col">${formatNumber(year.active_imobilizate)}</td>`;
-                assetsHtml += `<td class="number-col">${formatNumber(year.active_circulante)}</td>`;
-                assetsHtml += `<td class="number-col">${formatNumber(year.stocuri)}</td>`;
-                assetsHtml += `<td class="number-col">${formatNumber(year.creante)}</td>`;
-                assetsHtml += '</tr>';
+                assetsHtml += `<td>${formatNumber(year.active_imobilizate)}</td>`;
             });
+            assetsHtml += '</tr>';
 
-            assetsHtml += '</tbody></table>';
-            assetsHtml += '</div>'; // Close data-section
+            // Active Circulante
+            assetsHtml += '<tr><td>Active Circulante</td>';
+            data.years.forEach(year => {
+                assetsHtml += `<td>${formatNumber(year.active_circulante)}</td>`;
+            });
+            assetsHtml += '</tr>';
+
+            // Stocuri
+            assetsHtml += '<tr><td>Stocuri</td>';
+            data.years.forEach(year => {
+                assetsHtml += `<td>${formatNumber(year.stocuri)}</td>`;
+            });
+            assetsHtml += '</tr>';
+
+            // Creante
+            assetsHtml += '<tr><td>Creanțe</td>';
+            data.years.forEach(year => {
+                assetsHtml += `<td>${formatNumber(year.creante)}</td>`;
+            });
+            assetsHtml += '</tr>';
+
+            assetsHtml += '</tbody></table></div>';
+            assetsHtml += '</div>';
 
             assetsHtml += '<div class="data-section">';
             assetsHtml += '<div class="category-header">💼 Pasive și Capital</div>';
-            assetsHtml += '<table class="data-table"><thead><tr>';
-            assetsHtml += '<th>An</th>';
-            assetsHtml += '<th>Datorii</th>';
-            assetsHtml += '<th>Provizioane</th>';
-            assetsHtml += '<th>Capitaluri Total</th>';
-            assetsHtml += '<th>Patrimoniul Regiei</th>';
+            assetsHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
+            assetsHtml += '<th>Indicator</th>';
+            data.years.forEach(year => {
+                assetsHtml += `<th>${year.an}</th>`;
+            });
             assetsHtml += '</tr></thead><tbody>';
 
+            // Datorii
+            assetsHtml += '<tr><td>Datorii</td>';
             data.years.forEach(year => {
-                assetsHtml += '<tr>';
-                assetsHtml += `<td class="year-col">${year.an}</td>`;
-                assetsHtml += `<td class="number-col">${formatNumber(year.datorii)}</td>`;
-                assetsHtml += `<td class="number-col">${formatNumber(year.provizioane)}</td>`;
-                assetsHtml += `<td class="number-col">${formatNumber(year.capitaluri_total)}</td>`;
-                assetsHtml += `<td class="number-col">${formatNumber(year.patrimoniul_regiei)}</td>`;
-                assetsHtml += '</tr>';
+                assetsHtml += `<td>${formatNumber(year.datorii)}</td>`;
             });
+            assetsHtml += '</tr>';
 
-            assetsHtml += '</tbody></table>';
-            assetsHtml += '</div>'; // Close data-section
+            // Provizioane
+            assetsHtml += '<tr><td>Provizioane</td>';
+            data.years.forEach(year => {
+                assetsHtml += `<td>${formatNumber(year.provizioane)}</td>`;
+            });
+            assetsHtml += '</tr>';
+
+            // Capitaluri Total
+            assetsHtml += '<tr><td>Capitaluri Total</td>';
+            data.years.forEach(year => {
+                assetsHtml += `<td>${formatNumber(year.capitaluri_total)}</td>`;
+            });
+            assetsHtml += '</tr>';
+
+            // Patrimoniul Regiei
+            assetsHtml += '<tr><td>Patrimoniul Regiei</td>';
+            data.years.forEach(year => {
+                assetsHtml += `<td>${formatNumber(year.patrimoniul_regiei)}</td>`;
+            });
+            assetsHtml += '</tr>';
+
+            assetsHtml += '</tbody></table></div>';
+            assetsHtml += '</div>';
 
             console.log('[DISPLAY] Setting tab-assets innerHTML...');
             const assetsTab = document.getElementById('tab-assets');
