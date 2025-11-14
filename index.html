@@ -478,27 +478,50 @@
 
         async function searchCompany(event) {
             event.preventDefault();
+            console.log('[SEARCH] Starting search...');
+
             const cif = document.getElementById('cifInput').value.trim();
+            console.log('[SEARCH] CIF:', cif);
+
             const resultsDiv = document.getElementById('results');
-            const resultsContent = document.getElementById('resultsContent');
             const cifNumber = document.getElementById('cifNumber');
 
             resultsDiv.classList.add('show');
-            resultsContent.innerHTML = '<div class="loading"><div class="loader"></div><p>Se încarcă datele companiei...</p></div>';
+
+            // Show loading in first tab only
+            const overviewTab = document.getElementById('tab-overview');
+            if (overviewTab) {
+                overviewTab.innerHTML = '<div class="loading"><div class="loader"></div><p>Se încarcă datele companiei...</p></div>';
+                console.log('[SEARCH] Loading indicator shown');
+            }
 
             try {
+                console.log('[API] Fetching from:', `${API_URL}/search?cif=${encodeURIComponent(cif)}`);
                 const response = await fetch(`${API_URL}/search?cif=${encodeURIComponent(cif)}`);
+                console.log('[API] Response status:', response.status);
+
                 const data = await response.json();
+                console.log('[API] Response data:', data);
 
                 if (response.ok) {
+                    console.log('[SEARCH] Search successful, CIF:', data.cif);
+                    console.log('[SEARCH] Years data:', data.years);
+
                     cifNumber.textContent = data.cif;
                     currentData = data;
                     displayResults(data);
                 } else {
-                    resultsContent.innerHTML = `<div class="error"><strong>⚠ Eroare:</strong> ${data.error}</div>`;
+                    console.error('[SEARCH] Error from API:', data.error);
+                    if (overviewTab) {
+                        overviewTab.innerHTML = `<div class="error"><strong>⚠ Eroare:</strong> ${data.error}</div>`;
+                    }
                 }
             } catch (error) {
-                resultsContent.innerHTML = `<div class="error"><strong>⚠ Eroare de conexiune:</strong> ${error.message}</div>`;
+                console.error('[SEARCH] Exception:', error);
+                console.error('[SEARCH] Error stack:', error.stack);
+                if (overviewTab) {
+                    overviewTab.innerHTML = `<div class="error"><strong>⚠ Eroare de conexiune:</strong> ${error.message}</div>`;
+                }
             }
         }
 
@@ -515,12 +538,20 @@
         }
 
         function displayResults(data) {
+            console.log('[DISPLAY] displayResults called with data:', data);
+
             if (!data.years || data.years.length === 0) {
-                document.getElementById('tab-overview').innerHTML = '<p>Nu există date financiare disponibile.</p>';
+                console.warn('[DISPLAY] No years data available');
+                const overviewTab = document.getElementById('tab-overview');
+                if (overviewTab) {
+                    overviewTab.innerHTML = '<p>Nu există date financiare disponibile.</p>';
+                }
                 return;
             }
 
+            console.log('[DISPLAY] Sorting years data...');
             data.years.sort((a, b) => b.an - a.an);
+            console.log('[DISPLAY] Years sorted, count:', data.years.length);
 
             // TAB 1: OVERVIEW - Main indicators
             let overviewHtml = '<div class="category-header">📈 Indicatori Principali</div>';
@@ -543,7 +574,15 @@
             });
 
             overviewHtml += '</tbody></table>';
-            document.getElementById('tab-overview').innerHTML = overviewHtml;
+
+            console.log('[DISPLAY] Setting tab-overview innerHTML...');
+            const overviewTab = document.getElementById('tab-overview');
+            if (overviewTab) {
+                overviewTab.innerHTML = overviewHtml;
+                console.log('[DISPLAY] tab-overview updated successfully');
+            } else {
+                console.error('[DISPLAY] ERROR: tab-overview element not found!');
+            }
 
             // TAB 2: FINANCIAL DATA - All financial indicators
             let financialHtml = '<div class="category-header">💰 Venituri și Cheltuieli</div>';
@@ -585,7 +624,15 @@
             });
 
             financialHtml += '</tbody></table>';
-            document.getElementById('tab-financial').innerHTML = financialHtml;
+
+            console.log('[DISPLAY] Setting tab-financial innerHTML...');
+            const financialTab = document.getElementById('tab-financial');
+            if (financialTab) {
+                financialTab.innerHTML = financialHtml;
+                console.log('[DISPLAY] tab-financial updated successfully');
+            } else {
+                console.error('[DISPLAY] ERROR: tab-financial element not found!');
+            }
 
             // TAB 3: ASSETS & LIABILITIES
             let assetsHtml = '<div class="category-header">🏢 Active</div>';
@@ -629,7 +676,17 @@
             });
 
             assetsHtml += '</tbody></table>';
-            document.getElementById('tab-assets').innerHTML = assetsHtml;
+
+            console.log('[DISPLAY] Setting tab-assets innerHTML...');
+            const assetsTab = document.getElementById('tab-assets');
+            if (assetsTab) {
+                assetsTab.innerHTML = assetsHtml;
+                console.log('[DISPLAY] tab-assets updated successfully');
+            } else {
+                console.error('[DISPLAY] ERROR: tab-assets element not found!');
+            }
+
+            console.log('[DISPLAY] All tabs updated successfully!');
         }
 
         function formatNumber(value) {
