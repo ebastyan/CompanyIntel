@@ -420,6 +420,41 @@
             color: #ef4444;
         }
 
+        /* Warning Alert */
+        .warning-alert {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            color: #991b1b;
+            font-weight: 600;
+        }
+
+        .warning-alert .year {
+            color: #dc2626;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        /* Toggle Button */
+        .toggle-years-btn {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            background: #0F7CC0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .toggle-years-btn:hover {
+            background: #0a5a8f;
+        }
+
         /* Loading */
         .loading {
             text-align: center;
@@ -523,6 +558,8 @@
 
     <script>
         const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : '/api';
+        let showAllYears = false;
+        let currentCompanyData = null;
 
         async function searchCompany(event) {
             event.preventDefault();
@@ -556,8 +593,20 @@
             }
 
             data.years.sort((a, b) => b.an - a.an);
+            currentCompanyData = data; // Store for toggle
+
+            // Check if company might be closed
+            const closedInfo = checkIfClosed(data.years);
 
             let html = '';
+
+            // Warning if possibly closed
+            if (closedInfo.possibleClosed) {
+                html += `<div class="warning-alert">
+                    ⚠ Possibil ÎNCHIS din anul <span class="year">${closedInfo.lastActiveYear}</span>
+                    <br><small>Nu există date declarate în ultimii ${closedInfo.yearsInactive} ani (${closedInfo.inactiveYears.join(', ')})</small>
+                </div>`;
+            }
 
             // Company Header
             html += '<div class="company-header">';
@@ -587,10 +636,21 @@
             html += '<canvas id="revenueChart" height="80"></canvas>';
             html += '</div>';
 
-            // Compact Table - Last 5 Years
+            // Compact Table - Dynamic Years
             html += '<div class="data-section">';
-            html += '<div class="section-title">📊 Date Financiare (Ultimii 5 Ani)</div>';
-            html += createCompactTable(data.years.slice(0, 5));
+            const yearsToShow = showAllYears ? data.years : data.years.slice(0, 5);
+            const totalYears = data.years.length;
+
+            html += `<div class="section-title">📊 Date Financiare ${showAllYears ? `(Toți ${totalYears} Ani)` : `(Ultimii 5 Ani)`}</div>`;
+
+            // Toggle button (only if more than 5 years)
+            if (totalYears > 5) {
+                html += `<button class="toggle-years-btn" onclick="toggleYears()">
+                    ${showAllYears ? '📅 Afișare ultimii 5 ani' : '📅 Afișare toți anii (' + totalYears + ')'}
+                </button>`;
+            }
+
+            html += createCompactTable(yearsToShow);
             html += '</div>';
 
             document.getElementById('resultsContent').innerHTML = html;
@@ -717,6 +777,52 @@
                     }
                 }
             });
+        }
+
+        function checkIfClosed(years) {
+            // Check if company has recent activity
+            const currentYear = new Date().getFullYear();
+            const recentYears = [currentYear, currentYear - 1, currentYear - 2]; // Last 3 years
+
+            // Find which recent years have data
+            const activeRecentYears = years
+                .filter(y => recentYears.includes(y.an))
+                .filter(y => {
+                    // Check if there's any non-zero financial data
+                    return y.cifra_de_afaceri_neta > 0 ||
+                           y.venituri_totale > 0 ||
+                           y.active_imobilizate > 0 ||
+                           y.active_circulante > 0;
+                });
+
+            // If no activity in last 2-3 years, mark as possibly closed
+            if (activeRecentYears.length === 0) {
+                // Find last year with activity
+                const lastActiveYear = years.find(y =>
+                    y.cifra_de_afaceri_neta > 0 ||
+                    y.venituri_totale > 0 ||
+                    y.active_imobilizate > 0 ||
+                    y.active_circulante > 0
+                );
+
+                const inactiveYears = recentYears.filter(y => !years.find(yr => yr.an === y));
+
+                return {
+                    possibleClosed: true,
+                    lastActiveYear: lastActiveYear ? lastActiveYear.an : years[0].an,
+                    yearsInactive: recentYears.length - activeRecentYears.length,
+                    inactiveYears: recentYears.filter(y => years.some(yr => yr.an === y))
+                };
+            }
+
+            return { possibleClosed: false };
+        }
+
+        function toggleYears() {
+            showAllYears = !showAllYears;
+            if (currentCompanyData) {
+                displayResults(currentCompanyData);
+            }
         }
 
         function formatNumber(value, isCurrency = true) {
