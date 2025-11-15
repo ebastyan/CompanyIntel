@@ -437,6 +437,51 @@
             font-weight: 700;
         }
 
+        /* Collapsible Full History */
+        .collapse-toggle-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: white;
+            color: #0F7CC0;
+            border: 2px solid #0F7CC0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .collapse-toggle-btn:hover {
+            background: #0F7CC0;
+            color: white;
+        }
+
+        .collapse-toggle-btn .icon {
+            margin-right: 8px;
+        }
+
+        .full-history-section {
+            margin-top: 30px;
+            display: none;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        .full-history-section.show {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         /* Loading */
         .loading {
             text-align: center;
@@ -617,10 +662,25 @@
             html += '<canvas id="revenueChart" height="80"></canvas>';
             html += '</div>';
 
-            // Compact Table - Last 5 Years (fixed, no toggle)
+            // Compact Table - Last 5 Years (fixed, always visible)
             html += '<div class="data-section">';
             html += '<div class="section-title">📊 Date Financiare (Ultimii 5 Ani)</div>';
             html += createCompactTable(data.years.slice(0, 5));
+
+            // Collapse button (only if more than 5 years)
+            if (data.years.length > 5) {
+                html += `<button class="collapse-toggle-btn" onclick="toggleFullHistory()">
+                    <span class="icon">📂</span>
+                    <span id="collapseText">Vezi toate datele (${data.years.length} ani)</span>
+                </button>`;
+
+                // Full history section (hidden by default)
+                html += '<div class="full-history-section" id="fullHistorySection">';
+                html += '<div class="section-title">📜 Istoric Complet (Toți Anii)</div>';
+                html += createCompactTable(data.years);
+                html += '</div>';
+            }
+
             html += '</div>';
 
             document.getElementById('resultsContent').innerHTML = html;
@@ -786,6 +846,20 @@
             }
 
             return { possibleClosed: false };
+        }
+
+        function toggleFullHistory() {
+            const section = document.getElementById('fullHistorySection');
+            const text = document.getElementById('collapseText');
+            const isVisible = section.classList.contains('show');
+
+            if (isVisible) {
+                section.classList.remove('show');
+                text.textContent = `Vezi toate datele (${currentCompanyData.years.length} ani)`;
+            } else {
+                section.classList.add('show');
+                text.textContent = 'Ascunde istoricul complet';
+            }
         }
 
         function formatNumber(value, isCurrency = true) {
