@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Ultimate AI Project Ideas - PAJURCA Intelligence Platform</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0F7CC0;
+            --accent: #f78153;
+            --rust: #D35400;
+            --yellow: #F39C12;
+            --success: #27AE60;
+            --danger: #E74C3C;
+            --dark: #1C1C1C;
+            --light: #FFFFFF;
+            --gray: #34495E;
+            --purple: #9B59B6;
+            --cyan: #1ABC9C;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1C1C1C 0%, #2C3E50 100%);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--purple) 100%);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 8px solid var(--accent);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -200px;
+            right: -200px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            bottom: -100px;
+            left: -100px;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero p {
+            font-size: 24px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            animation: slideUp 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .nav-pills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 40px 0;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            background: rgba(28, 28, 28, 0.95);
+            padding: 20px;
+            border-radius: 16px;
+            border: 4px solid var(--accent);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-pill {
+            background: var(--primary);
+            color: var(--light);
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: 3px solid var(--light);
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .nav-pill:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            border-color: var(--accent);
+        }
+
+        .nav-pill.active {
+            background: var(--accent);
+            transform: scale(1.1);
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+            border: 6px solid var(--accent);
+            border-radius: 24px;
+            padding: 50px;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            transition: all 0.4s ease;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+            border-color: var(--yellow);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, var(--danger), var(--accent), var(--yellow), var(--success), var(--primary), var(--purple));
+            background-size: 200% 100%;
+            animation: rainbow 3s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        .project-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 900;
+            border: 5px solid var(--light);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .project-card h2 {
+            font-size: 48px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+            letter-spacing: -1px;
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--yellow);
+            margin: 30px 0 15px 0;
+            border-left: 6px solid var(--yellow);
+            padding-left: 15px;
+        }
+
+        .project-card p {
+            font-size: 18px;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .code-block {
+            background: #1C1C1C;
+            border: 4px solid var(--primary);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 25px 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            position: relative;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .code-block::before {
+            content: 'WORKFLOW';
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--primary);
+            padding: 5px 15px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-item {
+            background: rgba(255,255,255,0.05);
+            border: 3px solid var(--primary);
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .feature-item:hover::before {
+            left: 100%;
+        }
+
+        .feature-item:hover {
+            transform: translateX(10px);
+            border-color: var(--accent);
+            background: rgba(247, 129, 83, 0.1);
+        }
+
+        .feature-item strong {
+            color: var(--accent);
+            font-size: 20px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            margin: 5px;
+            border: 2px solid;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .badge-critical { background: var(--danger); border-color: var(--light); }
+        .badge-high { background: var(--accent); border-color: var(--light); }
+        .badge-medium { background: var(--yellow); border-color: var(--dark); color: var(--dark); }
+        .badge-success { background: var(--success); border-color: var(--light); }
+        .badge-info { background: var(--primary); border-color: var(--light); }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, var(--primary), var(--purple));
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 4px solid var(--light);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .stat-box:hover {
+            transform: rotate(-2deg) scale(1.05);
+        }
+
+        .stat-box .number {
+            font-size: 48px;
+            font-weight: 900;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-box .label {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+            margin: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            background: linear-gradient(180deg, var(--primary), var(--accent), var(--yellow), var(--success));
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: rgba(255,255,255,0.1);
+            border: 4px solid var(--primary);
+            border-radius: 16px;
+            padding: 25px;
+            margin: 0 40px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.05);
+            border-color: var(--accent);
+            background: rgba(247, 129, 83, 0.2);
+        }
+
+        .timeline-dot {
+            width: 30px;
+            height: 30px;
+            background: var(--accent);
+            border: 6px solid var(--light);
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            box-shadow: 0 0 20px rgba(247, 129, 83, 0.8);
+        }
+
+        .bonus-section {
+            background: linear-gradient(135deg, var(--purple), var(--danger));
+            border: 6px solid var(--yellow);
+            border-radius: 24px;
+            padding: 50px;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bonus-section::before {
+            content: '⭐';
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.1;
+            right: -50px;
+            top: -50px;
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .bonus-section h2 {
+            font-size: 56px;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--success), var(--cyan));
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 8px solid var(--yellow);
+            border-bottom: 8px solid var(--yellow);
+            margin-top: 60px;
+        }
+
+        .cta-section h2 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            background: var(--light);
+            color: var(--dark);
+            padding: 20px 40px;
+            border-radius: 50px;
+            border: 5px solid var(--dark);
+            font-weight: 900;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            background: var(--accent);
+            color: var(--light);
+            border-color: var(--light);
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border: 4px solid var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px) rotate(360deg);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .tech-tag {
+            background: var(--gray);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            border: 2px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .tech-tag:hover {
+            background: var(--primary);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 18px; }
+            .project-card { padding: 30px; }
+            .project-card h2 { font-size: 32px; }
+            .project-number { width: 60px; height: 60px; font-size: 32px; }
+            .timeline::before { left: 20px; }
+            .timeline-item { flex-direction: column !important; }
+            .timeline-content { margin: 20px 0 20px 40px; }
+            .timeline-dot { left: 20px; }
+        }
+
+        .impact-meter {
+            background: #1C1C1C;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .impact-bar {
+            height: 30px;
+            background: var(--gray);
+            border-radius: 50px;
+            overflow: hidden;
+            position: relative;
+            border: 3px solid var(--light);
+        }
+
+        .impact-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--success), var(--yellow), var(--danger));
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 15px;
+            font-weight: 900;
+            font-size: 14px;
+            transition: width 1s ease-out;
+        }
+
+        .roi-box {
+            background: linear-gradient(135deg, #27AE60, #229954);
+            padding: 30px;
+            border-radius: 16px;
+            border: 5px solid var(--light);
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .roi-box .roi-number {
+            font-size: 72px;
+            font-weight: 900;
+            display: block;
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+        }
+
+        .roi-box .roi-label {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>🚀 ULTIMATE AI IDEAS</h1>
+        <p>5 Zseniális Projekt Ötlet a PAJURCA Intelligence Platformhoz</p>
+    </div>
+
+    <!-- Navigation Pills -->
+    <div class="container">
+        <div class="nav-pills">
+            <a href="#project1" class="nav-pill">🔮 Prophet AI</a>
+            <a href="#project2" class="nav-pill">🛡️ Guardian AI</a>
+            <a href="#project3" class="nav-pill">🎯 DealHunter AI</a>
+            <a href="#project4" class="nav-pill">🌐 Nexus</a>
+            <a href="#project5" class="nav-pill">🗺️ Atlas</a>
+            <a href="#bonus" class="nav-pill">💎 Bonus</a>
+            <a href="#roadmap" class="nav-pill">📅 Roadmap</a>
+        </div>
+
+        <!-- Project 1: Prophet AI -->
+        <div id="project1" class="project-card">
+            <div class="project-number">1</div>
+            <h2>🔮 Prophet AI</h2>
+            <p style="font-size: 24px; color: var(--accent); font-weight: 600;">Predictive Market Intelligence Engine</p>
+
+            <h3>💡 Mi ez?</h3>
+            <p>Multi-Agent Team, ami <strong>3 hónap előre jelzi</strong> mi fog történni a piacon!</p>
+
+            <div class="code-block">
+┌─────────────────────────────────────────────────────────────┐
+│                    PROPHET AI WORKFLOW                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                               │
+│  Agent 1: NEWS PATTERN ANALYZER (Hiraggregator)              │
+│  ├─ Elemzi az elmúlt 12 hónap híreit                         │
+│  ├─ Keres pattern-eket: "Mindig amikor X hír → Y következik" │
+│  └─ Output: "EU szabályozás announcement → 3 hónap múlva     │
+│              áremelkedés 85% valószínűséggel"                │
+│                                                               │
+│  Agent 2: PRICE TREND PREDICTOR (MetalIntel)                 │
+│  ├─ 17 év LME data machine learning                          │
+│  ├─ Contango/Backwardation történeti korreláció              │
+│  └─ Output: "Copper backwardation → következő 6 hét trend"   │
+│                                                               │
+│  Agent 3: COMPANY HEALTH FORECASTER (CompanyIntel)           │
+│  ├─ 12 év pénzügyi data → trend előrejelzés                  │
+│  ├─ Risky companies (534) követése                           │
+│  └─ Output: "23 beszállító fog gyengülni Q2 2025-ben"        │
+│                                                               │
+│  MASTER AGENT: SYNTHESIS & PREDICTION                        │
+│  └─ Kombinálja mindhárom agent output-ját                    │
+└─────────────────────────────────────────────────────────────┘
+            </div>
+
+            <h3>🎯 Technikai Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">🤖 Multi-Agent Team (CrewAI)</span>
+                <span class="tech-tag">🧠 OpenAI GPT-4o</span>
+                <span class="tech-tag">💾 Shared Memory</span>
+                <span class="tech-tag">🔄 Self-Evolving Agent</span>
+                <span class="tech-tag">🎤 Voice AI Alert</span>
+                <span class="tech-tag">📊 Machine Learning</span>
+            </div>
+
+            <h3>💰 Üzleti Érték</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <strong>💰 Felvásárlási Lehetőségek</strong>
+                    Detektálás hónapokkal előre - azonnal csaphatsz le!
+                </div>
+                <div class="feature-item">
+                    <strong>📊 Beszerzési Optimalizálás</strong>
+                    Mikor venni rezet? Az AI megmondja!
+                </div>
+                <div class="feature-item">
+                    <strong>⚠️ Beszállítói Kockázat</strong>
+                    Early warning 6 hónappal csőd előtt!
+                </div>
+            </div>
+
+            <div class="roi-box">
+                <span class="roi-number">100x</span>
+                <span class="roi-label">Első jó predikció = költség megtérülés</span>
+            </div>
+
+            <div class="impact-meter">
+                <div style="margin-bottom: 10px; font-weight: 600;">⚡ Impact Score</div>
+                <div class="impact-bar">
+                    <div class="impact-fill" style="width: 95%;">95/100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Guardian AI -->
+        <div id="project2" class="project-card">
+            <div class="project-number">2</div>
+            <h2>🛡️ Guardian AI</h2>
+            <p style="font-size: 24px; color: var(--accent); font-weight: 600;">Autonomous Supplier Risk Radar</p>
+
+            <h3>💡 Mi ez?</h3>
+            <p>24/7 folyamatosan monitorozza a beszállítóidat és <strong>proaktívan alertel</strong> ha baj van!</p>
+
+            <div class="code-block">
+REAL-TIME MONITORING LOOP (minden 6 óra):
+
+1. CompanyIntel Database Scan
+   └─ 534 risky company közül 12 a te beszállítód? ✓
+
+2. Hiraggregator News Check
+   └─ Van-e negatív hír róluk az elmúlt 24 órában? ✓
+
+3. MetalIntel Price Impact
+   └─ Az ármozgás érinti őket? ✓
+
+4. RISK SCORE CALCULATION (0-100)
+   Financial Health: 45/100 ⚠️
+   News Sentiment: NEGATIVE (-0.7)
+   Market Impact: HIGH (backwardation)
+
+   TOTAL RISK: 87/100 🚨 CRITICAL!
+
+5. AUTOMATIC ACTIONS:
+   ├─ WhatsApp message CEO-nak
+   ├─ Email report: Részletes elemzés
+   └─ Voice call (ha kritikus)
+            </div>
+
+            <h3>🔥 Killer Feature: Alternative Supplier Finder</h3>
+            <p>Ha egy beszállító rizikós, az AI <strong>automatikusan keres alternatívát</strong>:</p>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <strong>🔍 Smart Search</strong>
+                    Azonos régió + hasonló profil + jobb health score
+                </div>
+                <div class="feature-item">
+                    <strong>📊 Auto-Compare</strong>
+                    Ár, távolság, kapacitás, megbízhatóság
+                </div>
+                <div class="feature-item">
+                    <strong>📞 Instant Contact</strong>
+                    Telefon, email, cím - minden egy kattintásra
+                </div>
+            </div>
+
+            <h3>🎯 Technikai Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">⏰ GitHub Actions (6h loop)</span>
+                <span class="tech-tag">🤖 Multi-Agent Team</span>
+                <span class="tech-tag">📱 WhatsApp API</span>
+                <span class="tech-tag">🎤 Voice AI</span>
+                <span class="tech-tag">💾 Memory System</span>
+            </div>
+
+            <div class="roi-box">
+                <span class="roi-number">500k€</span>
+                <span class="roi-label">Egy csőd elkerülése = átlag mentett összeg</span>
+            </div>
+
+            <div class="impact-meter">
+                <div style="margin-bottom: 10px; font-weight: 600;">⚡ Impact Score</div>
+                <div class="impact-bar">
+                    <div class="impact-fill" style="width: 98%;">98/100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: DealHunter AI -->
+        <div id="project3" class="project-card">
+            <div class="project-number">3</div>
+            <h2>🎯 DealHunter AI</h2>
+            <p style="font-size: 24px; color: var(--accent); font-weight: 600;">Market Opportunity Detection Engine</p>
+
+            <h3>💡 Mi ez?</h3>
+            <p>Automatikusan <strong>talál üzleti lehetőségeket</strong> amit ember sosem venne észre!</p>
+
+            <h3>🎯 5 Opportunity Type</h3>
+            <div class="stats-grid">
+                <div class="stat-box" style="background: linear-gradient(135deg, #E74C3C, #C0392B);">
+                    <span class="number">🏢</span>
+                    <span class="label">Acquisition Targets</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #3498DB, #2980B9);">
+                    <span class="number">🗺️</span>
+                    <span class="label">Geographic Gaps</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #F39C12, #E67E22);">
+                    <span class="number">💎</span>
+                    <span class="label">Distressed Assets</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #9B59B6, #8E44AD);">
+                    <span class="number">🤝</span>
+                    <span class="label">Partnerships</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #1ABC9C, #16A085);">
+                    <span class="number">⚖️</span>
+                    <span class="label">Regulatory Arbitrage</span>
+                </div>
+            </div>
+
+            <h3>💡 Példa: Acquisition Target Detection</h3>
+            <div class="code-block">
+CompanyIntel DOGS kategória (gyenge profit + gyenge növekedés)
++ Jó lokáció (közel hozzád)
++ Alacsony kockázat (nincs csőd veszély)
+= FELVÁSÁRLÁSI CÉLPONT!
+
+Example Output:
+"12 potenciális acquisition target Bihor megyében:
+1. SC RECYCLE NORD (Oradea, 8km)
+   ├─ BCG: DOG (profit -2%, growth -5%)
+   ├─ Financial Health: 65/100 (MODERATE)
+   ├─ Assets: 450k EUR (berendezések)
+   ├─ Estimated value: 200k EUR
+   └─ 💡 Opportunity: Felvásárlás után integrálás → 30% cost saving
+            </div>
+
+            <h3>📅 Automated Weekly Report</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <strong>📊 Top 10 Opportunities</strong>
+                    Ranked by ROI potential
+                </div>
+                <div class="feature-item">
+                    <strong>💰 Valuation Models</strong>
+                    AI-powered price estimation
+                </div>
+                <div class="feature-item">
+                    <strong>📈 Trend Analysis</strong>
+                    Market momentum scoring
+                </div>
+                <div class="feature-item">
+                    <strong>⚠️ Risk Assessment</strong>
+                    Full due diligence summary
+                </div>
+            </div>
+
+            <h3>🎯 Technikai Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">🤖 Opportunity Scout Agent</span>
+                <span class="tech-tag">💰 Valuation Agent</span>
+                <span class="tech-tag">⚠️ Risk Assessor</span>
+                <span class="tech-tag">📊 RAG Chatbot</span>
+                <span class="tech-tag">📧 Weekly PDF Reports</span>
+            </div>
+
+            <div class="roi-box">
+                <span class="roi-number">1,000%</span>
+                <span class="roi-label">ROI - Egy jó deal megtalálása</span>
+            </div>
+
+            <div class="impact-meter">
+                <div style="margin-bottom: 10px; font-weight: 6 00;">⚡ Impact Score</div>
+                <div class="impact-bar">
+                    <div class="impact-fill" style="width: 92%;">92/100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: Nexus -->
+        <div id="project4" class="project-card">
+            <div class="project-number">4</div>
+            <h2>🌐 NEXUS</h2>
+            <p style="font-size: 24px; color: var(--accent); font-weight: 600;">Unified Intelligence Command Center</p>
+
+            <h3>💡 Mi ez?</h3>
+            <p><strong>1 dashboard ahol az ÖSSZES adat összekapcsolódik</strong> - a "God Mode" view!</p>
+
+            <h3>🎯 Main Features</h3>
+            <div class="stats-grid">
+                <div class="stat-box" style="background: linear-gradient(135deg, #E74C3C, #C0392B);">
+                    <span class="number">🕸️</span>
+                    <span class="label">3D Knowledge Graph</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #3498DB, #2980B9);">
+                    <span class="number">📊</span>
+                    <span class="label">Live Widgets</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #9B59B6, #8E44AD);">
+                    <span class="number">🤖</span>
+                    <span class="label">Voice AI Assistant</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #F39C12, #E67E22);">
+                    <span class="number">⚡</span>
+                    <span class="label">Proactive Alerts</span>
+                </div>
+            </div>
+
+            <h3>🔥 Killer Features</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <strong>⏪ Temporal Playback</strong>
+                    "Mutasd mi történt 2023 Q2-ben" - AI visszajátssza az összes eseményt
+                </div>
+                <div class="feature-item">
+                    <strong>🎮 Scenario Simulator</strong>
+                    "Mi van ha a réz ár 20%-ot esik?" - AI kiszámolja a hatást
+                </div>
+                <div class="feature-item">
+                    <strong>🔍 Cross-Database RAG</strong>
+                    Egy kérdés → query all 3 databases → comprehensive answer
+                </div>
+                <div class="feature-item">
+                    <strong>🎤 Voice Command Center</strong>
+                    Hívd fel a rendszert, kérdezd meg bármit!
+                </div>
+            </div>
+
+            <h3>💬 AI Assistant Example</h3>
+            <div class="code-block">
+🎤 "Mi a helyzet az alumínium piaccal?"
+
+🤖 "Az alumínium piacon 3 fontos esemény:
+    1. LME ár -2% ma (2,340 USD/tonna)
+    2. Hiraggregator: ArcelorMittal termelés ↓ 15%
+    3. CompanyIntel: 8 beszállítód erős (avg 85/100)
+
+    💡 Recommendation: BUY alumínium ha <2,300
+       Reason: Termelés csökkenés → várható áremelkedés"
+
+[Sources: 3 news articles, 17yr LME data, 45 companies]
+            </div>
+
+            <h3>🎯 Technikai Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">🕸️ D3.js (3D Graph)</span>
+                <span class="tech-tag">🤖 Multi-LLM Memory</span>
+                <span class="tech-tag">🎤 Voice AI (OpenAI Realtime)</span>
+                <span class="tech-tag">⚡ WebSocket (Real-time)</span>
+                <span class="tech-tag">💾 Temporal Database</span>
+                <span class="tech-tag">📊 React Dashboard</span>
+            </div>
+
+            <div class="roi-box">
+                <span class="roi-number">5-10h</span>
+                <span class="roi-label">Saved per week - automatizált elemzés</span>
+            </div>
+
+            <div class="impact-meter">
+                <div style="margin-bottom: 10px; font-weight: 600;">⚡ Impact Score</div>
+                <div class="impact-bar">
+                    <div class="impact-fill" style="width: 100%;">100/100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5: Atlas -->
+        <div id="project5" class="project-card">
+            <div class="project-number">5</div>
+            <h2>🗺️ ATLAS</h2>
+            <p style="font-size: 24px; color: var(--accent); font-weight: 600;">Geographic Market Intelligence Engine</p>
+
+            <h3>💡 Mi ez?</h3>
+            <p><strong>Térképen vizualizálva az ÖSSZES adat</strong> + AI spatial analysis!</p>
+
+            <h3>🗺️ Interactive Map Layers</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <strong>📊 LAYER 1: Companies (8,390)</strong>
+                    🟢 STAR/CASH COW | 🟡 QUESTION MARK | 🔴 DOG/High Risk | ⚫ Closed
+                </div>
+                <div class="feature-item">
+                    <strong>📰 LAYER 2: News Heatmap</strong>
+                    Intensity = hírek száma | 🔥 Red = Kritikus | 🟠 Orange = Medium | 🟢 Green = Pozitív
+                </div>
+                <div class="feature-item">
+                    <strong>💰 LAYER 3: Price Impact Zones</strong>
+                    Color = exposure to price changes | 🔴 Copper | 🔵 Aluminum | 🟢 Diversified
+                </div>
+                <div class="feature-item">
+                    <strong>🚚 LAYER 4: Logistics Optimization</strong>
+                    Ports, Factories, Your Locations, Optimal Routes
+                </div>
+            </div>
+
+            <h3>🎯 Killer Use Cases</h3>
+            <div class="stats-grid">
+                <div class="stat-box" style="background: linear-gradient(135deg, #E74C3C, #C0392B);">
+                    <span class="number">🎯</span>
+                    <span class="label">Acquisition Heatmap</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #F39C12, #E67E22);">
+                    <span class="number">⚠️</span>
+                    <span class="label">Risk Geography</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #27AE60, #229954);">
+                    <span class="number">💡</span>
+                    <span class="label">Opportunity Zones</span>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #9B59B6, #8E44AD);">
+                    <span class="number">⏰</span>
+                    <span class="label">Historical Playback (4D)</span>
+                </div>
+            </div>
+
+            <h3>🤖 AI Spatial Analysis Example</h3>
+            <div class="code-block">
+User: "Hol nyissak új telephelyet?"
+
+AI Analysis:
+1. Market Gap Analysis (CompanyIntel)
+   → Satu Mare: 3 cég (underserved!)
+
+2. News Sentiment (Hiraggregator)
+   → Pozitív hírek: infrastruktúra fejlesztés
+
+3. Logistics (distance to ports/factories)
+   → Satu Mare-Port Constanța: 650km (OK)
+
+4. Competition Level
+   → LOW (kevés erős cég)
+
+🏆 RECOMMENDATION: Satu Mare (score: 87/100)
+   Expected ROI: 180% in 24 months
+            </div>
+
+            <h3>🎯 Technikai Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">🗺️ Mapbox GL / Leaflet.js</span>
+                <span class="tech-tag">🤖 Multi-Agent Spatial Analyzer</span>
+                <span class="tech-tag">⚡ WebSocket Real-time</span>
+                <span class="tech-tag">📱 Mobile-First Design</span>
+                <span class="tech-tag">🎨 Interactive Layers</span>
+            </div>
+
+            <div class="roi-box">
+                <span class="roi-number">180%</span>
+                <span class="roi-label">Expected ROI - Új telephely optimális lokáció</span>
+            </div>
+
+            <div class="impact-meter">
+                <div style="margin-bottom: 10px; font-weight: 600;">⚡ Impact Score</div>
+                <div class="impact-bar">
+                    <div class="impact-fill" style="width: 90%;">90/100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bonus Section -->
+        <div id="bonus" class="bonus-section">
+            <h2>💎 BONUS: Egyedi Feature-ök</h2>
+            <p style="font-size: 20px; text-align: center; margin-bottom: 40px;">
+                Amit SENKI MÁS nem csinál a világon! 🌍
+            </p>
+
+            <div class="feature-list">
+                <div class="feature-item" style="border-color: var(--yellow);">
+                    <strong>🎤 "War Room Mode"</strong>
+                    Voice-first interface vezetői meetingekhez. "Show me the top 3 risks" → AI prezentál + slides auto-generálódnak
+                </div>
+                <div class="feature-item" style="border-color: var(--cyan);">
+                    <strong>📱 "Field Agent App"</strong>
+                    Sales rep kint van, találkozik egy céggel. Mobilon beírja CIF-et → Azonnali briefing: CompanyIntel score + latest news
+                </div>
+                <div class="feature-item" style="border-color: var(--danger);">
+                    <strong>🔔 "Market Earthquake Detector"</strong>
+                    Ha 3+ kritikus esemény 24 órán belül → RED ALERT minden csatornán (SMS, email, voice call, WhatsApp)
+                </div>
+                <div class="feature-item" style="border-color: var(--purple);">
+                    <strong>🎮 "Simulation Mode"</strong>
+                    Gaming-style UI ahol "játszhatsz" döntésekkel. "Mi van ha felvásárlom ezt a 3 céget?" → AI kiszámolja ROI, risks, synergies
+                </div>
+                <div class="feature-item" style="border-color: var(--success);">
+                    <strong>🤝 "Network Effect Engine"</strong>
+                    Track customer-supplier relationships. "Ha Y csődbe megy, X is bajban lesz 6 hónap múlva"
+                </div>
+            </div>
+        </div>
+
+        <!-- Roadmap Section -->
+        <div id="roadmap" class="project-card">
+            <h2 style="text-align: center; font-size: 56px; margin-bottom: 50px;">🚀 MASTER PLAN</h2>
+            <p style="text-align: center; font-size: 24px; margin-bottom: 50px;">
+                Implementációs Roadmap - <span style="color: var(--accent);">10 Hétre</span>
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--success); margin-bottom: 15px;">⚡ Phase 1: Quick Wins (Week 1-2)</h3>
+                        <p><strong>🛡️ Guardian AI</strong> - Supplier Risk Radar</p>
+                        <ul style="margin: 15px 0 15px 25px; line-height: 2;">
+                            <li>GitHub Actions 6h-ként monitoring</li>
+                            <li>Email/WhatsApp alerts</li>
+                            <li>Alternative Supplier Finder</li>
+                        </ul>
+                        <div class="badge badge-critical">AZONNAL HASZNÁLHATÓ!</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--primary); margin-bottom: 15px;">🧠 Phase 2: Intelligence Layer (Week 3-4)</h3>
+                        <p><strong>🎯 DealHunter AI</strong> - Opportunity Detection</p>
+                        <ul style="margin: 15px 0 15px 25px; line-height: 2;">
+                            <li>Heti automated report</li>
+                            <li>Top 10 opportunities ranking</li>
+                            <li>Valuation models</li>
+                        </ul>
+                        <div class="badge badge-high">ROI: 1 JÓ DEAL = MEGTERÜLT</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--purple); margin-bottom: 15px;">🔮 Phase 3: Predictive Power (Week 5-6)</h3>
+                        <p><strong>🔮 Prophet AI</strong> - Predictive Engine</p>
+                        <ul style="margin: 15px 0 15px 25px; line-height: 2;">
+                            <li>Multi-agent team setup</li>
+                            <li>Historical data ML training</li>
+                            <li>3-6 month predictions</li>
+                        </ul>
+                        <div class="badge badge-medium">GAME CHANGER!</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--accent); margin-bottom: 15px;">🌐 Phase 4: Integration (Week 7-8)</h3>
+                        <p><strong>🌐 Nexus</strong> - Command Center</p>
+                        <ul style="margin: 15px 0 15px 25px; line-height: 2;">
+                            <li>Unified dashboard</li>
+                            <li>Cross-database RAG</li>
+                            <li>Voice AI integration</li>
+                        </ul>
+                        <div class="badge badge-info">GOD MODE ACTIVATED!</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--cyan); margin-bottom: 15px;">🗺️ Phase 5: Advanced (Week 9-10)</h3>
+                        <p><strong>🗺️ Atlas</strong> - Geographic Intelligence</p>
+                        <ul style="margin: 15px 0 15px 25px; line-height: 2;">
+                            <li>Interactive maps</li>
+                            <li>Spatial analysis</li>
+                            <li>Mobile app version</li>
+                        </ul>
+                        <div class="badge badge-success">ULTIMATE VISUALIZATION!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>❓ MI A KÖVETKEZŐ LÉPÉS?</h2>
+            <p style="font-size: 24px; margin: 20px 0;">Válassz egy opciót és kezdjük el! 🚀</p>
+
+            <div class="cta-buttons">
+                <button class="cta-button">📐 Architektúra Terv</button>
+                <button class="cta-button">💻 POC Implementáció</button>
+                <button class="cta-button">📊 ROI Kalkuláció</button>
+                <button class="cta-button">🗺️ Project Roadmap</button>
+            </div>
+
+            <div style="margin-top: 60px; padding: 30px; background: rgba(0,0,0,0.3); border-radius: 16px; border: 4px solid var(--yellow);">
+                <h3 style="font-size: 32px; margin-bottom: 20px;">💡 Melyik projekt izgat legjobban?</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 30px;">
+                    <span class="badge badge-critical" style="font-size: 18px; padding: 12px 24px;">🔮 Prophet AI</span>
+                    <span class="badge badge-high" style="font-size: 18px; padding: 12px 24px;">🛡️ Guardian AI</span>
+                    <span class="badge badge-medium" style="font-size: 18px; padding: 12px 24px;">🎯 DealHunter AI</span>
+                    <span class="badge badge-info" style="font-size: 18px; padding: 12px 24px;">🌐 Nexus</span>
+                    <span class="badge badge-success" style="font-size: 18px; padding: 12px 24px;">🗺️ Atlas</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">⬆️</div>
+
+    <script>
+        // Smooth scrolling for navigation pills
+        document.querySelectorAll('.nav-pill').forEach(pill => {
+            pill.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+
+                // Update active state
+                document.querySelectorAll('.nav-pill').forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // CTA buttons interaction
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const text = this.textContent;
+                alert(`Kiválasztottad: ${text}\n\nKövetkező lépés: Részletes dokumentáció készítése! 🚀`);
+            });
+        });
+
+        // Animate impact bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.8s ease-out';
+            observer.observe(card);
+        });
+
+        // Add click effect to project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (!e.target.closest('.cta-button')) {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(-10px)';
+                    }, 100);
+                }
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            const scrolled = window.pageYOffset;
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            hero.style.opacity = 1 - (scrolled / 500);
+        });
+
+        // Console easter egg
+        console.log('%c🚀 PAJURCA INTELLIGENCE PLATFORM', 'font-size: 24px; font-weight: bold; color: #f78153;');
+        console.log('%cReady to revolutionize metal trading intelligence! 💎', 'font-size: 16px; color: #27AE60;');
+    </script>
+</body>
+</html>
