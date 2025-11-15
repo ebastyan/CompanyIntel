@@ -6,7 +6,11 @@
       "use": "@vercel/python"
     },
     {
-      "src": "index.html",
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.json",
       "use": "@vercel/static"
     }
   ],
@@ -16,8 +20,16 @@
       "dest": "api/app.py"
     },
     {
+      "src": "/analitica.html",
+      "dest": "/analitica.html"
+    },
+    {
+      "src": "/analytics_results.json",
+      "dest": "/analytics_results.json"
+    },
+    {
       "src": "/",
-      "dest": "index.html"
+      "dest": "/index.html"
     }
   ]
 }
