@@ -1,428 +1,142 @@
-# 🏢 Romanian Companies Directory
+# 📊 CompanyIntel Romania
 
-A comprehensive Next.js application for exploring Romanian company profiles, similar to listafirme.ro, featuring financial data visualization, search functionality, and business analytics.
+Platformă de analiză financiară pentru 8,390 companii din sectorul gestiunii deșeurilor din România.
 
-![Next.js](https://img.shields.io/badge/Next.js-14.0+-black?style=flat&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?style=flat&logo=typescript)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue?style=flat&logo=postgresql)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3+-blue?style=flat&logo=tailwindcss)
-![Vercel](https://img.shields.io/badge/Vercel-Ready-black?style=flat&logo=vercel)
+## 🚀 Features
 
-## 🌟 Features
+### 🏠 Pagina Principală (`index.html`)
+- **Căutare CIF**: Caută companii după Codul de Identificare Fiscală
+- **Filtrare avansată**: Filtrare după Județ, Oraș, COD CAEN
+- **Vizualizare date**: 17 indicatori financiari pentru fiecare companie
+- **Istoric 12 ani**: Date de la 2013 până în 2024
+- **Warning sistem**: Identificare companii potențial închise
 
-### 🏪 Company Profiles
-- **Detailed company information** with CIF, registration numbers, and status
-- **Financial data visualization** with interactive charts (revenue, profit, employees)
-- **Multi-year financial trends** and growth analysis
-- **Performance indicators** and business metrics
-- **Contact information** with maps integration
-- **CAEN activity codes** and business descriptions
+### 📊 Analytics Dashboard (`analitica.html`)
 
-### 🔍 Advanced Search
-- **Full-text search** across company names, CIF numbers, and activities
-- **Advanced filters** by county, business sector, revenue, and employee count
-- **Real-time search** with debounced input
-- **Sorting options** by revenue, profit, employees, and name
-- **Pagination** with responsive design
+Dashboard-ul de analiză oferă 5 tipuri de analize comprehensive:
 
-### 📊 Business Analytics
-- **Company rankings** by revenue, profit, and growth
-- **Sector analysis** with industry breakdowns
-- **Regional statistics** by county performance
-- **Market trends** and comparative analysis
+#### 1️⃣ Tendințe & Creștere
+- Top 50 companii cu cea mai rapidă creștere (CAGR 2020-2024)
+- Analiza impactului COVID-19
+- Cele mai profitabile companii
+- Graficonuri interactive
 
-### 🌐 International Support
-- **Multi-language support** (Romanian/English)
-- **Responsive design** optimized for mobile, tablet, and desktop
-- **SEO optimized** with structured data and meta tags
-- **Performance optimized** with caching and CDN
+#### 2️⃣ Sănătate Financiară
+- Scoring sistem (0-100 puncte) pentru fiecare companie
+- Categorii: EXCELENT, BUN, MODERAT, SLAB, RISC ÎNALT
+- Top 50 companii cu cea mai bună sănătate financiară
+- Distribuție scoruri și categorii de risc
 
-## 🚀 Quick Start
+#### 3️⃣ Segmentare
+- **Mărime**: MICRO, MIC, MEDIU, MARE
+- **Specializare CAEN**: Deșeuri nepericuloase, periculoase, demolări, etc.
+- **Model de business** (BCG Matrix):
+  - ⭐ STARS: Profit înalt + Creștere înaltă
+  - 🐮 CASH COWS: Profit înalt + Creștere moderată
+  - ❓ QUESTION MARKS: Profit scăzut + Creștere înaltă
+  - 🐕 DOGS: Profit scăzut + Creștere scăzută
 
-### Prerequisites
+#### 4️⃣ Analiză Geografică
+- Statistici per județ (79 județe)
+- Top 15 județe după cifră de afaceri
+- Piețe monopolizate vs. fragmentate
+- Total angajați per regiune
 
-- **Node.js 18+** and npm
-- **PostgreSQL database** (Neon DB recommended)
-- **Git** for version control
+#### 5️⃣ Predicții & Risc
+- **Predicții venituri 2025** (top 100 companii)
+- **Risc faliment**: 534 companii identificate
+  - 232 risc ÎNALT
+  - 302 risc MEDIU
+- Detectare anomalii (salturi/scăderi >100%)
 
-### 1. Clone and Install
+## 📈 Statistici
 
+```
+✅ 8,390 companii în baza de date
+✅ 5,306 companii cu date complete (nume, adresă, telefon)
+✅ 3,651 companii analizate (cu date financiare 2023)
+✅ 79 județe acoperite
+✅ 12 ani istoric (2013-2024)
+✅ 17 indicatori financiari per companie
+```
+
+## 🛠️ Tehnologii
+
+### Frontend
+- **HTML5/CSS3**: Design responsive
+- **Chart.js**: Graficonuri interactive
+- **Vanilla JavaScript**: Fără dependențe externe
+
+### Backend
+- **Python 3.x**: Analiza datelor
+- **PostgreSQL (Neon)**: Baza de date cloud
+- **psycopg2**: PostgreSQL adapter
+
+## 📦 Deployment pe Vercel
+
+### Setup
+1. Conectează repository-ul GitHub la Vercel
+2. Vercel va detecta automat fișierele HTML statice
+3. Deploy automat la fiecare push pe `main`
+
+### Environment Variables (pentru API)
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/romanian-companies-app.git
-cd romanian-companies-app
-
-# Install dependencies
-npm install
+DATABASE_URL=postgresql://user:pass@host/db?sslmode=require
 ```
 
-### 2. Environment Setup
+## 🔧 Local Development
 
+### Rulare Analytics Engine
 ```bash
-# Copy environment template
-cp .env.example .env.local
-
-# Edit with your database credentials
-nano .env.local
+python analytics_engine.py
 ```
 
-**Required environment variables:**
+Generează `analytics_results.json` cu toate cele 5 analize.
 
-```env
-DATABASE_URL="postgresql://username:password@your-neon-host/database?sslmode=require"
-NEXTAUTH_URL="http://localhost:3000"
-NEXTAUTH_SECRET="your-secret-key"
-```
-
-### 3. Database Setup
-
+### Pornire Server Local
 ```bash
-# Run database migrations
-npm run db:migrate
-
-# Seed with your data (optional)
-npm run db:seed
+python -m http.server 8000
 ```
 
-### 4. Development Server
-
-```bash
-# Start development server
-npm run dev
-
-# Open browser to http://localhost:3000
-```
-
-## 🗄️ Database Schema
-
-The application uses a normalized PostgreSQL schema optimized for Romanian business data:
-
-### Core Tables
-
-- **`companies`** - Basic company information (CIF, name, status)
-- **`company_financials`** - Annual financial data (revenue, profit, employees)
-- **`company_addresses`** - Company locations with geolocation
-- **`company_contacts`** - Email, phone, website information
-- **`caen_codes`** - Romanian business activity classifications
-- **`company_caen`** - Many-to-many relationship for company activities
-
-### Features
-
-- **UUID primary keys** for performance
-- **Full-text search** with Romanian language support
-- **Composite indexes** for complex queries
-- **Views and functions** for business logic
-- **Row-level security** ready for multi-tenant setups
-
-## 📁 Project Structure
-
-```
-romanian-companies-app/
-├── src/
-│   ├── app/
-│   │   ├── [locale]/              # Internationalized routes
-│   │   │   ├── company/[cif]/     # Company profile pages
-│   │   │   └── page.tsx           # Homepage
-│   │   ├── api/                   # API routes
-│   │   │   ├── companies/         # Company data endpoints
-│   │   │   ├── search/            # Search functionality
-│   │   │   ├── rankings/          # Performance rankings
-│   │   │   └── stats/             # Statistics and analytics
-│   │   └── globals.css            # Global styles
-│   ├── components/
-│   │   ├── charts/                # Financial chart components
-│   │   ├── company/               # Company-related components
-│   │   ├── layout/                # Header, footer, navigation
-│   │   └── ui/                    # Reusable UI components
-│   ├── lib/
-│   │   └── database.ts            # Database connection and queries
-│   ├── messages/                  # i18n translations
-│   ├── types/                     # TypeScript definitions
-│   └── utils/                     # Utility functions
-├── scripts/
-│   ├── migrate.js                 # Database migration script
-│   ├── seed.js                    # Data seeding script
-│   └── neon-schema.sql            # PostgreSQL schema
-├── public/                        # Static assets
-└── docs/                          # Additional documentation
-```
-
-## 🛠️ Development
-
-### Available Scripts
-
-```bash
-# Development
-npm run dev              # Start development server
-npm run build            # Build for production
-npm run start            # Start production server
-npm run lint             # Run ESLint
-
-# Database
-npm run db:migrate       # Run database migrations
-npm run db:seed          # Populate with data
-
-# Type checking
-npm run type-check       # Run TypeScript compiler
-```
-
-### Code Quality
-
-- **TypeScript** for type safety
-- **ESLint** and **Prettier** for code formatting
-- **Husky** for pre-commit hooks
-- **Conventional commits** for git history
-
-### Testing
-
-```bash
-npm run test             # Run unit tests
-npm run test:e2e         # Run end-to-end tests
-npm run test:coverage    # Generate coverage report
-```
-
-## 🌐 Deployment
-
-### Vercel (Recommended)
-
-The application is optimized for Vercel deployment:
-
-1. **Connect to GitHub**
-   ```bash
-   # Push to GitHub repository
-   git remote add origin https://github.com/your-username/romanian-companies-app.git
-   git push -u origin main
-   ```
-
-2. **Deploy to Vercel**
-   - Visit [vercel.com](https://vercel.com) and import your repository
-   - Add environment variables in Vercel dashboard
-   - Deploy automatically on every push
-
-3. **Set up Neon Database**
-   - Create database at [neon.tech](https://neon.tech)
-   - Copy connection string to `DATABASE_URL`
-   - Run migrations: `npm run db:migrate`
-
-### Environment Variables for Production
-
-```env
-DATABASE_URL="postgresql://..."
-NEXTAUTH_URL="https://your-domain.vercel.app"
-NEXTAUTH_SECRET="secure-random-string"
-NODE_ENV="production"
-```
-
-### Alternative Deployment Platforms
-
-- **Railway**: PostgreSQL + Next.js hosting
-- **PlanetScale + Netlify**: MySQL variant
-- **AWS**: EC2 + RDS deployment
-- **DigitalOcean**: App Platform + Managed Database
-
-## 📊 Data Import
-
-### From Excel Files
-
-The application can import data from Excel files:
-
-```bash
-# Place Excel files in project root
-# Run seed script
-npm run db:seed
-```
-
-**Expected Excel columns:**
-- `CIF` - Company tax ID
-- `Denumire` - Company name
-- `Judet` - County
-- `Localitate` - City
-- `An` - Financial year
-- `Cifra_afaceri` - Revenue
-- `Profit` - Net profit
-- `Salariati` - Employee count
-
-### From CSV Files
-
-```bash
-# Convert CSV to Excel or modify seed script
-node scripts/import-csv.js your-data.csv
-```
-
-### From API Sources
-
-```bash
-# Set up data sync from external APIs
-node scripts/sync-external-data.js
-```
-
-## 🔧 Configuration
-
-### Tailwind CSS
-
-Customize the design system in `tailwind.config.js`:
-
-```javascript
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        primary: { /* Your brand colors */ },
-        secondary: { /* Secondary palette */ }
-      }
-    }
-  }
-}
-```
-
-### Internationalization
-
-Add new languages in `src/messages/`:
-
-```bash
-# Add new language file
-cp src/messages/ro.json src/messages/fr.json
-```
-
-Update `middleware.ts`:
-```typescript
-const locales = ['ro', 'en', 'fr'];
-```
-
-### Database Optimization
-
-For large datasets (100K+ companies):
-
-1. **Add database indexes**
-```sql
-CREATE INDEX CONCURRENTLY idx_companies_search
-ON companies USING gin(to_tsvector('romanian', company_name));
-```
-
-2. **Enable connection pooling**
-```typescript
-const pool = new Pool({
-  max: 20,
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000,
-});
-```
-
-3. **Implement Redis caching**
-```bash
-npm install redis
-```
-
-## 📈 Performance
-
-### Optimization Features
-
-- **Image optimization** with Next.js Image component
-- **Code splitting** with dynamic imports
-- **API caching** with stale-while-revalidate
-- **Database query optimization** with indexes
-- **CDN integration** for static assets
-
-### Monitoring
-
-- **Vercel Analytics** for web vitals
-- **Sentry** for error tracking
-- **Database monitoring** with Neon metrics
-
-### Load Testing
-
-```bash
-# Install artillery for load testing
-npm install -g artillery
-
-# Run load tests
-artillery quick --count 100 --num 10 http://localhost:3000
-```
-
-## 🔒 Security
-
-### Security Features
-
-- **SQL injection protection** with parameterized queries
-- **XSS protection** with Content Security Policy
-- **CSRF protection** with Next.js built-in features
-- **Rate limiting** on API endpoints
-- **Input validation** with TypeScript and Zod
-
-### Security Headers
-
-Configured in `next.config.js`:
-```javascript
-const securityHeaders = [
-  {
-    key: 'X-DNS-Prefetch-Control',
-    value: 'on'
-  },
-  {
-    key: 'Strict-Transport-Security',
-    value: 'max-age=63072000; includeSubDomains; preload'
-  }
-];
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### Development Workflow
-
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
-3. **Make your changes** with tests
-4. **Run quality checks**: `npm run lint && npm run type-check`
-5. **Commit your changes**: `git commit -m 'Add amazing feature'`
-6. **Push to the branch**: `git push origin feature/amazing-feature`
-7. **Open a Pull Request**
-
-### Code Guidelines
-
-- Follow **TypeScript best practices**
-- Write **comprehensive tests**
-- Use **semantic commit messages**
-- Document **API changes**
-- Ensure **accessibility compliance**
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Romanian Ministry of Finance** for public company data
-- **Neon** for PostgreSQL hosting
-- **Vercel** for Next.js deployment platform
-- **Tailwind CSS** for the design system
-- **Chart.js** for data visualizations
-- **Next-intl** for internationalization
-- **React Hook Form** for form handling
-
-## 📞 Support
-
-### Getting Help
-
-- 📖 **Documentation**: [docs/](docs/)
-- 💬 **Discussions**: GitHub Discussions
-- 🐛 **Bug Reports**: GitHub Issues
-- 📧 **Email**: contact@your-domain.com
-
-### Roadmap
-
-See our [Project Roadmap](https://github.com/your-username/romanian-companies-app/projects/1) for upcoming features:
-
-- [ ] Advanced analytics dashboard
-- [ ] Company comparison tools
-- [ ] Export to PDF/Excel functionality
-- [ ] Real-time data synchronization
-- [ ] Mobile application
-- [ ] API access for developers
+Accesează:
+- http://localhost:8000/index.html
+- http://localhost:8000/analitica.html
+
+## 📊 Indicatori Financiari
+
+Fiecare companie are 17 indicatori × 12 ani:
+
+1. **Cifra de Afaceri Netă**
+2. **Venituri Totale**
+3. **Cheltuieli Totale**
+4. **Profit Brut**
+5. **Pierdere Brut**
+6. **Profit Net**
+7. **Pierdere Net**
+8. **Active Imobilizate**
+9. **Active Circulante**
+10. **Stocuri**
+11. **Creanțe**
+12. **Datorii**
+13. **Provizioane**
+14. **Capitaluri Total**
+15. **Patrimoniul Regiei**
+16. **Salariați**
+17. **COD CAEN**
+
+## 🎨 Design
+
+- **Culori principale**: 
+  - Albastru `#0F7CC0` (primar)
+  - Portocaliu `#f78153` (accent)
+- **Inspirație**: listafirme.ro, termene.ro
+- **Layout**: 3 taburi pentru date financiare
+- **Responsive**: Mobile-friendly
+
+## 📝 License
+
+© 2024 CompanyIntel Romania. All rights reserved.
 
 ---
 
-**Built with ❤️ for the Romanian business community**
-
-*Last updated: November 2024*
+🤖 Built with [Claude Code](https://claude.com/claude-code)
