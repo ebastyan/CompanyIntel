@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CompanyIntel.ro - Informații Financiare Complete</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏢</text></svg>">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -19,7 +20,7 @@
             line-height: 1.6;
         }
 
-        /* Header Section */
+        /* Top Bar */
         .top-bar {
             background: #0F7CC0;
             color: white;
@@ -31,11 +32,9 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
+        /* Header */
         .header {
             background: white;
             border-bottom: 3px solid #f78153;
@@ -46,37 +45,21 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         .logo h1 {
             color: #0F7CC0;
             font-size: 28px;
-            font-weight: bold;
         }
 
         .logo .highlight {
             color: #f78153;
         }
 
-        .logo-subtitle {
-            color: #666;
-            font-size: 12px;
-            margin-top: -5px;
-        }
-
         /* Search Section */
         .search-section {
             background: linear-gradient(135deg, #0F7CC0 0%, #0a5a8f 100%);
-            padding: 40px 20px;
+            padding: 30px 20px;
             color: white;
         }
 
@@ -85,276 +68,205 @@
             margin: 0 auto;
         }
 
-        .search-title {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .search-subtitle {
-            font-size: 14px;
-            margin-bottom: 25px;
-            opacity: 0.9;
-        }
-
         .search-form {
             display: flex;
             gap: 10px;
-            max-width: 700px;
+            max-width: 600px;
         }
 
         input[type="text"] {
             flex: 1;
-            padding: 15px 20px;
+            padding: 12px 15px;
             border: none;
             border-radius: 4px;
-            font-size: 16px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        input[type="text"]:focus {
-            outline: 2px solid #f78153;
+            font-size: 15px;
         }
 
         button {
-            padding: 15px 35px;
+            padding: 12px 30px;
             background: #f78153;
             color: white;
             border: none;
             border-radius: 4px;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             cursor: pointer;
-            transition: background 0.3s;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         button:hover {
             background: #e56a3d;
         }
 
-        /* Stats Section */
-        .stats-section {
-            max-width: 1200px;
-            margin: -30px auto 30px;
-            padding: 0 20px;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .stat-card {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-left: 4px solid #f78153;
-            text-align: center;
-        }
-
-        .stat-value {
-            font-size: 36px;
-            font-weight: bold;
-            color: #0F7CC0;
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            font-size: 14px;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* Results Section */
-        .results-section {
+        /* Results Container */
+        .results-container {
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 20px;
             display: none;
         }
 
-        .results-section.show {
+        .results-container.show {
             display: block;
         }
 
-        .results-card {
+        /* Company Header Card */
+        .company-header {
             background: white;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
+            margin-bottom: 20px;
         }
 
-        .results-header {
-            background: linear-gradient(135deg, #0F7CC0 0%, #0a5a8f 100%);
-            color: white;
-            padding: 20px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .results-header h2 {
-            font-size: 24px;
-        }
-
-        .results-header .cif-number {
-            font-size: 28px;
+        .company-name {
+            font-size: 26px;
             font-weight: bold;
-            color: #f78153;
+            color: #0F7CC0;
+            margin-bottom: 15px;
         }
 
-        .close-btn {
-            background: rgba(255,255,255,0.2);
-            padding: 8px 20px;
-            font-size: 14px;
+        .company-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
         }
 
-        .close-btn:hover {
-            background: rgba(255,255,255,0.3);
-        }
-
-        /* Tabs */
-        .tabs {
+        .meta-item {
             display: flex;
+            gap: 10px;
+        }
+
+        .meta-label {
+            font-weight: 600;
+            color: #666;
+            min-width: 80px;
+        }
+
+        .meta-value {
+            color: #333;
+        }
+
+        /* Summary Cards */
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #0F7CC0;
+        }
+
+        .summary-card .label {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .summary-card .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0F7CC0;
+        }
+
+        .summary-card .change {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .summary-card .change.positive {
+            color: #10b981;
+        }
+
+        .summary-card .change.negative {
+            color: #ef4444;
+        }
+
+        /* Charts Section */
+        .charts-section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0F7CC0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f78153;
+        }
+
+        /* Compact Table */
+        .data-section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .compact-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .compact-table th {
             background: #f5f5f5;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+            color: #0F7CC0;
             border-bottom: 2px solid #e0e0e0;
         }
 
-        .tab {
-            padding: 15px 25px;
-            cursor: pointer;
-            font-weight: bold;
+        .compact-table td {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .compact-table td:first-child {
+            font-weight: 600;
             color: #666;
-            border-bottom: 3px solid transparent;
-            transition: all 0.3s;
         }
 
-        .tab:hover {
-            color: #0F7CC0;
-            background: #ebebeb;
+        .compact-table tbody tr:hover {
+            background: #f9f9f9;
         }
 
-        .tab.active {
-            color: #0F7CC0;
-            border-bottom-color: #f78153;
-            background: white;
-        }
-
-        .tab-content {
-            display: none;
-            padding: 30px;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        /* Table Styling */
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            font-size: 12px;
-        }
-
-        .data-table thead {
-            background: linear-gradient(135deg, #0F7CC0 0%, #0a5a8f 100%);
-            color: white;
-        }
-
-        .data-table th {
-            padding: 12px 8px;
-            text-align: center;
-            font-weight: bold;
-            border: 1px solid #0a5a8f;
-            font-size: 12px;
-        }
-
-        .data-table th:first-child {
-            text-align: left;
-            background: #0F7CC0;
-            position: sticky;
-            left: 0;
-            z-index: 10;
-            min-width: 180px;
-        }
-
-        .data-table td {
-            padding: 10px 8px;
-            border: 1px solid #e0e0e0;
+        .value-cell {
             text-align: right;
             font-family: 'Courier New', monospace;
-            font-size: 12px;
         }
 
-        .data-table td:first-child {
-            text-align: left;
-            font-weight: 600;
-            background: #f5f5f5;
-            position: sticky;
-            left: 0;
-            z-index: 5;
-            color: #333;
-            font-family: 'Segoe UI', sans-serif;
+        .change-indicator {
+            font-size: 11px;
+            margin-left: 8px;
         }
 
-        .data-table tbody tr:hover {
-            background: #fffbf0;
-        }
-
-        .data-table tbody tr:hover td:first-child {
-            background: #fff3d9;
-        }
-
-        .positive {
+        .change-indicator.positive {
             color: #10b981;
-            font-weight: bold;
         }
 
-        .negative {
+        .change-indicator.negative {
             color: #ef4444;
-            font-weight: bold;
         }
 
-        /* Category Headers */
-        .category-header {
-            background: linear-gradient(135deg, #0F7CC0 0%, #0a5a8f 100%);
-            color: white;
-            padding: 15px 20px;
-            margin: 40px 0 20px;
-            border-radius: 6px;
-            font-weight: bold;
-            font-size: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 2px 8px rgba(15, 124, 192, 0.3);
-        }
-
-        .category-header:first-child {
-            margin-top: 0;
-        }
-
-        /* Data Section Wrapper */
-        .data-section {
-            background: #fafafa;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-        }
-
-        .data-section:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Loading & Error */
+        /* Loading */
         .loading {
             text-align: center;
             padding: 60px;
-            color: #0F7CC0;
         }
 
         .loader {
@@ -378,447 +290,233 @@
             padding: 20px;
             border-radius: 4px;
             border-left: 4px solid #dc2626;
-            margin: 20px 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .data-table {
-                font-size: 12px;
-            }
-
-            .data-table th,
-            .data-table td {
-                padding: 8px;
-            }
-
-            .tabs {
-                overflow-x: auto;
-            }
         }
     </style>
 </head>
 <body>
     <div class="top-bar">
         <div class="container">
-            <div>📊 Baza de date financiară completă - 8,390 companii</div>
-            <div>🕐 Actualizat: 2024</div>
+            📊 8,390 companii • 5,306 cu date complete • 12 ani (2013-2024)
         </div>
     </div>
 
     <div class="header">
         <div class="container">
             <div class="logo">
-                <div>
-                    <h1>Company<span class="highlight">Intel</span>.ro</h1>
-                    <div class="logo-subtitle">Informații financiare complete pentru companiile din România</div>
-                </div>
+                <h1>Company<span class="highlight">Intel</span>.ro</h1>
             </div>
         </div>
     </div>
 
     <div class="search-section">
         <div class="container">
-            <h2 class="search-title">Căutare Companie după CIF</h2>
-            <p class="search-subtitle">Introduceți codul unic de înregistrare (CIF) pentru a vizualiza datele financiare complete din bilanțul contabil</p>
+            <h2>Căutare Companie după CIF</h2>
             <form class="search-form" onsubmit="searchCompany(event)">
-                <input
-                    type="text"
-                    id="cifInput"
-                    placeholder="Introduceți CIF-ul companiei (ex: 27820, 18992904)"
-                    required
-                >
+                <input type="text" id="cifInput" placeholder="Introduceți CIF (ex: 29036053)" required>
                 <button type="submit">Căutare</button>
             </form>
         </div>
     </div>
 
-    <div class="stats-section">
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value" id="totalCompanies">8,390</div>
-                <div class="stat-label">Companii în Bază</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">12 Ani</div>
-                <div class="stat-label">Perioada (2013-2024)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">17</div>
-                <div class="stat-label">Indicatori Financiari</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">204</div>
-                <div class="stat-label">Puncte de Date/Companie</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="results-section" id="results">
-        <div class="results-card">
-            <div class="results-header">
-                <div>
-                    <h2>Datele Companiei</h2>
-                    <div>CIF: <span class="cif-number" id="cifNumber"></span></div>
-                </div>
-                <button class="close-btn" onclick="clearResults()">✕ Închide</button>
-            </div>
-
-            <div class="tabs">
-                <div class="tab active" onclick="switchTab('overview', this)">📊 Prezentare Generală</div>
-                <div class="tab" onclick="switchTab('financial', this)">💰 Date Financiare Complete</div>
-                <div class="tab" onclick="switchTab('assets', this)">🏢 Active și Pasive</div>
-            </div>
-
-            <div id="resultsContent">
-                <!-- Tab 1: Overview -->
-                <div class="tab-content active" id="tab-overview"></div>
-
-                <!-- Tab 2: Financial Data -->
-                <div class="tab-content" id="tab-financial"></div>
-
-                <!-- Tab 3: Assets & Liabilities -->
-                <div class="tab-content" id="tab-assets"></div>
-            </div>
-        </div>
+    <div class="results-container" id="results">
+        <div id="resultsContent"></div>
     </div>
 
     <script>
-        const API_URL = window.location.hostname === 'localhost'
-            ? 'http://localhost:5000/api'
-            : '/api';
-
-        let currentData = null;
-
-        window.addEventListener('load', loadStats);
-
-        async function loadStats() {
-            try {
-                const response = await fetch(`${API_URL}/stats`);
-                const data = await response.json();
-                if (data.total_companies) {
-                    document.getElementById('totalCompanies').textContent =
-                        data.total_companies.toLocaleString('ro-RO');
-                }
-            } catch (error) {
-                console.error('Error loading stats:', error);
-            }
-        }
+        const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : '/api';
 
         async function searchCompany(event) {
             event.preventDefault();
-            console.log('[SEARCH] Starting search...');
+            console.log('[SEARCH] Starting...');
 
             const cif = document.getElementById('cifInput').value.trim();
-            console.log('[SEARCH] CIF:', cif);
+            const resultsContainer = document.getElementById('results');
+            const resultsContent = document.getElementById('resultsContent');
 
-            const resultsDiv = document.getElementById('results');
-            const cifNumber = document.getElementById('cifNumber');
-
-            resultsDiv.classList.add('show');
-
-            // Show loading in first tab only
-            const overviewTab = document.getElementById('tab-overview');
-            if (overviewTab) {
-                overviewTab.innerHTML = '<div class="loading"><div class="loader"></div><p>Se încarcă datele companiei...</p></div>';
-                console.log('[SEARCH] Loading indicator shown');
-            }
+            resultsContainer.classList.add('show');
+            resultsContent.innerHTML = '<div class="loading"><div class="loader"></div><p>Se încarcă...</p></div>';
 
             try {
-                console.log('[API] Fetching from:', `${API_URL}/search?cif=${encodeURIComponent(cif)}`);
                 const response = await fetch(`${API_URL}/search?cif=${encodeURIComponent(cif)}`);
-                console.log('[API] Response status:', response.status);
-
                 const data = await response.json();
-                console.log('[API] Response data:', data);
 
                 if (response.ok) {
-                    console.log('[SEARCH] Search successful, CIF:', data.cif);
-                    console.log('[SEARCH] Years data:', data.years);
-
-                    cifNumber.textContent = data.cif;
-                    currentData = data;
                     displayResults(data);
                 } else {
-                    console.error('[SEARCH] Error from API:', data.error);
-                    if (overviewTab) {
-                        overviewTab.innerHTML = `<div class="error"><strong>⚠ Eroare:</strong> ${data.error}</div>`;
-                    }
+                    resultsContent.innerHTML = `<div class="error">${data.error}</div>`;
                 }
             } catch (error) {
-                console.error('[SEARCH] Exception:', error);
-                console.error('[SEARCH] Error stack:', error.stack);
-                if (overviewTab) {
-                    overviewTab.innerHTML = `<div class="error"><strong>⚠ Eroare de conexiune:</strong> ${error.message}</div>`;
-                }
-            }
-        }
-
-        function switchTab(tabName, element) {
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
-
-            element.classList.add('active');
-            document.getElementById(`tab-${tabName}`).classList.add('active');
-
-            if (currentData) {
-                displayResults(currentData);
+                resultsContent.innerHTML = `<div class="error">Eroare: ${error.message}</div>`;
             }
         }
 
         function displayResults(data) {
-            console.log('[DISPLAY] displayResults called with data:', data);
-
             if (!data.years || data.years.length === 0) {
-                console.warn('[DISPLAY] No years data available');
-                const overviewTab = document.getElementById('tab-overview');
-                if (overviewTab) {
-                    overviewTab.innerHTML = '<p>Nu există date financiare disponibile.</p>';
-                }
+                document.getElementById('resultsContent').innerHTML = '<div class="error">Nu există date disponibile</div>';
                 return;
             }
 
-            console.log('[DISPLAY] Sorting years data...');
             data.years.sort((a, b) => b.an - a.an);
-            console.log('[DISPLAY] Years sorted, count:', data.years.length);
 
-            // TAB 1: OVERVIEW - Main indicators (PIVOT TABLE)
-            let overviewHtml = '<div class="category-header">📈 Indicatori Principali</div>';
-            overviewHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
-            overviewHtml += '<th>Indicator</th>';
+            let html = '';
 
-            // Years as columns (descending)
-            data.years.forEach(year => {
-                overviewHtml += `<th>${year.an}</th>`;
-            });
-            overviewHtml += '</tr></thead><tbody>';
+            // Company Header
+            html += '<div class="company-header">';
+            html += `<div class="company-name">${data.company_name || 'CIF ' + data.cif}</div>`;
+            html += '<div class="company-meta">';
+            html += `<div class="meta-item"><span class="meta-label">CIF:</span><span class="meta-value">${data.cif}</span></div>`;
+            if (data.j_number) html += `<div class="meta-item"><span class="meta-label">J:</span><span class="meta-value">${data.j_number}</span></div>`;
+            if (data.full_address) html += `<div class="meta-item"><span class="meta-label">Adresă:</span><span class="meta-value">${data.full_address}</span></div>`;
+            if (data.phone) html += `<div class="meta-item"><span class="meta-label">Telefon:</span><span class="meta-value">${data.phone}</span></div>`;
+            if (data.cod_caen) html += `<div class="meta-item"><span class="meta-label">COD CAEN:</span><span class="meta-value">${data.cod_caen}</span></div>`;
+            html += '</div></div>';
 
-            // Row: Cifra de Afaceri
-            overviewHtml += '<tr><td>Cifra de Afaceri Netă (RON)</td>';
-            data.years.forEach(year => {
-                overviewHtml += `<td>${formatNumber(year.cifra_de_afaceri_neta)}</td>`;
-            });
-            overviewHtml += '</tr>';
+            // Summary Cards (Last year data)
+            const lastYear = data.years[0];
+            const prevYear = data.years[1] || {};
 
-            // Row: Profit Net
-            overviewHtml += '<tr><td>Profit Net (RON)</td>';
-            data.years.forEach(year => {
-                overviewHtml += `<td class="positive">${formatNumber(year.profit_net)}</td>`;
-            });
-            overviewHtml += '</tr>';
+            html += '<div class="summary-cards">';
+            html += createSummaryCard('Cifra de Afaceri', lastYear.cifra_de_afaceri_neta, prevYear.cifra_de_afaceri_neta);
+            html += createSummaryCard('Profit Net', lastYear.profit_net, prevYear.profit_net);
+            html += createSummaryCard('Angajați', lastYear.salariati, prevYear.salariati, false);
+            html += createSummaryCard('Datorii', lastYear.datorii, prevYear.datorii);
+            html += '</div>';
 
-            // Row: Pierdere Net
-            overviewHtml += '<tr><td>Pierdere Net (RON)</td>';
-            data.years.forEach(year => {
-                overviewHtml += `<td class="negative">${formatNumber(year.pierdere_net)}</td>`;
-            });
-            overviewHtml += '</tr>';
+            // Charts
+            html += '<div class="charts-section">';
+            html += '<div class="section-title">📈 Evoluție Financiară</div>';
+            html += '<canvas id="revenueChart" height="80"></canvas>';
+            html += '</div>';
 
-            // Row: Salariati
-            overviewHtml += '<tr><td>Salariați</td>';
-            data.years.forEach(year => {
-                overviewHtml += `<td>${formatNumber(year.salariati)}</td>`;
-            });
-            overviewHtml += '</tr>';
+            // Compact Table - Last 5 Years
+            html += '<div class="data-section">';
+            html += '<div class="section-title">📊 Date Financiare (Ultimii 5 Ani)</div>';
+            html += createCompactTable(data.years.slice(0, 5));
+            html += '</div>';
 
-            overviewHtml += '</tbody></table></div>';
+            document.getElementById('resultsContent').innerHTML = html;
 
-            console.log('[DISPLAY] Setting tab-overview innerHTML...');
-            const overviewTab = document.getElementById('tab-overview');
-            if (overviewTab) {
-                overviewTab.innerHTML = overviewHtml;
-                console.log('[DISPLAY] tab-overview updated successfully');
-            } else {
-                console.error('[DISPLAY] ERROR: tab-overview element not found!');
-            }
-
-            // TAB 2: FINANCIAL DATA - All financial indicators (PIVOT TABLE)
-            let financialHtml = '<div class="data-section">';
-            financialHtml += '<div class="category-header">💰 Venituri și Cheltuieli</div>';
-            financialHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
-            financialHtml += '<th>Indicator</th>';
-            data.years.forEach(year => {
-                financialHtml += `<th>${year.an}</th>`;
-            });
-            financialHtml += '</tr></thead><tbody>';
-
-            // Cifra de Afaceri
-            financialHtml += '<tr><td>Cifra de Afaceri Netă</td>';
-            data.years.forEach(year => {
-                financialHtml += `<td>${formatNumber(year.cifra_de_afaceri_neta)}</td>`;
-            });
-            financialHtml += '</tr>';
-
-            // Venituri Totale
-            financialHtml += '<tr><td>Venituri Totale</td>';
-            data.years.forEach(year => {
-                financialHtml += `<td>${formatNumber(year.venituri_totale)}</td>`;
-            });
-            financialHtml += '</tr>';
-
-            // Cheltuieli Totale
-            financialHtml += '<tr><td>Cheltuieli Totale</td>';
-            data.years.forEach(year => {
-                financialHtml += `<td>${formatNumber(year.cheltuieli_totale)}</td>`;
-            });
-            financialHtml += '</tr>';
-
-            financialHtml += '</tbody></table></div>';
-            financialHtml += '</div>';
-
-            financialHtml += '<div class="data-section">';
-            financialHtml += '<div class="category-header">📊 Profit și Pierdere</div>';
-            financialHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
-            financialHtml += '<th>Indicator</th>';
-            data.years.forEach(year => {
-                financialHtml += `<th>${year.an}</th>`;
-            });
-            financialHtml += '</tr></thead><tbody>';
-
-            // Profit Brut
-            financialHtml += '<tr><td>Profit Brut</td>';
-            data.years.forEach(year => {
-                financialHtml += `<td class="positive">${formatNumber(year.profit_brut)}</td>`;
-            });
-            financialHtml += '</tr>';
-
-            // Pierdere Brut
-            financialHtml += '<tr><td>Pierdere Brut</td>';
-            data.years.forEach(year => {
-                financialHtml += `<td class="negative">${formatNumber(year.pierdere_brut)}</td>`;
-            });
-            financialHtml += '</tr>';
-
-            // Profit Net
-            financialHtml += '<tr><td>Profit Net</td>';
-            data.years.forEach(year => {
-                financialHtml += `<td class="positive">${formatNumber(year.profit_net)}</td>`;
-            });
-            financialHtml += '</tr>';
-
-            // Pierdere Net
-            financialHtml += '<tr><td>Pierdere Net</td>';
-            data.years.forEach(year => {
-                financialHtml += `<td class="negative">${formatNumber(year.pierdere_net)}</td>`;
-            });
-            financialHtml += '</tr>';
-
-            financialHtml += '</tbody></table></div>';
-            financialHtml += '</div>';
-
-            console.log('[DISPLAY] Setting tab-financial innerHTML...');
-            const financialTab = document.getElementById('tab-financial');
-            if (financialTab) {
-                financialTab.innerHTML = financialHtml;
-                console.log('[DISPLAY] tab-financial updated successfully');
-            } else {
-                console.error('[DISPLAY] ERROR: tab-financial element not found!');
-            }
-
-            // TAB 3: ASSETS & LIABILITIES (PIVOT TABLE)
-            let assetsHtml = '<div class="data-section">';
-            assetsHtml += '<div class="category-header">🏢 Active</div>';
-            assetsHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
-            assetsHtml += '<th>Indicator</th>';
-            data.years.forEach(year => {
-                assetsHtml += `<th>${year.an}</th>`;
-            });
-            assetsHtml += '</tr></thead><tbody>';
-
-            // Active Imobilizate
-            assetsHtml += '<tr><td>Active Imobilizate</td>';
-            data.years.forEach(year => {
-                assetsHtml += `<td>${formatNumber(year.active_imobilizate)}</td>`;
-            });
-            assetsHtml += '</tr>';
-
-            // Active Circulante
-            assetsHtml += '<tr><td>Active Circulante</td>';
-            data.years.forEach(year => {
-                assetsHtml += `<td>${formatNumber(year.active_circulante)}</td>`;
-            });
-            assetsHtml += '</tr>';
-
-            // Stocuri
-            assetsHtml += '<tr><td>Stocuri</td>';
-            data.years.forEach(year => {
-                assetsHtml += `<td>${formatNumber(year.stocuri)}</td>`;
-            });
-            assetsHtml += '</tr>';
-
-            // Creante
-            assetsHtml += '<tr><td>Creanțe</td>';
-            data.years.forEach(year => {
-                assetsHtml += `<td>${formatNumber(year.creante)}</td>`;
-            });
-            assetsHtml += '</tr>';
-
-            assetsHtml += '</tbody></table></div>';
-            assetsHtml += '</div>';
-
-            assetsHtml += '<div class="data-section">';
-            assetsHtml += '<div class="category-header">💼 Pasive și Capital</div>';
-            assetsHtml += '<div style="overflow-x: auto;"><table class="data-table"><thead><tr>';
-            assetsHtml += '<th>Indicator</th>';
-            data.years.forEach(year => {
-                assetsHtml += `<th>${year.an}</th>`;
-            });
-            assetsHtml += '</tr></thead><tbody>';
-
-            // Datorii
-            assetsHtml += '<tr><td>Datorii</td>';
-            data.years.forEach(year => {
-                assetsHtml += `<td>${formatNumber(year.datorii)}</td>`;
-            });
-            assetsHtml += '</tr>';
-
-            // Provizioane
-            assetsHtml += '<tr><td>Provizioane</td>';
-            data.years.forEach(year => {
-                assetsHtml += `<td>${formatNumber(year.provizioane)}</td>`;
-            });
-            assetsHtml += '</tr>';
-
-            // Capitaluri Total
-            assetsHtml += '<tr><td>Capitaluri Total</td>';
-            data.years.forEach(year => {
-                assetsHtml += `<td>${formatNumber(year.capitaluri_total)}</td>`;
-            });
-            assetsHtml += '</tr>';
-
-            // Patrimoniul Regiei
-            assetsHtml += '<tr><td>Patrimoniul Regiei</td>';
-            data.years.forEach(year => {
-                assetsHtml += `<td>${formatNumber(year.patrimoniul_regiei)}</td>`;
-            });
-            assetsHtml += '</tr>';
-
-            assetsHtml += '</tbody></table></div>';
-            assetsHtml += '</div>';
-
-            console.log('[DISPLAY] Setting tab-assets innerHTML...');
-            const assetsTab = document.getElementById('tab-assets');
-            if (assetsTab) {
-                assetsTab.innerHTML = assetsHtml;
-                console.log('[DISPLAY] tab-assets updated successfully');
-            } else {
-                console.error('[DISPLAY] ERROR: tab-assets element not found!');
-            }
-
-            console.log('[DISPLAY] All tabs updated successfully!');
+            // Render chart
+            renderChart(data.years);
         }
 
-        function formatNumber(value) {
-            if (value === null || value === undefined || value === 0) {
-                return '-';
-            }
-            return parseInt(value).toLocaleString('ro-RO');
+        function createSummaryCard(label, current, previous, isCurrency = true) {
+            const change = previous && current ? ((current - previous) / previous * 100) : 0;
+            const changeClass = change > 0 ? 'positive' : (change < 0 ? 'negative' : '');
+            const changeSymbol = change > 0 ? '↑' : (change < 0 ? '↓' : '');
+
+            return `
+                <div class="summary-card">
+                    <div class="label">${label}</div>
+                    <div class="value">${formatNumber(current, isCurrency)}</div>
+                    ${previous ? `<div class="change ${changeClass}">${changeSymbol} ${Math.abs(change).toFixed(1)}%</div>` : ''}
+                </div>
+            `;
         }
 
-        function clearResults() {
-            document.getElementById('results').classList.remove('show');
-            document.getElementById('cifInput').value = '';
-            currentData = null;
+        function createCompactTable(years) {
+            let html = '<table class="compact-table"><thead><tr><th>Indicator</th>';
+            years.forEach(y => html += `<th>${y.an}</th>`);
+            html += '</tr></thead><tbody>';
+
+            const indicators = [
+                {label: 'Cifra de Afaceri Netă', key: 'cifra_de_afaceri_neta'},
+                {label: 'Venituri Totale', key: 'venituri_totale'},
+                {label: 'Cheltuieli Totale', key: 'cheltuieli_totale'},
+                {label: 'Profit Net', key: 'profit_net', positive: true},
+                {label: 'Pierdere Net', key: 'pierdere_net', negative: true},
+                {label: 'Active Imobilizate', key: 'active_imobilizate'},
+                {label: 'Active Circulante', key: 'active_circulante'},
+                {label: 'Datorii', key: 'datorii'},
+                {label: 'Salariați', key: 'salariati', isCurrency: false},
+            ];
+
+            indicators.forEach(ind => {
+                html += `<tr><td>${ind.label}</td>`;
+                for (let i = 0; i < years.length; i++) {
+                    const current = years[i][ind.key];
+                    const previous = i < years.length - 1 ? years[i + 1][ind.key] : null;
+                    const change = previous && current ? ((current - previous) / previous * 100) : 0;
+                    const changeClass = change > 0 ? 'positive' : (change < 0 ? 'negative' : '');
+                    const changeSymbol = change > 0 ? '↑' : (change < 0 ? '↓' : '');
+
+                    let cellClass = '';
+                    if (ind.positive) cellClass = 'positive';
+                    if (ind.negative) cellClass = 'negative';
+
+                    html += `<td class="value-cell ${cellClass}">`;
+                    html += formatNumber(current, ind.isCurrency !== false);
+                    if (previous && change !== 0) {
+                        html += `<span class="change-indicator ${changeClass}"> ${changeSymbol}${Math.abs(change).toFixed(0)}%</span>`;
+                    }
+                    html += '</td>';
+                }
+                html += '</tr>';
+            });
+
+            html += '</tbody></table>';
+            return html;
+        }
+
+        function renderChart(years) {
+            const ctx = document.getElementById('revenueChart');
+            if (!ctx) return;
+
+            const sortedYears = [...years].sort((a, b) => a.an - b.an);
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: sortedYears.map(y => y.an),
+                    datasets: [
+                        {
+                            label: 'Cifra de Afaceri',
+                            data: sortedYears.map(y => y.cifra_de_afaceri_neta),
+                            borderColor: '#0F7CC0',
+                            backgroundColor: 'rgba(15, 124, 192, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        },
+                        {
+                            label: 'Profit Net',
+                            data: sortedYears.map(y => y.profit_net),
+                            borderColor: '#10b981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {position: 'top'},
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + formatNumber(context.parsed.y, true);
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return (value / 1000000).toFixed(1) + 'M';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function formatNumber(value, isCurrency = true) {
+            if (value === null || value === undefined || value === 0) return '-';
+            const num = parseInt(value).toLocaleString('ro-RO');
+            return isCurrency ? num + ' RON' : num;
         }
     </script>
 </body>
