@@ -642,7 +642,7 @@
 
             // Update summary stats
             document.getElementById('totalCounties').textContent = analyticsData.geography.total_counties;
-            document.getElementById('avgHealthScore').textContent = analyticsData.financial_health.average_score.toFixed(1);
+            document.getElementById('avgHealthScore').textContent = parseFloat(analyticsData.financial_health.average_score).toFixed(1);
             document.getElementById('highRiskCount').textContent = analyticsData.timeseries.high_risk_count;
 
             // Update Tab 1 - Trends
@@ -668,13 +668,13 @@
             // Update insights
             if (trends.fastest_growth.length > 0) {
                 const top = trends.fastest_growth[0];
-                document.getElementById('topCAGR').textContent = top.cagr.toFixed(1) + '%';
+                document.getElementById('topCAGR').textContent = parseFloat(top.cagr).toFixed(1) + '%';
                 document.getElementById('topCAGRCompany').textContent = top.name;
             }
 
             if (trends.covid_winners.length > 0) {
                 const winner = trends.covid_winners[0];
-                document.getElementById('covidImpact').textContent = '+' + winner.covid_impact.toFixed(0) + '%';
+                document.getElementById('covidImpact').textContent = '+' + parseFloat(winner.covid_impact).toFixed(0) + '%';
                 document.getElementById('covidWinner').textContent = winner.name;
             }
 
@@ -739,7 +739,7 @@
                     <td>${i + 1}</td>
                     <td>${c.cif}</td>
                     <td>${c.name}</td>
-                    <td><span class="badge success">${c.cagr.toFixed(1)}%</span></td>
+                    <td><span class="badge success">${parseFloat(c.cagr).toFixed(1)}%</span></td>
                     <td>${formatRON(c.revenue_2023)}</td>
                     <td>${c.employees_2024}</td>
                 </tr>
@@ -808,7 +808,7 @@
                         <td>${c.name}</td>
                         <td><strong>${c.score}</strong>/100</td>
                         <td><span class="badge ${categoryClass}">${c.category}</span></td>
-                        <td>${c.profit_margin.toFixed(1)}%</td>
+                        <td>${parseFloat(c.profit_margin).toFixed(1)}%</td>
                         <td>${c.risk}</td>
                     </tr>
                 `;
@@ -879,8 +879,8 @@
                     <td>${c.name}</td>
                     <td><span class="badge info">${c.size}</span></td>
                     <td>${c.specialization}</td>
-                    <td>${c.profit_margin.toFixed(1)}%</td>
-                    <td><span class="badge success">+${c.growth.toFixed(1)}%</span></td>
+                    <td>${parseFloat(c.profit_margin).toFixed(1)}%</td>
+                    <td><span class="badge success">+${parseFloat(c.growth).toFixed(1)}%</span></td>
                 </tr>
             `).join('');
         }
@@ -939,8 +939,8 @@
                     <td>${c.num_companies}</td>
                     <td>${formatRON(c.total_revenue)}</td>
                     <td>${formatRON(c.avg_revenue)}</td>
-                    <td>${(c.total_employees || 0).toLocaleString('ro-RO')}</td>
-                    <td>${(c.avg_employees || 0).toFixed(0)}</td>
+                    <td>${parseInt(c.total_employees || 0).toLocaleString('ro-RO')}</td>
+                    <td>${parseFloat(c.avg_employees || 0).toFixed(0)}</td>
                 </tr>
             `).join('');
         }
@@ -957,7 +957,7 @@
 
             if (ts.predictions_2025.length > 0) {
                 const topPred = ts.predictions_2025[0];
-                document.getElementById('topPredGrowth').textContent = '+' + topPred.growth_rate.toFixed(0) + '%';
+                document.getElementById('topPredGrowth').textContent = '+' + parseFloat(topPred.growth_rate).toFixed(0) + '%';
                 document.getElementById('topPredCompany').textContent = topPred.name;
             }
 
@@ -983,7 +983,7 @@
                     <td>${c.name}</td>
                     <td>${formatRON(c.revenue_2023)}</td>
                     <td>${formatRON(c.predicted_2025)}</td>
-                    <td><span class="badge success">+${c.growth_rate.toFixed(1)}%</span></td>
+                    <td><span class="badge success">+${parseFloat(c.growth_rate).toFixed(1)}%</span></td>
                 </tr>
             `).join('');
         }
@@ -991,9 +991,11 @@
         // Helper: Format RON
         function formatRON(value) {
             if (!value) return '0 RON';
-            if (value >= 1000000) return (value / 1000000).toFixed(1) + 'M RON';
-            if (value >= 1000) return (value / 1000).toFixed(0) + 'K RON';
-            return value.toFixed(0) + ' RON';
+            const num = parseFloat(value);
+            if (isNaN(num)) return '0 RON';
+            if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M RON';
+            if (num >= 1000) return (num / 1000).toFixed(0) + 'K RON';
+            return num.toFixed(0) + ' RON';
         }
 
         // Load on page load
