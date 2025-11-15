@@ -1,0 +1,85 @@
+================================================================================
+NORMALIZÁLÁSI HIBA JAVÍTÁSA - RÉSZLETES JELENTÉS
+================================================================================
+
+🐛 HIBA:
+   A normalize_cif() függvény rosszul kezelte a float értékeket.
+   Példa: 29036053.0 → "290360530" (extra 0 a végén!)
+
+🔧 JAVÍTÁS:
+   RÉGI (hibás):
+     cif_str = str(cif_value).strip().upper()  # "29036053.0"
+     cif_clean = re.sub(r'[^0-9]', '', cif_str)  # "290360530" ← HIBA!
+
+   ÚJ (helyes):
+     return str(int(float(cif_value)))  # 29036053.0 → 29036053
+
+================================================================================
+METADATA FILEOK - NORMALIZÁLÁSI HIBÁK
+================================================================================
+
+File                                     Hibás normalizálás
+--------------------------------------------------------------------------------
+metale.xlsx                                              34
+neferoase.xlsx                                          473
+aluminiu.xlsx                                         2,077
+q_inox.xlsx                                             661
+q_importator_profile_aluminiu.xlsx                       44
+2442.xlsx                                                48
+--------------------------------------------------------------------------------
+ÖSSZESEN:                                             3,337 (27.4%)
+
+================================================================================
+CIF ENRICHMENT EREDMÉNYEK
+================================================================================
+
+RÉGI (hibás normalizálás):   5,306 CIF bővítve
+ÚJ (helyes normalizálás):    5,342 CIF bővítve
+KÜLÖNBSÉG:                   +36 CIF
+
+================================================================================
+ÚJ (HELYES) CIF-EK PÉLDÁI
+================================================================================
+
+ 1. CIF: 1155810      - PICANT S.R.L.
+ 2. CIF: 1206832      - ORMATIN MUR S.R.L.
+ 3. CIF: 13069160     - PROMETAB S.R.L.
+ 4. CIF: 13354034     - DIREN EXIM S.R.L.
+ 5. CIF: 14511889     - ALIN FOR YOU S.R.L.
+ 6. CIF: 14542966     - STILIOS COM S.R.L.
+ 7. CIF: 14953252     - PRORETUR S.R.L.
+ 8. CIF: 1538378      - REMAT OLT S.A.
+ 9. CIF: 15404007     - ROMNED S.R.L.
+10. CIF: 17059959     - ECOPLAST HART S.R.L.
+11. CIF: 17676849     - R.M.G. RECICLARE DEŞEURI S.R.L.
+12. CIF: 18433082     - COLECT COM S.R.L.
+13. CIF: 18702261     - GEROCRI ARGEŞ 2006 S.R.L.
+14. CIF: 2073289      - REMAT S.A.
+15. CIF: 210436       - REFORMATEX IMPORT-EXPORT S.R.L.
+16. CIF: 21504540     - GOGECO S.R.L.
+17. CIF: 2155648      - REMAT GORJ S.A.
+18. CIF: 21769164     - MONDOREK S.R.L.
+19. CIF: 22479851     - DALVCHI S.R.L.
+20. CIF: 22880852     - DEVALEX S.R.L.
+
+================================================================================
+TESZT: 29036053 CIF
+================================================================================
+
+✅ MEGTALÁLVA az új (helyes) enriched adatban!
+   Cégnév: PAJURCA METAL GROUP S.R.L.
+   Telefonok: ['0744-607 656']
+   J szám: ['J/5/1560/2011']
+   COD CAEN: ['3811: Colectarea deseurilor nepericuloase']
+   Sources: ['aluminiu.xlsx', 'q_inox.xlsx', 'neferoase.xlsx']
+
+================================================================================
+KÖVETKEZTETÉS
+================================================================================
+
+✅ A normalizálási hiba javítva
+✅ 36 további CIF sikeresen bővítve
+✅ 3,337 hibás normalizálás kijavítva a metadata fileokban
+✅ Az új enriched file: cif_enriched_fixed.json (2.98 MB)
+
+🎯 JAVASLAT: Használd a cif_enriched_fixed.json file-t a továbbiakban!

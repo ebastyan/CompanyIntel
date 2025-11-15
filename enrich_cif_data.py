@@ -30,15 +30,12 @@ class CIFEnricher:
         print("=" * 80)
 
     def normalize_cif(self, cif_value):
-        """CIF normalizálás"""
+        """CIF normalizálás - FIXED: float → int → str (nem extra 0-k!)"""
         if pd.isna(cif_value):
             return None
-        cif_str = str(cif_value).strip().upper()
-        cif_clean = re.sub(r'[^0-9]', '', cif_str)
-        if not cif_clean:
-            return None
         try:
-            return str(int(cif_clean))
+            # HELYES: 29036053.0 → 29036053 (NEM 290360530!)
+            return str(int(float(cif_value)))
         except:
             return None
 
@@ -388,14 +385,14 @@ def main():
     enricher.process_metadata_files()
     enricher.process_colectare_dump()
     enricher.calculate_statistics()
-    enricher.export_enriched_data()
+    enricher.export_enriched_data('cif_enriched_fixed.json')  # FIXED VERSION!
 
     print("\n" + "=" * 80)
-    print("✓ CIF ENRICHMENT KÉSZ!")
+    print("✓ CIF ENRICHMENT KÉSZ! (FIXED VERSION)")
     print("=" * 80)
     print("\nKimeneti fájlok:")
-    print("  - cif_enriched.json")
-    print("  - cif_enriched_stats.txt")
+    print("  - cif_enriched_fixed.json")
+    print("  - cif_enriched_fixed_stats.txt")
 
 if __name__ == "__main__":
     main()
