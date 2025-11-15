@@ -939,8 +939,8 @@
                     <td>${c.num_companies}</td>
                     <td>${formatRON(c.total_revenue)}</td>
                     <td>${formatRON(c.avg_revenue)}</td>
-                    <td>${c.total_employees.toLocaleString('ro-RO')}</td>
-                    <td>${c.avg_employees.toFixed(0)}</td>
+                    <td>${(c.total_employees || 0).toLocaleString('ro-RO')}</td>
+                    <td>${(c.avg_employees || 0).toFixed(0)}</td>
                 </tr>
             `).join('');
         }

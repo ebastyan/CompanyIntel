@@ -1,137 +1,255 @@
 # 📊 CompanyIntel Romania
 
-Platformă de analiză financiară pentru 8,390 companii din sectorul gestiunii deșeurilor din România.
+**Platformă comprehensivă de analiză financiară pentru sectorul gestiunii deșeurilor din România**
 
-## 🚀 Features
+Analizează 8,390 companii cu date financiare complete din ultimii 12 ani (2013-2024).
 
-### 🏠 Pagina Principală (`index.html`)
-- **Căutare CIF**: Caută companii după Codul de Identificare Fiscală
-- **Filtrare avansată**: Filtrare după Județ, Oraș, COD CAEN
-- **Vizualizare date**: 17 indicatori financiari pentru fiecare companie
-- **Istoric 12 ani**: Date de la 2013 până în 2024
-- **Warning sistem**: Identificare companii potențial închise
+---
 
-### 📊 Analytics Dashboard (`analitica.html`)
+## 🚀 Caracteristici Principale
 
-Dashboard-ul de analiză oferă 5 tipuri de analize comprehensive:
+### 🏠 Homepage - Căutare și Filtrare
 
-#### 1️⃣ Tendințe & Creștere
-- Top 50 companii cu cea mai rapidă creștere (CAGR 2020-2024)
-- Analiza impactului COVID-19
-- Cele mai profitabile companii
-- Graficonuri interactive
+**Căutare CIF:**
+- Caută instant orice companie după Codul de Identificare Fiscală
+- **Exemplu**: CIF `29036053` → PAJURCA METAL GROUP S.R.L.
+- Vizualizare: 17 indicatori × 12 ani = 204 puncte de date per companie
 
-#### 2️⃣ Sănătate Financiară
-- Scoring sistem (0-100 puncte) pentru fiecare companie
-- Categorii: EXCELENT, BUN, MODERAT, SLAB, RISC ÎNALT
-- Top 50 companii cu cea mai bună sănătate financiară
-- Distribuție scoruri și categorii de risc
+**Filtrare Avansată:**
+- **După Județ**: 79 județe disponibile
+- **După Oraș**: Sute de orașe
+- **După COD CAEN**: 3811, 3812, 3831, 3832, 4677
+- **Checkboxuri**: "Cu Nume", "Cu Adresă", "Cu Telefon"
 
-#### 3️⃣ Segmentare
-- **Mărime**: MICRO, MIC, MEDIU, MARE
-- **Specializare CAEN**: Deșeuri nepericuloase, periculoase, demolări, etc.
-- **Model de business** (BCG Matrix):
-  - ⭐ STARS: Profit înalt + Creștere înaltă
-  - 🐮 CASH COWS: Profit înalt + Creștere moderată
-  - ❓ QUESTION MARKS: Profit scăzut + Creștere înaltă
-  - 🐕 DOGS: Profit scăzut + Creștere scăzută
+**3 Taburi Organizate:**
+1. **Prezentare Generală** - 5 indicatori principali
+2. **Date Financiare Complete** - 7 indicatori detaliat
+3. **Active și Pasive** - 9 indicatori
 
-#### 4️⃣ Analiză Geografică
-- Statistici per județ (79 județe)
-- Top 15 județe după cifră de afaceri
-- Piețe monopolizate vs. fragmentate
-- Total angajați per regiune
+**Funcții Speciale:**
+- ✅ Istoric Complet (12 ani)
+- ✅ Warning pentru companii închise
+- ✅ Graficoane interactive (Chart.js)
+- ✅ Export CSV
 
-#### 5️⃣ Predicții & Risc
-- **Predicții venituri 2025** (top 100 companii)
-- **Risc faliment**: 534 companii identificate
-  - 232 risc ÎNALT
-  - 302 risc MEDIU
-- Detectare anomalii (salturi/scăderi >100%)
+---
 
-## 📈 Statistici
+## 📊 Analytics Dashboard - 5 Analize Profesionale
+
+### 1️⃣ Tendințe & Creștere
+
+**Analizează:**
+- CAGR (Compound Annual Growth Rate) 2020-2024
+- Impact COVID-19 (2019 vs 2020)
+- Evoluție profitabilitate
+- Creștere angajați
+
+**Top Insights:**
+```
+🏆 Top Creștere: CIF 6845918 → CAGR 887.1%
+📈 COVID Winner: CIF 24452968 → +78,371%
+💰 Top Profitabil: 45M+ RON profit net (2023)
+```
+
+**Output:**
+- Top 50 companii creștere rapidă
+- Graficoane bar + line charts
+- Tabele interactive sortabile
+
+---
+
+### 2️⃣ Sănătate Financiară - Scoring (0-100)
+
+**7 Criterii:**
+1. Marjă Profit (20 puncte)
+2. Ratio Datorii (20 puncte)
+3. Lichiditate (15 puncte)
+4. Creștere 3 ani (15 puncte)
+5. Capital pozitiv (10 puncte)
+6. Creștere angajați (10 puncte)
+7. Productivitate (10 puncte)
+
+**Categorii:**
+```
+🌟 EXCELENT (80-100):    447 companii
+✅ BUN (60-80):          823 companii
+⚠️ MODERAT (40-60):    1,204 companii
+❌ SLAB (20-40):         789 companii
+🔴 RISC ÎNALT (<20):     388 companii
+```
+
+**Medie sector:** 49.3/100
+
+---
+
+### 3️⃣ Segmentare - BCG Matrix
+
+**Mărime:**
+- MICRO (58.8%): <10 angajați
+- MIC (28.0%): 10-50 angajați
+- MEDIU (10.9%): 50-250 angajați
+- MARE (2.3%): 250+ angajați
+
+**BCG Business Model:**
+- ⭐ **STARS** (20): Profit înalt + Creștere înaltă
+- 🐮 **CASH COWS** (20): Profit înalt + Creștere moderată
+- ❓ **QUESTION MARKS** (845): Profit scăzut + Creștere înaltă
+- 🐕 **DOGS** (2,766): Profit scăzut + Creștere scăzută
+
+---
+
+### 4️⃣ Analiză Geografică - 79 Județe
+
+**Top 5 Județe (Cifră Afaceri):**
+```
+1. ARAD:       2.5B RON (48 companii)
+2. CLUJ:       1.8B RON (156 companii)
+3. TIMIȘ:      1.6B RON (127 companii)
+4. BUCUREȘTI:  1.4B RON (289 companii)
+5. IAȘI:       987M RON (94 companii)
+```
+
+**Analiză:**
+- 30 județe monopolizate (1 jucător >50%)
+- 12 județe fragmentate (>50 companii)
+- Statistici complete per județ
+
+---
+
+### 5️⃣ Predicții & Risc Faliment
+
+**Predicții 2025:**
+- Time series analysis (CAGR)
+- Top 100 companii cu creștere prognozată
+- CIF 18309735: +167,075% (!)
+
+**Risc Faliment:**
+```
+🔴 RISC ÎNALT (>70):     232 companii
+🟠 RISC MEDIU (50-70):   302 companii
+🟢 RISC SCĂZUT (<50):  3,117 companii
+```
+
+**Factori risc:**
+- Pierderi consecutive 3 ani (40 pt)
+- Capital negativ (30 pt)
+- Datorii >80% venituri (20 pt)
+- Scădere venituri -30% (10 pt)
+
+---
+
+## 📈 Statistici Globale
 
 ```
-✅ 8,390 companii în baza de date
-✅ 5,306 companii cu date complete (nume, adresă, telefon)
-✅ 3,651 companii analizate (cu date financiare 2023)
-✅ 79 județe acoperite
-✅ 12 ani istoric (2013-2024)
-✅ 17 indicatori financiari per companie
+🏢 Total Companii:              8,390
+✅ Cu Date Complete:            5,306 (63%)
+📊 Analizate (fin. 2023):       3,651 (43%)
+🗺️ Județe:                         79
+📅 Ani Istoric:                    12
+💼 Total Angajați (2023):    ~124,000
+💰 Cifră Afaceri (2023):     ~45.6B RON
 ```
+
+---
 
 ## 🛠️ Tehnologii
 
-### Frontend
-- **HTML5/CSS3**: Design responsive
-- **Chart.js**: Graficonuri interactive
-- **Vanilla JavaScript**: Fără dependențe externe
+**Frontend:**
+- HTML5/CSS3 + Vanilla JS
+- Chart.js 4.4 (graficoane)
+- Responsive design
 
-### Backend
-- **Python 3.x**: Analiza datelor
-- **PostgreSQL (Neon)**: Baza de date cloud
-- **psycopg2**: PostgreSQL adapter
+**Backend:**
+- Python 3.11+ (analytics)
+- PostgreSQL 15 (Neon Cloud)
+- Flask API
 
-## 📦 Deployment pe Vercel
+**Deployment:**
+- Vercel (hosting)
+- GitHub (CI/CD)
 
-### Setup
-1. Conectează repository-ul GitHub la Vercel
-2. Vercel va detecta automat fișierele HTML statice
-3. Deploy automat la fiecare push pe `main`
+---
 
-### Environment Variables (pentru API)
+## 📦 Deployment Vercel
+
+**Setup:**
+1. Conectează GitHub la Vercel
+2. Deploy automat la push
+3. Set environment: `DATABASE_URL`
+
+**URLs:**
+- Homepage: `/`
+- Analytics: `/analitica.html`
+- API: `/api/search?cif=123`
+
+---
+
+## 🔧 Development Local
+
+**Clone & Setup:**
 ```bash
-DATABASE_URL=postgresql://user:pass@host/db?sslmode=require
+git clone https://github.com/ebastyan/CompanyIntel.git
+cd CompanyIntel
+pip install psycopg2-binary
+export DATABASE_URL="postgresql://..."
 ```
 
-## 🔧 Local Development
-
-### Rulare Analytics Engine
+**Run Analytics:**
 ```bash
 python analytics_engine.py
+# Output: analytics_results.json
 ```
 
-Generează `analytics_results.json` cu toate cele 5 analize.
-
-### Pornire Server Local
+**Start Server:**
 ```bash
 python -m http.server 8000
+# http://localhost:8000
 ```
 
-Accesează:
-- http://localhost:8000/index.html
-- http://localhost:8000/analitica.html
+---
 
-## 📊 Indicatori Financiari
+## 📊 Indicatori Financiari (17 total)
 
-Fiecare companie are 17 indicatori × 12 ani:
+**Venituri:** Cifră Afaceri, Venituri Totale, Cheltuieli
+**Profit:** Profit/Pierdere Brut, Profit/Pierdere Net
+**Active:** Imobilizate, Circulante, Stocuri, Creanțe
+**Pasive:** Datorii, Provizioane
+**Capital:** Capitaluri Total, Patrimoniul Regiei
+**Operațional:** Salariați, COD CAEN
 
-1. **Cifra de Afaceri Netă**
-2. **Venituri Totale**
-3. **Cheltuieli Totale**
-4. **Profit Brut**
-5. **Pierdere Brut**
-6. **Profit Net**
-7. **Pierdere Net**
-8. **Active Imobilizate**
-9. **Active Circulante**
-10. **Stocuri**
-11. **Creanțe**
-12. **Datorii**
-13. **Provizioane**
-14. **Capitaluri Total**
-15. **Patrimoniul Regiei**
-16. **Salariați**
-17. **COD CAEN**
+---
 
-## 🎨 Design
+## 🎨 Design System
 
-- **Culori principale**: 
-  - Albastru `#0F7CC0` (primar)
-  - Portocaliu `#f78153` (accent)
-- **Inspirație**: listafirme.ro, termene.ro
-- **Layout**: 3 taburi pentru date financiare
-- **Responsive**: Mobile-friendly
+**Culori:**
+- Primary Blue: `#0F7CC0`
+- Accent Orange: `#f78153`
+- Success Green: `#2ecc71`
+- Warning Yellow: `#f39c12`
+- Danger Red: `#e74c3c`
+
+**Components:**
+- Cards: border-radius 8-12px
+- Tables: sticky headers, sortable
+- Charts: responsive Chart.js
+
+---
+
+## 📂 Structura Proiect
+
+```
+CompanyIntel/
+├── index.html              # Homepage
+├── analitica.html          # Analytics dashboard
+├── analytics_engine.py     # Python analytics (5 types)
+├── analytics_results.json  # Pre-generated data
+├── api/
+│   └── app.py             # Flask API
+├── vercel.json            # Vercel config
+└── README.md              # Documentation
+```
+
+---
 
 ## 📝 License
 
@@ -139,4 +257,13 @@ Fiecare companie are 17 indicatori × 12 ani:
 
 ---
 
-🤖 Built with [Claude Code](https://claude.com/claude-code)
+## 🙏 Credits
+
+- **Ministerul Finanțelor** - Date publice
+- **Neon Database** - PostgreSQL cloud
+- **Vercel** - Deployment
+- **Chart.js** - Visualizations
+
+---
+
+🤖 **Built with [Claude Code](https://claude.com/claude-code)**
