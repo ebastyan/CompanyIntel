@@ -83,8 +83,20 @@ def search_company():
         cursor.close()
         conn.close()
 
+        # Add enriched metadata
         return jsonify({
             'cif': company['cif'],
+            'company_name': company.get('company_name'),
+            'judet': company.get('judet'),
+            'oras': company.get('oras'),
+            'strada': company.get('strada'),
+            'full_address': company.get('full_address'),
+            'phone': company.get('phone'),
+            'j_number': company.get('j_number'),
+            'cod_caen': company.get('cod_caen'),
+            'capital': company.get('capital'),
+            'latitude': float(company['latitude']) if company.get('latitude') else None,
+            'longitude': float(company['longitude']) if company.get('longitude') else None,
             'years': years_data
         })
 
@@ -148,6 +160,156 @@ def health():
             'status': 'error',
             'error': str(e)
         }), 500
+
+@app.route('/api/filters', methods=['GET'])
+def get_filters():
+    """Get available filter values"""
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get unique județe
+        cursor.execute("""
+            SELECT DISTINCT judet
+            FROM companii
+            WHERE judet IS NOT NULL
+            ORDER BY judet
+        """)
+        judete = [row[0] for row in cursor.fetchall()]
+
+        # Get unique orașe
+        cursor.execute("""
+            SELECT DISTINCT oras
+            FROM companii
+            WHERE oras IS NOT NULL
+            ORDER BY oras
+            LIMIT 100
+        """)
+        orase = [row[0] for row in cursor.fetchall()]
+
+        # Get unique COD CAEN
+        cursor.execute("""
+            SELECT DISTINCT cod_caen
+            FROM companii
+            WHERE cod_caen IS NOT NULL
+            LIMIT 50
+        """)
+        cod_caen_list = [row[0] for row in cursor.fetchall()]
+
+        cursor.close()
+        conn.close()
+
+        return jsonify({
+            'judete': judete,
+            'orase': orase,
+            'cod_caen': cod_caen_list
+        })
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/companies', methods=['GET'])
+def list_companies():
+    """List companies with filters"""
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Build WHERE clause from filters
+        where_clauses = []
+        params = []
+
+        # Filter by județ
+        judet = request.args.get('judet')
+        if judet:
+            where_clauses.append("judet = %s")
+            params.append(judet)
+
+        # Filter by oraș
+        oras = request.args.get('oras')
+        if oras:
+            where_clauses.append("oras = %s")
+            params.append(oras)
+
+        # Filter by COD CAEN (partial match)
+        cod_caen = request.args.get('cod_caen')
+        if cod_caen:
+            where_clauses.append("cod_caen LIKE %s")
+            params.append(f'%{cod_caen}%')
+
+        # Filter by has address
+        has_address = request.args.get('has_address')
+        if has_address == 'true':
+            where_clauses.append("full_address IS NOT NULL")
+        elif has_address == 'false':
+            where_clauses.append("full_address IS NULL")
+
+        # Filter by has name
+        has_name = request.args.get('has_name')
+        if has_name == 'true':
+            where_clauses.append("company_name IS NOT NULL")
+        elif has_name == 'false':
+            where_clauses.append("company_name IS NULL")
+
+        # Filter by has phone
+        has_phone = request.args.get('has_phone')
+        if has_phone == 'true':
+            where_clauses.append("phone IS NOT NULL")
+        elif has_phone == 'false':
+            where_clauses.append("phone IS NULL")
+
+        # Build query
+        where_sql = " AND ".join(where_clauses) if where_clauses else "1=1"
+
+        # Pagination
+        page = int(request.args.get('page', 1))
+        per_page = int(request.args.get('per_page', 50))
+        offset = (page - 1) * per_page
+
+        # Count total
+        count_query = f"SELECT COUNT(*) FROM companii WHERE {where_sql}"
+        cursor.execute(count_query, params)
+        total = cursor.fetchone()[0]
+
+        # Get results
+        query = f"""
+            SELECT cif, company_name, judet, oras, full_address, phone, cod_caen,
+                   cifra_de_afaceri_neta_2024, cifra_de_afaceri_neta_2023
+            FROM companii
+            WHERE {where_sql}
+            ORDER BY cifra_de_afaceri_neta_2024 DESC NULLS LAST
+            LIMIT %s OFFSET %s
+        """
+        cursor.execute(query, params + [per_page, offset])
+
+        companies = []
+        for row in cursor.fetchall():
+            companies.append({
+                'cif': row[0],
+                'company_name': row[1],
+                'judet': row[2],
+                'oras': row[3],
+                'full_address': row[4],
+                'phone': row[5],
+                'cod_caen': row[6],
+                'cifra_de_afaceri_2024': row[7],
+                'cifra_de_afaceri_2023': row[8]
+            })
+
+        cursor.close()
+        conn.close()
+
+        return jsonify({
+            'total': total,
+            'page': page,
+            'per_page': per_page,
+            'companies': companies
+        })
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
