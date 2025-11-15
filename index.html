@@ -74,6 +74,144 @@
             max-width: 600px;
         }
 
+        /* Browse Section */
+        .browse-section {
+            background: #f9f9f9;
+            padding: 30px 20px;
+            border-top: 3px solid #f78153;
+        }
+
+        .browse-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .browse-section h2 {
+            color: #0F7CC0;
+            margin-bottom: 20px;
+        }
+
+        .filters-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .filter-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .filter-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filter-item label {
+            display: block;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .filter-item select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .filter-item input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        /* Company List Table */
+        .company-table {
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .company-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .company-table th {
+            background: #0F7CC0;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .company-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 13px;
+        }
+
+        .company-table tbody tr:hover {
+            background: #f5f5f5;
+            cursor: pointer;
+        }
+
+        .company-table .cif-link {
+            color: #0F7CC0;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .company-table .cif-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 8px 15px;
+            background: white;
+            color: #0F7CC0;
+            border: 1px solid #0F7CC0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .pagination button:hover {
+            background: #0F7CC0;
+            color: white;
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .pagination button.active {
+            background: #0F7CC0;
+            color: white;
+        }
+
         input[type="text"] {
             flex: 1;
             padding: 12px 15px;
@@ -318,6 +456,48 @@
         </div>
     </div>
 
+    <!-- Browse Section with Filters -->
+    <div class="browse-section">
+        <div class="container">
+            <h2>Răsfoiește Companii</h2>
+            <div class="filters-container">
+                <div class="filter-row">
+                    <div class="filter-item">
+                        <label>Județ:</label>
+                        <select id="filterJudet" onchange="applyFilters()">
+                            <option value="">Toate</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label>Oraș:</label>
+                        <select id="filterOras" onchange="applyFilters()">
+                            <option value="">Toate</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label>COD CAEN:</label>
+                        <select id="filterCaen" onchange="applyFilters()">
+                            <option value="">Toate</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-item">
+                        <label><input type="checkbox" id="filterHasName" onchange="applyFilters()"> Cu Nume</label>
+                    </div>
+                    <div class="filter-item">
+                        <label><input type="checkbox" id="filterHasAddress" onchange="applyFilters()"> Cu Adresă</label>
+                    </div>
+                    <div class="filter-item">
+                        <label><input type="checkbox" id="filterHasPhone" onchange="applyFilters()"> Cu Telefon</label>
+                    </div>
+                </div>
+            </div>
+            <div id="browseResults"></div>
+            <div id="pagination" class="pagination"></div>
+        </div>
+    </div>
+
     <div class="results-container" id="results">
         <div id="resultsContent"></div>
     </div>
@@ -518,6 +698,169 @@
             const num = parseInt(value).toLocaleString('ro-RO');
             return isCurrency ? num + ' RON' : num;
         }
+
+        // Filter and Browse Functions
+        let currentPage = 1;
+        let filtersLoaded = false;
+
+        async function loadFilters() {
+            if (filtersLoaded) return;
+
+            try {
+                const response = await fetch(`${API_URL}/filters`);
+                const data = await response.json();
+
+                // Populate Județ
+                const judetSelect = document.getElementById('filterJudet');
+                data.judete.forEach(judet => {
+                    const option = document.createElement('option');
+                    option.value = judet;
+                    option.textContent = judet;
+                    judetSelect.appendChild(option);
+                });
+
+                // Populate Oraș
+                const orasSelect = document.getElementById('filterOras');
+                data.orase.forEach(oras => {
+                    const option = document.createElement('option');
+                    option.value = oras;
+                    option.textContent = oras;
+                    orasSelect.appendChild(option);
+                });
+
+                // Populate COD CAEN
+                const caenSelect = document.getElementById('filterCaen');
+                data.cod_caen.forEach(caen => {
+                    const option = document.createElement('option');
+                    option.value = caen;
+                    option.textContent = caen;
+                    caenSelect.appendChild(option);
+                });
+
+                filtersLoaded = true;
+
+                // Load initial company list
+                applyFilters();
+            } catch (error) {
+                console.error('Error loading filters:', error);
+            }
+        }
+
+        async function applyFilters(page = 1) {
+            currentPage = page;
+
+            const params = new URLSearchParams();
+            params.append('page', page);
+            params.append('per_page', 50);
+
+            const judet = document.getElementById('filterJudet').value;
+            if (judet) params.append('judet', judet);
+
+            const oras = document.getElementById('filterOras').value;
+            if (oras) params.append('oras', oras);
+
+            const caen = document.getElementById('filterCaen').value;
+            if (caen) params.append('cod_caen', caen);
+
+            if (document.getElementById('filterHasName').checked) {
+                params.append('has_name', 'true');
+            }
+
+            if (document.getElementById('filterHasAddress').checked) {
+                params.append('has_address', 'true');
+            }
+
+            if (document.getElementById('filterHasPhone').checked) {
+                params.append('has_phone', 'true');
+            }
+
+            try {
+                document.getElementById('browseResults').innerHTML = '<div class="loading"><div class="loader"></div><p>Se încarcă...</p></div>';
+
+                const response = await fetch(`${API_URL}/companies?${params}`);
+                const data = await response.json();
+
+                displayCompanyList(data);
+            } catch (error) {
+                document.getElementById('browseResults').innerHTML = `<div class="error">Eroare: ${error.message}</div>`;
+            }
+        }
+
+        function displayCompanyList(data) {
+            let html = '<div class="company-table">';
+            html += '<table><thead><tr>';
+            html += '<th>CIF</th>';
+            html += '<th>Nume</th>';
+            html += '<th>Județ</th>';
+            html += '<th>Oraș</th>';
+            html += '<th>Adresă</th>';
+            html += '<th>Telefon</th>';
+            html += '<th>COD CAEN</th>';
+            html += '<th>Cifra Afaceri 2024</th>';
+            html += '<th>Cifra Afaceri 2023</th>';
+            html += '</tr></thead><tbody>';
+
+            data.companies.forEach(company => {
+                html += '<tr onclick="clickCompany(\'' + company.cif + '\')">';
+                html += `<td><a href="#" class="cif-link" onclick="event.preventDefault(); clickCompany('${company.cif}')">${company.cif}</a></td>`;
+                html += `<td>${company.company_name || '-'}</td>`;
+                html += `<td>${company.judet || '-'}</td>`;
+                html += `<td>${company.oras || '-'}</td>`;
+                html += `<td>${company.full_address ? (company.full_address.length > 50 ? company.full_address.substring(0, 50) + '...' : company.full_address) : '-'}</td>`;
+                html += `<td>${company.phone || '-'}</td>`;
+                html += `<td>${company.cod_caen || '-'}</td>`;
+                html += `<td>${formatNumber(company.cifra_de_afaceri_2024)}</td>`;
+                html += `<td>${formatNumber(company.cifra_de_afaceri_2023)}</td>`;
+                html += '</tr>';
+            });
+
+            html += '</tbody></table></div>';
+
+            // Pagination info
+            html += `<p style="text-align: center; margin-top: 15px; color: #666;">Afișare ${data.companies.length} din ${data.total.toLocaleString('ro-RO')} companii</p>`;
+
+            document.getElementById('browseResults').innerHTML = html;
+
+            // Render pagination
+            renderPagination(data);
+        }
+
+        function renderPagination(data) {
+            const totalPages = Math.ceil(data.total / data.per_page);
+            let html = '';
+
+            // Previous button
+            html += `<button ${currentPage === 1 ? 'disabled' : ''} onclick="applyFilters(${currentPage - 1})">‹ Anterior</button>`;
+
+            // Page numbers (show max 5 pages)
+            const startPage = Math.max(1, currentPage - 2);
+            const endPage = Math.min(totalPages, startPage + 4);
+
+            for (let i = startPage; i <= endPage; i++) {
+                html += `<button class="${i === currentPage ? 'active' : ''}" onclick="applyFilters(${i})">${i}</button>`;
+            }
+
+            // Next button
+            html += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="applyFilters(${currentPage + 1})">Următor ›</button>`;
+
+            document.getElementById('pagination').innerHTML = html;
+        }
+
+        function clickCompany(cif) {
+            // Set CIF in search box
+            document.getElementById('cifInput').value = cif;
+
+            // Trigger search
+            searchCompany({preventDefault: () => {}});
+
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({behavior: 'smooth'});
+        }
+
+        // Load filters on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadFilters();
+        });
     </script>
 </body>
 </html>
