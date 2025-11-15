@@ -437,24 +437,6 @@
             font-weight: 700;
         }
 
-        /* Toggle Button */
-        .toggle-years-btn {
-            display: inline-block;
-            margin-bottom: 15px;
-            padding: 10px 20px;
-            background: #0F7CC0;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .toggle-years-btn:hover {
-            background: #0a5a8f;
-        }
-
         /* Loading */
         .loading {
             text-align: center;
@@ -558,7 +540,6 @@
 
     <script>
         const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : '/api';
-        let showAllYears = false;
         let currentCompanyData = null;
 
         async function searchCompany(event) {
@@ -636,21 +617,10 @@
             html += '<canvas id="revenueChart" height="80"></canvas>';
             html += '</div>';
 
-            // Compact Table - Dynamic Years
+            // Compact Table - Last 5 Years (fixed, no toggle)
             html += '<div class="data-section">';
-            const yearsToShow = showAllYears ? data.years : data.years.slice(0, 5);
-            const totalYears = data.years.length;
-
-            html += `<div class="section-title">📊 Date Financiare ${showAllYears ? `(Toți ${totalYears} Ani)` : `(Ultimii 5 Ani)`}</div>`;
-
-            // Toggle button (only if more than 5 years)
-            if (totalYears > 5) {
-                html += `<button class="toggle-years-btn" onclick="toggleYears()">
-                    ${showAllYears ? '📅 Afișare ultimii 5 ani' : '📅 Afișare toți anii (' + totalYears + ')'}
-                </button>`;
-            }
-
-            html += createCompactTable(yearsToShow);
+            html += '<div class="section-title">📊 Date Financiare (Ultimii 5 Ani)</div>';
+            html += createCompactTable(data.years.slice(0, 5));
             html += '</div>';
 
             document.getElementById('resultsContent').innerHTML = html;
@@ -816,13 +786,6 @@
             }
 
             return { possibleClosed: false };
-        }
-
-        function toggleYears() {
-            showAllYears = !showAllYears;
-            if (currentCompanyData) {
-                displayResults(currentCompanyData);
-            }
         }
 
         function formatNumber(value, isCurrency = true) {
