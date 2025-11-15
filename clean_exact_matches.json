@@ -1,0 +1,3747 @@
+{
+  "total_unique_names": 750,
+  "single_cif_count": 748,
+  "multiple_cif_count": 2,
+  "single_cif_matches": [
+    {
+      "normalized": "ACCES METAL SRL",
+      "colectare_name": "Acces Metal SRL",
+      "cif": "24663906"
+    },
+    {
+      "normalized": "ACMAREF SRL",
+      "colectare_name": "Acmaref SRL",
+      "cif": "21435431"
+    },
+    {
+      "normalized": "ACORD EXTRA METAL SRL",
+      "colectare_name": "Acord Extra Metal SRL",
+      "cif": "38237897"
+    },
+    {
+      "normalized": "ACTIV AUTO COLECT SRL",
+      "colectare_name": "Activ Auto Colect SRL",
+      "cif": "40911833"
+    },
+    {
+      "normalized": "ACTIV VOX RECYCLING SRL",
+      "colectare_name": "Activ Vox Recycling SRL",
+      "cif": "37231438"
+    },
+    {
+      "normalized": "ACTIVE METAL SRL",
+      "colectare_name": "Active Metal SRL",
+      "cif": "28980257"
+    },
+    {
+      "normalized": "ACTUAL STEEL COLECT SRL",
+      "colectare_name": "Actual Steel Colect SRL",
+      "cif": "30263165"
+    },
+    {
+      "normalized": "AD TOTAL GREEN COLLECT SRL",
+      "colectare_name": "Ad Total Green Collect SRL",
+      "cif": "30257678"
+    },
+    {
+      "normalized": "ADCOM PREST STAR SRL",
+      "colectare_name": "Adcom Prest Star SRL",
+      "cif": "29159994"
+    },
+    {
+      "normalized": "ADCRASH SRL",
+      "colectare_name": "Adcrash SRL",
+      "cif": "25505416"
+    },
+    {
+      "normalized": "ADELCOM SRL",
+      "colectare_name": "Adelcom SRL",
+      "cif": "16583075"
+    },
+    {
+      "normalized": "ADELINA SARA SRL",
+      "colectare_name": "Adelina Sara SRL",
+      "cif": "35351853"
+    },
+    {
+      "normalized": "ADINOEL IMPEX SRL",
+      "colectare_name": "Adinoel Impex SRL",
+      "cif": "5726277"
+    },
+    {
+      "normalized": "ADIVALEX SRL",
+      "colectare_name": "Adivalex SRL",
+      "cif": "17730654"
+    },
+    {
+      "normalized": "ADIVIO COMSERV SRL",
+      "colectare_name": "Adivio Comserv SRL",
+      "cif": "8745974"
+    },
+    {
+      "normalized": "ADRIA METAL RECYCLING SRL",
+      "colectare_name": "Adria Metal Recycling SRL",
+      "cif": "26952390"
+    },
+    {
+      "normalized": "ADRIMI METAL ECO SRL",
+      "colectare_name": "Adrimi Metal Eco SRL",
+      "cif": "41441900"
+    },
+    {
+      "normalized": "ADTRUE COMPANY SRL",
+      "colectare_name": "Adtrue Company SRL",
+      "cif": "38160629"
+    },
+    {
+      "normalized": "ADY - MET RECYCLING SRL",
+      "colectare_name": "ADY - MET RECYCLING SRL",
+      "cif": "28395563"
+    },
+    {
+      "normalized": "ADY METAL NYK SRL",
+      "colectare_name": "Ady Metal Nyk SRL",
+      "cif": "27660564"
+    },
+    {
+      "normalized": "AEC MOTOR PARTS SRL",
+      "colectare_name": "Aec Motor Parts SRL",
+      "cif": "39687547"
+    },
+    {
+      "normalized": "AFRODITA NET SRL",
+      "colectare_name": "Afrodita Net SRL",
+      "cif": "16465436"
+    },
+    {
+      "normalized": "AG AUTOTEHNIC SRL",
+      "colectare_name": "SC AG AUTOTEHNIC SRL",
+      "cif": "29795215"
+    },
+    {
+      "normalized": "AGEMAR COM 2009 SRL",
+      "colectare_name": "Agemar Com 2009 SRL",
+      "cif": "25849967"
+    },
+    {
+      "normalized": "AGOREF RECICLARE SRL",
+      "colectare_name": "Agoref Reciclare SRL",
+      "cif": "35831312"
+    },
+    {
+      "normalized": "ALEDAR DEZMEMBRARI SI VANZARI AUTO SRL",
+      "colectare_name": "Aledar Dezmembrari Si Vanzari Auto SRL",
+      "cif": "38128245"
+    },
+    {
+      "normalized": "ALEX BACK METAL COLECT SRL",
+      "colectare_name": "Alex Back Metal Colect SRL",
+      "cif": "36061262"
+    },
+    {
+      "normalized": "ALEX IMPEX GRUP SRL",
+      "colectare_name": "Alex Impex Grup SRL",
+      "cif": "17101875"
+    },
+    {
+      "normalized": "ALICECOM ADINEFER SRL",
+      "colectare_name": "Alicecom Adinefer SRL",
+      "cif": "32479921"
+    },
+    {
+      "normalized": "ALIMAR TRADING BUSINESS SRL",
+      "colectare_name": "Alimar Trading Business SRL",
+      "cif": "28192488"
+    },
+    {
+      "normalized": "ALINEF RECYCLING COM SRL",
+      "colectare_name": "Alinef Recycling Com SRL",
+      "cif": "32959393"
+    },
+    {
+      "normalized": "ALIPET-DENS SRL",
+      "colectare_name": "SC ALIPET-DENS SRL",
+      "cif": "32894871"
+    },
+    {
+      "normalized": "ALMARMETAL SRL",
+      "colectare_name": "Almarmetal SRL",
+      "cif": "23737002"
+    },
+    {
+      "normalized": "ALMOSIL & MSG IMPEX SRL",
+      "colectare_name": "ALMOSIL & MSG IMPEX SRL",
+      "cif": "18112856"
+    },
+    {
+      "normalized": "ALNES RECYCLING SRL",
+      "colectare_name": "Alnes Recycling SRL",
+      "cif": "30516730"
+    },
+    {
+      "normalized": "ALVALIV SRL",
+      "colectare_name": "Alvaliv SRL",
+      "cif": "9939413"
+    },
+    {
+      "normalized": "AMET GHIULBAHAR SRL",
+      "colectare_name": "Amet Ghiulbahar SRL",
+      "cif": "26739326"
+    },
+    {
+      "normalized": "AMP DEZMEMBRARI AUTO SRL",
+      "colectare_name": "Amp Dezmembrari Auto SRL",
+      "cif": "36865267"
+    },
+    {
+      "normalized": "AMROMELI SRL",
+      "colectare_name": "Amromeli SRL",
+      "cif": "15173530"
+    },
+    {
+      "normalized": "ANADREMAT SRL",
+      "colectare_name": "Anadremat SRL",
+      "cif": "31390957"
+    },
+    {
+      "normalized": "ANASTASIA METAL SRL",
+      "colectare_name": "ANASTASIA METAL SRL",
+      "cif": "32666989"
+    },
+    {
+      "normalized": "ANCOREC SRL",
+      "colectare_name": "Ancorec SRL",
+      "cif": "22209424"
+    },
+    {
+      "normalized": "ANDMARK SRL",
+      "colectare_name": "Andmark SRL",
+      "cif": "17708282"
+    },
+    {
+      "normalized": "ANDRADA SERVEXIM SRL",
+      "colectare_name": "S.C.ANDRADA SERVEXIM S.R.L.",
+      "cif": "7196797"
+    },
+    {
+      "normalized": "ANDREEA IONELA UNIVERSAL SRL",
+      "colectare_name": "Andreea Ionela Universal SRL",
+      "cif": "25271072"
+    },
+    {
+      "normalized": "ANDREI & MIHAI TRANSPORT SRL",
+      "colectare_name": "ANDREI & MIHAI TRANSPORT S.R.L.",
+      "cif": "18976470"
+    },
+    {
+      "normalized": "ANTEIA SRL",
+      "colectare_name": "Scanteia SRL",
+      "cif": "16251980"
+    },
+    {
+      "normalized": "ARMISFER REMAT SRL",
+      "colectare_name": "SC ARMISFER REMAT SRL",
+      "cif": "29166460"
+    },
+    {
+      "normalized": "ARWAY WEST SRL",
+      "colectare_name": "Arway West SRL",
+      "cif": "15076694"
+    },
+    {
+      "normalized": "ASH BUISNESS MANAGEMENT SRL",
+      "colectare_name": "Ash Buisness Management SRL",
+      "cif": "27176530"
+    },
+    {
+      "normalized": "ASSECO STEEL GROUP SRL",
+      "colectare_name": "Asseco Steel Group SRL",
+      "cif": "18722684"
+    },
+    {
+      "normalized": "AUDILINE DEZAUTO SRL",
+      "colectare_name": "Audiline Dezauto SRL",
+      "cif": "38533493"
+    },
+    {
+      "normalized": "AUTO COS MIR SRL",
+      "colectare_name": "Auto Cos Mir SRL",
+      "cif": "23615102"
+    },
+    {
+      "normalized": "AUTO DENIS SRL",
+      "colectare_name": "Auto Denis SRL",
+      "cif": "22093060"
+    },
+    {
+      "normalized": "AUTO DEZ CAM SRL",
+      "colectare_name": "Auto Dez Cam SRL",
+      "cif": "27740337"
+    },
+    {
+      "normalized": "AUTO HOUSE FRON SRL",
+      "colectare_name": "Auto House Fron SRL",
+      "cif": "39649225"
+    },
+    {
+      "normalized": "AUTO IRELAND SRL",
+      "colectare_name": "Auto Ireland SRL",
+      "cif": "32731653"
+    },
+    {
+      "normalized": "AUTO LINE CAR PARTS SRL",
+      "colectare_name": "Auto Line Car Parts SRL",
+      "cif": "29441994"
+    },
+    {
+      "normalized": "AUTO LINES GMG SRL",
+      "colectare_name": "Auto Lines Gmg SRL",
+      "cif": "27707160"
+    },
+    {
+      "normalized": "AUTO MOMENT SRL",
+      "colectare_name": "Auto Moment SRL",
+      "cif": "31695188"
+    },
+    {
+      "normalized": "AUTO NET TEAM SRL",
+      "colectare_name": "SC AUTO NET TEAM SRL",
+      "cif": "28879652"
+    },
+    {
+      "normalized": "AUTO RIM CARS SRL",
+      "colectare_name": "Auto Rim Cars SRL",
+      "cif": "27895846"
+    },
+    {
+      "normalized": "AUTO ROUTE SRL",
+      "colectare_name": "Auto Route SRL",
+      "cif": "23846107"
+    },
+    {
+      "normalized": "AUTO SERVICE OSTROV SRL",
+      "colectare_name": "Auto Service Ostrov SRL",
+      "cif": "21072603"
+    },
+    {
+      "normalized": "AUTO SERVO STAR SRL",
+      "colectare_name": "Auto Servo Star SRL",
+      "cif": "26695467"
+    },
+    {
+      "normalized": "AUTO VALCIU SRL",
+      "colectare_name": "Auto Valciu SRL",
+      "cif": "35716496"
+    },
+    {
+      "normalized": "AUTO VIP SRL",
+      "colectare_name": "Auto Vip SRL",
+      "cif": "18294413"
+    },
+    {
+      "normalized": "AUTO-RECYCLING SRL",
+      "colectare_name": "Auto-Recycling SRL",
+      "cif": "27880128"
+    },
+    {
+      "normalized": "AUTOBETA SRL",
+      "colectare_name": "Autobeta SRL",
+      "cif": "33972773"
+    },
+    {
+      "normalized": "AUTOCAM REST SRL",
+      "colectare_name": "Autocam Rest SRL",
+      "cif": "29141920"
+    },
+    {
+      "normalized": "AUTOCASSE MOCIRA SRL",
+      "colectare_name": "Autocasse Mocira SRL",
+      "cif": "31589802"
+    },
+    {
+      "normalized": "AUTOCRIS DEZMEMBRARI SRL",
+      "colectare_name": "Autocris Dezmembrari SRL",
+      "cif": "39264180"
+    },
+    {
+      "normalized": "AUTOHAUS D & G SRL",
+      "colectare_name": "SC AUTOHAUS D & G SRL",
+      "cif": "29550037"
+    },
+    {
+      "normalized": "AUTOMATIA ATEGO GRUP SRL",
+      "colectare_name": "Automatia Atego Grup SRL",
+      "cif": "32692520"
+    },
+    {
+      "normalized": "AUTOPARTS MOTORS G&B SRL",
+      "colectare_name": "Autoparts Motors G&B SRL",
+      "cif": "36432530"
+    },
+    {
+      "normalized": "AUTOPARTS SRL",
+      "colectare_name": "SC AUTOPARTS SRL",
+      "cif": "24254006"
+    },
+    {
+      "normalized": "AUTOPARTSASN SRL",
+      "colectare_name": "Autoparts Asn SRL",
+      "cif": "41872228"
+    },
+    {
+      "normalized": "AUTOPSR VENICOSADELS SRL",
+      "colectare_name": "Autopsr Venicos Adels SRL",
+      "cif": "37092690"
+    },
+    {
+      "normalized": "AUTOWEST WEM SRL",
+      "colectare_name": "SC AUTOWEST WEM SRL",
+      "cif": "26387769"
+    },
+    {
+      "normalized": "AXE METALORIN SRL",
+      "colectare_name": "Axe Metalorin SRL",
+      "cif": "27020042"
+    },
+    {
+      "normalized": "AXUM TRADING SRL",
+      "colectare_name": "SC AXUM TRADING SRL",
+      "cif": "19491111"
+    },
+    {
+      "normalized": "BAD RND NIC SRL",
+      "colectare_name": "Bad Rnd Nic SRL",
+      "cif": "38974058"
+    },
+    {
+      "normalized": "BAIBEC COLECT SRL",
+      "colectare_name": "Baibec Colect SRL",
+      "cif": "31373980"
+    },
+    {
+      "normalized": "BARYL VAYPER SRL",
+      "colectare_name": "SC BARYL VAYPER SRL",
+      "cif": "32797780"
+    },
+    {
+      "normalized": "BAV SRL",
+      "colectare_name": "SC BAV SRL",
+      "cif": "18499826"
+    },
+    {
+      "normalized": "BEN MAT SRL",
+      "colectare_name": "Ben Mat SRL",
+      "cif": "12558494"
+    },
+    {
+      "normalized": "BENZ AUTO WORLD SRL",
+      "colectare_name": "Benz Auto World SRL",
+      "cif": "35985818"
+    },
+    {
+      "normalized": "BEST GRUP SERVICII SRL",
+      "colectare_name": "Best Grup Servicii SRL",
+      "cif": "23890463"
+    },
+    {
+      "normalized": "BIANPAL REMAT SRL",
+      "colectare_name": "SC BIANPAL REMAT SRL",
+      "cif": "30713790"
+    },
+    {
+      "normalized": "BIODAYS SRL",
+      "colectare_name": "Biodays SRL",
+      "cif": "35936661"
+    },
+    {
+      "normalized": "BIOMAR SRL",
+      "colectare_name": "Biomar SRL",
+      "cif": "23189066"
+    },
+    {
+      "normalized": "BIONEF CARTEL SRL",
+      "colectare_name": "Bionef Cartel SRL",
+      "cif": "26655608"
+    },
+    {
+      "normalized": "BLACK SEA RAP SRL",
+      "colectare_name": "Black Sea Scrap SRL",
+      "cif": "26366383"
+    },
+    {
+      "normalized": "BM TOP RECYCLING SRL",
+      "colectare_name": "Bm Top Recycling SRL",
+      "cif": "24268737"
+    },
+    {
+      "normalized": "BODAMAR SRL",
+      "colectare_name": "Bodamar SRL",
+      "cif": "23278791"
+    },
+    {
+      "normalized": "BOLD MAN AUTO SRL",
+      "colectare_name": "Bold Man Auto SRL",
+      "cif": "38975355"
+    },
+    {
+      "normalized": "BRATU METAL SRL",
+      "colectare_name": "Bratu Metal SRL",
+      "cif": "30503926"
+    },
+    {
+      "normalized": "BRC GRUP HOLDING SRL",
+      "colectare_name": "B.R.C Grup Holding SRL",
+      "cif": "17146966"
+    },
+    {
+      "normalized": "BRODALIN SRL",
+      "colectare_name": "Brodalin SRL",
+      "cif": "18065118"
+    },
+    {
+      "normalized": "BUCOVINA VERDE SRL",
+      "colectare_name": "Bucovina Verde SRL",
+      "cif": "28353975"
+    },
+    {
+      "normalized": "BURSA METAL SRL",
+      "colectare_name": "BURSA METAL SRL",
+      "cif": "26970036"
+    },
+    {
+      "normalized": "BURSA RECYCLING SRL",
+      "colectare_name": "Bursa Recycling SRL",
+      "cif": "32928079"
+    },
+    {
+      "normalized": "BUSINESS FASHION CONSULTING SRL",
+      "colectare_name": "Business Fashion Consulting SRL",
+      "cif": "26961747"
+    },
+    {
+      "normalized": "BVS METAL CONSTRUCT SRL",
+      "colectare_name": "Bvs Metal Construct SRL",
+      "cif": "30527143"
+    },
+    {
+      "normalized": "BYC METAL SERV SRL",
+      "colectare_name": "SC BYC METAL SERV SRL",
+      "cif": "26866621"
+    },
+    {
+      "normalized": "CAR CASH UK SRL",
+      "colectare_name": "Car Cash UK SRL",
+      "cif": "36787681"
+    },
+    {
+      "normalized": "CAR RIP SRL",
+      "colectare_name": "Car Rip SRL",
+      "cif": "33133259"
+    },
+    {
+      "normalized": "CARADAA SRL",
+      "colectare_name": "Caradasca SRL",
+      "cif": "25462390"
+    },
+    {
+      "normalized": "CC OLD IRON SRL",
+      "colectare_name": "Cc Old Iron SRL",
+      "cif": "32521740"
+    },
+    {
+      "normalized": "CEDI ECOLOGIC SRL",
+      "colectare_name": "Cedi Ecologic SRL",
+      "cif": "25810177"
+    },
+    {
+      "normalized": "CERAMAR ALBA SRL",
+      "colectare_name": "Ceramar Alba SRL",
+      "cif": "22081898"
+    },
+    {
+      "normalized": "CEZAR AUTO CENTER SRL",
+      "colectare_name": "Cezar Auto Center SRL",
+      "cif": "36207652"
+    },
+    {
+      "normalized": "CEZI STAR 2014 SRL",
+      "colectare_name": "SC CEZI STAR 2014 SRL",
+      "cif": "33406731"
+    },
+    {
+      "normalized": "CHOP SHOP SRL",
+      "colectare_name": "Chop Shop SRL",
+      "cif": "39264083"
+    },
+    {
+      "normalized": "CICHI AUTO PARTS SRL",
+      "colectare_name": "Cichi Auto Parts SRL",
+      "cif": "34229409"
+    },
+    {
+      "normalized": "CIECO RECYCLE SRL",
+      "colectare_name": "Cieco Recycle SRL",
+      "cif": "29785270"
+    },
+    {
+      "normalized": "CIOBIDEZ 86 SRL",
+      "colectare_name": "Ciobidez 86 SRL",
+      "cif": "35243835"
+    },
+    {
+      "normalized": "CIPDEZ SRL",
+      "colectare_name": "Cipdez SRL",
+      "cif": "32804666"
+    },
+    {
+      "normalized": "CIUVALI BUSINESS SRL",
+      "colectare_name": "CIUVALI BUSINESS SRL",
+      "cif": "28143442"
+    },
+    {
+      "normalized": "CLAUNIC AUTO DEZMEMBRARI SRL",
+      "colectare_name": "Claunic Auto Dezmembrari SRL",
+      "cif": "36452830"
+    },
+    {
+      "normalized": "CLEAN COLLECTING SRL",
+      "colectare_name": "Clean Collecting SRL",
+      "cif": "28295564"
+    },
+    {
+      "normalized": "CLEAN FOR THE FUTURE SRL",
+      "colectare_name": "Clean For The Future SRL",
+      "cif": "27645980"
+    },
+    {
+      "normalized": "CLEAN ROTCC SRL",
+      "colectare_name": "Clean Rotcc SRL",
+      "cif": "28668590"
+    },
+    {
+      "normalized": "CLEANMAN SRL",
+      "colectare_name": "Cleanman SRL",
+      "cif": "16984905"
+    },
+    {
+      "normalized": "CLEMY EUROMETAL SRL",
+      "colectare_name": "Clemy Eurometal SRL",
+      "cif": "16153027"
+    },
+    {
+      "normalized": "COBALT SRL",
+      "colectare_name": "Cobalt SRL",
+      "cif": "4082666"
+    },
+    {
+      "normalized": "COCRISAUTODEZ SRL",
+      "colectare_name": "Cocris Autodez SRL",
+      "cif": "33979160"
+    },
+    {
+      "normalized": "COLDESPER SRL",
+      "colectare_name": "Coldesper SRL",
+      "cif": "33634993"
+    },
+    {
+      "normalized": "COLECTION SRL",
+      "colectare_name": "Colection SRL",
+      "cif": "16377024"
+    },
+    {
+      "normalized": "COLLECT METAL TRADE IND SRL",
+      "colectare_name": "Collect Metal Trade Ind SRL",
+      "cif": "31333188"
+    },
+    {
+      "normalized": "COLMAT SRL",
+      "colectare_name": "COLMAT SRL",
+      "cif": "25369063"
+    },
+    {
+      "normalized": "COLOMBO BUSINESS SRL",
+      "colectare_name": "Colombo Business SRL",
+      "cif": "33552893"
+    },
+    {
+      "normalized": "COMEX GRUP COMPANY SRL",
+      "colectare_name": "Comex Grup Company SRL",
+      "cif": "14834740"
+    },
+    {
+      "normalized": "COMOBOGHY SRL",
+      "colectare_name": "Comoboghy SRL",
+      "cif": "17580573"
+    },
+    {
+      "normalized": "COMPANY LAS VEGAS SRL",
+      "colectare_name": "SC COMPANY LAS VEGAS SRL",
+      "cif": "2162947"
+    },
+    {
+      "normalized": "COMPETENCE RECYCLING CENTER SRL",
+      "colectare_name": "Competence Recycling Center SRL",
+      "cif": "32851960"
+    },
+    {
+      "normalized": "COMREMAT SRL",
+      "colectare_name": "COMREMAT SRL",
+      "cif": "743196"
+    },
+    {
+      "normalized": "CONCRET TRADING SRL",
+      "colectare_name": "Concret Trading SRL",
+      "cif": "24103623"
+    },
+    {
+      "normalized": "CONSPRODALI SRL",
+      "colectare_name": "Consprodali SRL",
+      "cif": "4026801"
+    },
+    {
+      "normalized": "CONSTRUCT MATERIAL GRUP SRL",
+      "colectare_name": "Construct Material Grup SRL",
+      "cif": "7305835"
+    },
+    {
+      "normalized": "CONTINENT IMPEX SRL",
+      "colectare_name": "Continent Impex SRL",
+      "cif": "2900033"
+    },
+    {
+      "normalized": "COR PIT COM SRL",
+      "colectare_name": "Cor Pit Com SRL",
+      "cif": "31253674"
+    },
+    {
+      "normalized": "CORREO ALLORE SRL",
+      "colectare_name": "Correo Allore SRL",
+      "cif": "37578632"
+    },
+    {
+      "normalized": "COSMADA ANCOMA SRL",
+      "colectare_name": "Cosmada Ancoma SRL",
+      "cif": "40026735"
+    },
+    {
+      "normalized": "COSMOPLAST ONE SRL",
+      "colectare_name": "Cosmoplast One SRL",
+      "cif": "27884189"
+    },
+    {
+      "normalized": "COSTEL FER SRL",
+      "colectare_name": "Costel Fer SRL",
+      "cif": "26009771"
+    },
+    {
+      "normalized": "CRICOV SRL",
+      "colectare_name": "Cricov SRL",
+      "cif": "13726383"
+    },
+    {
+      "normalized": "CRINATURSERV SRL",
+      "colectare_name": "Crinaturserv SRL",
+      "cif": "35701649"
+    },
+    {
+      "normalized": "CRIROB SALUBRIS SRL",
+      "colectare_name": "SC CRIROB SALUBRIS SRL",
+      "cif": "28608351"
+    },
+    {
+      "normalized": "CRIS METAL INVEST SRL",
+      "colectare_name": "SC CRIS METAL INVEST SRL",
+      "cif": "30670282"
+    },
+    {
+      "normalized": "CRISNED COLECT IMPEX SRL",
+      "colectare_name": "Crisned Colect Impex SRL",
+      "cif": "23657094"
+    },
+    {
+      "normalized": "CRISPO COM SRL",
+      "colectare_name": "Crispo Com SRL",
+      "cif": "3591491"
+    },
+    {
+      "normalized": "CRISTICRIN COMSERV SRL",
+      "colectare_name": "Cristicrin Comserv SRL",
+      "cif": "3094093"
+    },
+    {
+      "normalized": "CSA FOR YOU SRL",
+      "colectare_name": "Csa For You SRL",
+      "cif": "35351748"
+    },
+    {
+      "normalized": "CVD COLECT SRL",
+      "colectare_name": "Cvd Colect SRL",
+      "cif": "24738596"
+    },
+    {
+      "normalized": "CXA ECO PLAST CLEAR SRL",
+      "colectare_name": "Cxa Eco Plast Clear SRL",
+      "cif": "30461901"
+    },
+    {
+      "normalized": "DACS PRESTAUTO SRL",
+      "colectare_name": "Dacs Prestauto SRL",
+      "cif": "27935088"
+    },
+    {
+      "normalized": "DACSIF AUTO SRL",
+      "colectare_name": "Dacsif Auto SRL",
+      "cif": "34187648"
+    },
+    {
+      "normalized": "DADABO SRL",
+      "colectare_name": "Dadabo SRL",
+      "cif": "21719972"
+    },
+    {
+      "normalized": "DAF IMPEX METAL SRL",
+      "colectare_name": "Daf Impex Metal SRL",
+      "cif": "37143735"
+    },
+    {
+      "normalized": "DALLOSAUTO MARKET SRL",
+      "colectare_name": "Dallosauto Market SRL",
+      "cif": "33201949"
+    },
+    {
+      "normalized": "DALMAR POLARIS SRL",
+      "colectare_name": "Dalmar Polaris SRL",
+      "cif": "25360960"
+    },
+    {
+      "normalized": "DAMIRO ACTIV COMPANY SRL",
+      "colectare_name": "Damiro Activ Company SRL",
+      "cif": "30977601"
+    },
+    {
+      "normalized": "DANIEL METAL SRL",
+      "colectare_name": "SC DANIEL METAL SRL",
+      "cif": "27805860"
+    },
+    {
+      "normalized": "DANINICU REDI SRL",
+      "colectare_name": "SC DANINICU REDI SRL",
+      "cif": "26472643"
+    },
+    {
+      "normalized": "DANON RECICLARE SRL",
+      "colectare_name": "Danon Reciclare SRL",
+      "cif": "17944615"
+    },
+    {
+      "normalized": "DANTEX STAR SRL",
+      "colectare_name": "Dantex Star SRL",
+      "cif": "15418401"
+    },
+    {
+      "normalized": "DARY PLASTICS SRL",
+      "colectare_name": "Dary Plastics SRL",
+      "cif": "24492652"
+    },
+    {
+      "normalized": "DATA ARPLAST SRL",
+      "colectare_name": "Data Arplast SRL",
+      "cif": "27141001"
+    },
+    {
+      "normalized": "DEBORA PRIM SRL",
+      "colectare_name": "Debora Prim SRL",
+      "cif": "15581580"
+    },
+    {
+      "normalized": "DECINERA SRL",
+      "colectare_name": "Decinera SRL",
+      "cif": "18589279"
+    },
+    {
+      "normalized": "DEEA CLEANING SRL",
+      "colectare_name": "SC DEEA CLEANING SRL",
+      "cif": "25970461"
+    },
+    {
+      "normalized": "DEMO CONST SRL",
+      "colectare_name": "SC DEMO CONST SRL",
+      "cif": "15908250"
+    },
+    {
+      "normalized": "DENIS TRADING BUSINESS SRL",
+      "colectare_name": "DENIS TRADING BUSINESS S.R.L.",
+      "cif": "30081988"
+    },
+    {
+      "normalized": "DENISFERO SRL",
+      "colectare_name": "Denisfero SRL",
+      "cif": "26620260"
+    },
+    {
+      "normalized": "DEWALT SRL",
+      "colectare_name": "Dewalt SRL",
+      "cif": "17251953"
+    },
+    {
+      "normalized": "DEZ CARSAUTO SRL",
+      "colectare_name": "Dez Cars Auto SRL",
+      "cif": "32776450"
+    },
+    {
+      "normalized": "DEZALEX AUTOSERV SRL",
+      "colectare_name": "Dezalex Autoserv SRL",
+      "cif": "29914316"
+    },
+    {
+      "normalized": "DEZMEMBRARI AUTO 2005 SRL",
+      "colectare_name": "SC DEZMEMBRARI AUTO 2005 SRL",
+      "cif": "17942231"
+    },
+    {
+      "normalized": "DEZMEMBRARI AUTO BENY SRL",
+      "colectare_name": "Dezmembrari Auto Beny SRL",
+      "cif": "37633710"
+    },
+    {
+      "normalized": "DEZMEMBRARI CAR PARTS SRL",
+      "colectare_name": "Dezmembrari Car Parts SRL",
+      "cif": "36935036"
+    },
+    {
+      "normalized": "DEZMEMBRARI ECONOMYCARS SRL",
+      "colectare_name": "Dezmembrari Economycars SRL",
+      "cif": "32014020"
+    },
+    {
+      "normalized": "DEZMEMBRARI GRUP SRL",
+      "colectare_name": "Dezmembrari Grup SRL",
+      "cif": "32396036"
+    },
+    {
+      "normalized": "DEZMEMBRĂRI DEEA SRL",
+      "colectare_name": "Dezmembrări Deea SRL",
+      "cif": "31395865"
+    },
+    {
+      "normalized": "DEZPIESE 93 SRL",
+      "colectare_name": "Dezpiese 93 SRL",
+      "cif": "38883065"
+    },
+    {
+      "normalized": "DEZTM SRL",
+      "colectare_name": "Deztm SRL",
+      "cif": "30659381"
+    },
+    {
+      "normalized": "DIKDON NUTRITION SRL",
+      "colectare_name": "Dikdon Nutrition SRL",
+      "cif": "27949849"
+    },
+    {
+      "normalized": "DINAMIC CARTING SRL",
+      "colectare_name": "Dinamic Carting SRL",
+      "cif": "21012709"
+    },
+    {
+      "normalized": "DIP GROUP RECYCLING SRL",
+      "colectare_name": "Dip Group Recycling SRL",
+      "cif": "29252472"
+    },
+    {
+      "normalized": "DIRECTIA PUBLICA MOTRU SA",
+      "colectare_name": "Directia Publica Motru SA",
+      "cif": "27419583"
+    },
+    {
+      "normalized": "DISI SRL",
+      "colectare_name": "Disi SRL",
+      "cif": "12467574"
+    },
+    {
+      "normalized": "DIURPANEUS SRL",
+      "colectare_name": "Diurpaneus SRL",
+      "cif": "16460498"
+    },
+    {
+      "normalized": "DIVERS RECYCLING EXPERT SRL",
+      "colectare_name": "Divers Recycling Expert SRL",
+      "cif": "29237847"
+    },
+    {
+      "normalized": "DOIODO COMEX SRL",
+      "colectare_name": "Doiodo Comex SRL",
+      "cif": "3829691"
+    },
+    {
+      "normalized": "DOMINUS INDUSTRIES SRL",
+      "colectare_name": "Dominus Industries SRL",
+      "cif": "27492096"
+    },
+    {
+      "normalized": "DOR COLECT RRR SRL",
+      "colectare_name": "Dor Colect Rrr SRL",
+      "cif": "16582185"
+    },
+    {
+      "normalized": "DORISAN METAL COM SRL",
+      "colectare_name": "Dorisan Metal Com SRL",
+      "cif": "28156833"
+    },
+    {
+      "normalized": "DORIXLAND SRL",
+      "colectare_name": "Dorixland SRL",
+      "cif": "17164172"
+    },
+    {
+      "normalized": "DORSEB AUTO SRL",
+      "colectare_name": "Dorseb Auto SRL",
+      "cif": "40663347"
+    },
+    {
+      "normalized": "DROPHSYSTEM SRL",
+      "colectare_name": "Drophsystem SRL",
+      "cif": "28463323"
+    },
+    {
+      "normalized": "DUCU PREST ANDRATONIA SRL",
+      "colectare_name": "SC DUCU PREST ANDRATONIA SRL",
+      "cif": "30978712"
+    },
+    {
+      "normalized": "DUCU PREST SRL",
+      "colectare_name": "Ducu Prest SRL",
+      "cif": "13756066"
+    },
+    {
+      "normalized": "DUMASA 2009 SRL",
+      "colectare_name": "Dumasa 2009 SRL",
+      "cif": "25983526"
+    },
+    {
+      "normalized": "DUMIROM SRL",
+      "colectare_name": "SC DUMIROM SRL",
+      "cif": "21195045"
+    },
+    {
+      "normalized": "EASYRAP AUTO SRL",
+      "colectare_name": "Easyscrap Auto SRL",
+      "cif": "40754399"
+    },
+    {
+      "normalized": "ECO 5 ARDEAL SRL",
+      "colectare_name": "Eco 5 Ardeal SRL",
+      "cif": "27234526"
+    },
+    {
+      "normalized": "ECO BURN SRL",
+      "colectare_name": "Eco Burn SRL",
+      "cif": "24333770"
+    },
+    {
+      "normalized": "ECO CIVICA CENTER SRL",
+      "colectare_name": "Eco Civica Center SRL",
+      "cif": "39170132"
+    },
+    {
+      "normalized": "ECO ELECTRONIC COLECT SRL",
+      "colectare_name": "Eco Electronic Colect SRL",
+      "cif": "40240720"
+    },
+    {
+      "normalized": "ECO EURO OIL SRL",
+      "colectare_name": "Eco Euro Oil SRL",
+      "cif": "31260833"
+    },
+    {
+      "normalized": "ECO GREEN TRADE PLAST SRL",
+      "colectare_name": "Eco Green Trade Plast SRL",
+      "cif": "30671792"
+    },
+    {
+      "normalized": "ECO GREEN VILLE SRL",
+      "colectare_name": "Eco Green Ville SRL",
+      "cif": "33712005"
+    },
+    {
+      "normalized": "ECO LEVEL SRL",
+      "colectare_name": "Eco Level SRL",
+      "cif": "35817580"
+    },
+    {
+      "normalized": "ECO MARGINIME SA",
+      "colectare_name": "Eco Marginime SA",
+      "cif": "26403996"
+    },
+    {
+      "normalized": "ECO METAL COLECT SRL",
+      "colectare_name": "Eco Metal Colect SRL",
+      "cif": "29429095"
+    },
+    {
+      "normalized": "ECO MONTAN APUSENI SRL",
+      "colectare_name": "Eco Montan Apuseni SRL",
+      "cif": "27267116"
+    },
+    {
+      "normalized": "ECO NATURE SRL",
+      "colectare_name": "Eco Nature SRL",
+      "cif": "26915236"
+    },
+    {
+      "normalized": "ECO PLUS RECYCLING SRL",
+      "colectare_name": "Eco Plus Recycling SRL",
+      "cif": "33752506"
+    },
+    {
+      "normalized": "ECO REMAT SRL",
+      "colectare_name": "Eco Remat SRL",
+      "cif": "21121404"
+    },
+    {
+      "normalized": "ECO SERV PROFESIONAL SRL",
+      "colectare_name": "Eco Serv Profesional SRL",
+      "cif": "30850127"
+    },
+    {
+      "normalized": "ECO SMART LIFE SRL",
+      "colectare_name": "Eco Smart Life SRL",
+      "cif": "27646110"
+    },
+    {
+      "normalized": "ECO STAR REMAT SRL",
+      "colectare_name": "Eco Star Remat SRL",
+      "cif": "28959611"
+    },
+    {
+      "normalized": "ECO SUD SA",
+      "colectare_name": "Eco Sud SA",
+      "cif": "13838255"
+    },
+    {
+      "normalized": "ECO VALEA MUNTELUI SRL",
+      "colectare_name": "SC ECO VALEA MUNTELUI SRL",
+      "cif": "27273126"
+    },
+    {
+      "normalized": "ECO VALMACS SRL",
+      "colectare_name": "Eco Valmacs SRL",
+      "cif": "16957650"
+    },
+    {
+      "normalized": "ECO WORLD PRODUCTION SRL",
+      "colectare_name": "Eco World Production SRL",
+      "cif": "27253978"
+    },
+    {
+      "normalized": "ECOADRIANIS SRL",
+      "colectare_name": "ECOADRIANIS SRL",
+      "cif": "26152630"
+    },
+    {
+      "normalized": "ECOCENTER PREST SRL",
+      "colectare_name": "Ecocenter Prest SRL",
+      "cif": "28567790"
+    },
+    {
+      "normalized": "ECOKAR RECYCLING SRL",
+      "colectare_name": "Ecokar Recycling SRL",
+      "cif": "32691559"
+    },
+    {
+      "normalized": "ECOLOGIC ACTIV DM SRL",
+      "colectare_name": "Ecologic Activ Dm SRL",
+      "cif": "23061791"
+    },
+    {
+      "normalized": "ECOLOGIC COLECT SRL",
+      "colectare_name": "SC ECOLOGIC COLECT SRL",
+      "cif": "29788145"
+    },
+    {
+      "normalized": "ECOLOGIC LIVIU SRL",
+      "colectare_name": "Ecologic Liviu SRL",
+      "cif": "28263384"
+    },
+    {
+      "normalized": "ECONET AUTO SRL",
+      "colectare_name": "Econet Auto SRL",
+      "cif": "21178940"
+    },
+    {
+      "normalized": "ECOPAC COLECTARE RECICLARE SRL",
+      "colectare_name": "ecopac colectare reciclare srl",
+      "cif": "35354418"
+    },
+    {
+      "normalized": "ECOPLAST INDUSTRIES GROUP SRL",
+      "colectare_name": "Ecoplast Industries Group SRL",
+      "cif": "16464015"
+    },
+    {
+      "normalized": "ECOPUF RECYCLE SRL",
+      "colectare_name": "Ecopuf Recycle SRL",
+      "cif": "29105862"
+    },
+    {
+      "normalized": "ECOREC RECYCLING SRL",
+      "colectare_name": "Ecorec Recycling SRL",
+      "cif": "22952746"
+    },
+    {
+      "normalized": "ECOROM RECYCLING SRL",
+      "colectare_name": "Ecorom Recycling SRL",
+      "cif": "14320471"
+    },
+    {
+      "normalized": "ECOROMAUTO SRL",
+      "colectare_name": "Ecoromauto SRL",
+      "cif": "39503628"
+    },
+    {
+      "normalized": "ECOSALUBRIZARE PREST SRL",
+      "colectare_name": "Ecosalubrizare Prest SRL",
+      "cif": "28147657"
+    },
+    {
+      "normalized": "ECOSERV CITY SRL",
+      "colectare_name": "Ecoserv City SRL",
+      "cif": "24457035"
+    },
+    {
+      "normalized": "ECOSTAR RECYCLING SRL",
+      "colectare_name": "ECOSTAR RECYCLING S.R.L.",
+      "cif": "22347141"
+    },
+    {
+      "normalized": "ECOTECH FPC SRL",
+      "colectare_name": "Ecotech Fpc SRL",
+      "cif": "33544610"
+    },
+    {
+      "normalized": "ECOTRANS DANARA SRL",
+      "colectare_name": "Ecotrans Danara SRL",
+      "cif": "33669215"
+    },
+    {
+      "normalized": "ECOVIRA RECICLING SRL",
+      "colectare_name": "Ecovira Recicling SRL",
+      "cif": "28154620"
+    },
+    {
+      "normalized": "ECOVOL SA",
+      "colectare_name": "Ecovol SA",
+      "cif": "21551614"
+    },
+    {
+      "normalized": "ECOWASTEROM SRL",
+      "colectare_name": "Ecowasterom SRL",
+      "cif": "32175337"
+    },
+    {
+      "normalized": "EDI STAR TRADE SRL",
+      "colectare_name": "SC EDI STAR TRADE SRL",
+      "cif": "26092091"
+    },
+    {
+      "normalized": "EDIL INDUSTRY SRL",
+      "colectare_name": "Edil Industry SRL",
+      "cif": "17125599"
+    },
+    {
+      "normalized": "EDIL MAR NORD EST SRL",
+      "colectare_name": "Edil Mar Nord Est SRL",
+      "cif": "24561027"
+    },
+    {
+      "normalized": "EDIL URBAN SERV SA",
+      "colectare_name": "Edil Urban Serv SA",
+      "cif": "24454519"
+    },
+    {
+      "normalized": "EDIMAR COLECT SRL",
+      "colectare_name": "SC EDIMAR COLECT SRL",
+      "cif": "29491640"
+    },
+    {
+      "normalized": "EDIMAR METAL SRL",
+      "colectare_name": "Edimar Metal SRL",
+      "cif": "6119907"
+    },
+    {
+      "normalized": "EDRIC AUTO SRL",
+      "colectare_name": "Edric Auto SRL",
+      "cif": "27996166"
+    },
+    {
+      "normalized": "EDUALAUTOPRO SRL",
+      "colectare_name": "Edualautopro SRL",
+      "cif": "36213638"
+    },
+    {
+      "normalized": "EDY METAL SRL",
+      "colectare_name": "Edy Metal SRL",
+      "cif": "16677501"
+    },
+    {
+      "normalized": "ELARIN ANIFLOR SRL",
+      "colectare_name": "Elarin Aniflor SRL",
+      "cif": "27502815"
+    },
+    {
+      "normalized": "ELECTRONICS RECYCLING TRANSILVANIA SRL",
+      "colectare_name": "SC ELECTRONICS RECYCLING TRANSILVANIA SRL",
+      "cif": "17607520"
+    },
+    {
+      "normalized": "ELENDAN COM SRL",
+      "colectare_name": "Elendan Com SRL",
+      "cif": "6104868"
+    },
+    {
+      "normalized": "ELEVEN GREEN SRL",
+      "colectare_name": "Eleven Green SRL",
+      "cif": "36935303"
+    },
+    {
+      "normalized": "ELGRI IMPEX SRL",
+      "colectare_name": "Elgri Impex SRL",
+      "cif": "4146263"
+    },
+    {
+      "normalized": "ELIASRL",
+      "colectare_name": "Eliasc SRL",
+      "cif": "6868652"
+    },
+    {
+      "normalized": "ELIDAC AUTO PREST SRL-D",
+      "colectare_name": "Elidac Auto Prest SRL-D",
+      "cif": "33744864"
+    },
+    {
+      "normalized": "ELITECO RECYCLING SRL",
+      "colectare_name": "Eliteco Recycling SRL",
+      "cif": "32384767"
+    },
+    {
+      "normalized": "ELITTE MET INDUSTRIAL SRL",
+      "colectare_name": "Elitte Met Industrial SRL",
+      "cif": "26102306"
+    },
+    {
+      "normalized": "ELIX COLECT SRL",
+      "colectare_name": "Elix Colect SRL",
+      "cif": "41618107"
+    },
+    {
+      "normalized": "EMANOCRIS RECOM SRL",
+      "colectare_name": "Emanocris Recom SRL",
+      "cif": "32436815"
+    },
+    {
+      "normalized": "EMICOS PEC SRL",
+      "colectare_name": "Emicos Pec SRL",
+      "cif": "32995175"
+    },
+    {
+      "normalized": "ENRIMAR PLAY SRL",
+      "colectare_name": "Enrimar Play SRL",
+      "cif": "32871541"
+    },
+    {
+      "normalized": "ERINA COMPANY SRL",
+      "colectare_name": "ERINA COMPANY SRL",
+      "cif": "10778930"
+    },
+    {
+      "normalized": "EURO ALIAJ IMPEX SRL",
+      "colectare_name": "SC EURO ALIAJ IMPEX SRL",
+      "cif": "14816069"
+    },
+    {
+      "normalized": "EURO IAN UTIL SRL",
+      "colectare_name": "Euro Ian Util SRL",
+      "cif": "37017087"
+    },
+    {
+      "normalized": "EURO LUCY METAL SRL",
+      "colectare_name": "Euro Lucy Metal SRL",
+      "cif": "31010632"
+    },
+    {
+      "normalized": "EURO METAL TRADING SRL",
+      "colectare_name": "Euro Metal Trading SRL",
+      "cif": "21480793"
+    },
+    {
+      "normalized": "EUROCOMSIB SRL",
+      "colectare_name": "Eurocomsib SRL",
+      "cif": "26715386"
+    },
+    {
+      "normalized": "EUROFER INDUSTRY SRL",
+      "colectare_name": "Eurofer Industry SRL",
+      "cif": "23634406"
+    },
+    {
+      "normalized": "EUROPLASTIC INDUSTRY SRL",
+      "colectare_name": "Europlastic Industry SRL",
+      "cif": "21620773"
+    },
+    {
+      "normalized": "EURORAP COMPANY SRL",
+      "colectare_name": "Euroscrap Company SRL",
+      "cif": "26588029"
+    },
+    {
+      "normalized": "EUROSEPT SRL",
+      "colectare_name": "Eurosept SRL",
+      "cif": "16360049"
+    },
+    {
+      "normalized": "EXOFIER SRL",
+      "colectare_name": "Exofier SRL",
+      "cif": "31489072"
+    },
+    {
+      "normalized": "EXPERT BROKER BUSINESS SRL",
+      "colectare_name": "Expert Broker Business SRL",
+      "cif": "37640963"
+    },
+    {
+      "normalized": "EXTRA DARIA IMPEX SRL",
+      "colectare_name": "EXTRA DARIA IMPEX SRL",
+      "cif": "33324437"
+    },
+    {
+      "normalized": "EXXOTECH SRL",
+      "colectare_name": "Exxotech SRL",
+      "cif": "29452667"
+    },
+    {
+      "normalized": "FALA PRODCOM SRL",
+      "colectare_name": "Fala Prodcom SRL",
+      "cif": "8132651"
+    },
+    {
+      "normalized": "FAMECO PURTOTAL SRL",
+      "colectare_name": "Fameco Purtotal SRL",
+      "cif": "32178694"
+    },
+    {
+      "normalized": "FAN STEAL IMPEX SRL",
+      "colectare_name": "Fan Steal Impex SRL",
+      "cif": "27216210"
+    },
+    {
+      "normalized": "FARM FOREST SRL",
+      "colectare_name": "Farm Forest SRL",
+      "cif": "16527946"
+    },
+    {
+      "normalized": "FAURSAL SERV SRL",
+      "colectare_name": "SC FAURSAL SERV SRL",
+      "cif": "26658353"
+    },
+    {
+      "normalized": "FEIER IMPEX SRL",
+      "colectare_name": "Feier Impex SRL",
+      "cif": "12174094"
+    },
+    {
+      "normalized": "FER NET COMPANY SRL",
+      "colectare_name": "Fer Net Company SRL",
+      "cif": "33982050"
+    },
+    {
+      "normalized": "FERALAM TC-LM SRL",
+      "colectare_name": "Feralam Tc-Lm SRL",
+      "cif": "24225841"
+    },
+    {
+      "normalized": "FERCOMEXIM SRL",
+      "colectare_name": "Fercomexim SRL",
+      "cif": "23019711"
+    },
+    {
+      "normalized": "FERCRIST IMPEX SRL",
+      "colectare_name": "SC FERCRIST IMPEX SRL",
+      "cif": "16509613"
+    },
+    {
+      "normalized": "FEREMETAL COLECT SELECTIV SRL",
+      "colectare_name": "Feremetal Colect Selectiv SRL",
+      "cif": "32068004"
+    },
+    {
+      "normalized": "FERO CIOAZA SRL",
+      "colectare_name": "Fero Cioaza SRL",
+      "cif": "16651161"
+    },
+    {
+      "normalized": "FEROCOLECT SRL",
+      "colectare_name": "Ferocolect SRL",
+      "cif": "17042175"
+    },
+    {
+      "normalized": "FEROFLOR SRL",
+      "colectare_name": "Feroflor SRL",
+      "cif": "16953216"
+    },
+    {
+      "normalized": "FEROM EXIM SRL",
+      "colectare_name": "Ferom Exim SRL",
+      "cif": "8305868"
+    },
+    {
+      "normalized": "FEROM SRL",
+      "colectare_name": "Ferom SRL",
+      "cif": "4867782"
+    },
+    {
+      "normalized": "FERONAT CARTON SRL",
+      "colectare_name": "Feronat Carton SRL",
+      "cif": "16036582"
+    },
+    {
+      "normalized": "FERROUS RECYLING GROUP SRL",
+      "colectare_name": "Ferrous Recyling Group SRL",
+      "cif": "33192077"
+    },
+    {
+      "normalized": "FESOCO SRL",
+      "colectare_name": "Fesoco SRL",
+      "cif": "31163857"
+    },
+    {
+      "normalized": "FIERCOM GABOR SRL",
+      "colectare_name": "SC FIERCOM GABOR SRL",
+      "cif": "29585256"
+    },
+    {
+      "normalized": "FIHER AUTO SRL",
+      "colectare_name": "Fischer Auto SRL",
+      "cif": "18218432"
+    },
+    {
+      "normalized": "FIL SERV TACTIC SRL",
+      "colectare_name": "Fil Serv Tactic SRL",
+      "cif": "27793072"
+    },
+    {
+      "normalized": "FILAUTODA SRL",
+      "colectare_name": "Filautoda SRL",
+      "cif": "31376561"
+    },
+    {
+      "normalized": "FILRAP SRL",
+      "colectare_name": "Filscrap SRL",
+      "cif": "37299913"
+    },
+    {
+      "normalized": "FLAPS SA",
+      "colectare_name": "SC FLAPS SA",
+      "cif": "1604617"
+    },
+    {
+      "normalized": "FLEX METAL SRL",
+      "colectare_name": "Flex Metal SRL",
+      "cif": "18999350"
+    },
+    {
+      "normalized": "FLORALISIA SRL",
+      "colectare_name": "Floralisia SRL",
+      "cif": "17609734"
+    },
+    {
+      "normalized": "FOCUSAUTOHOUSE SRL",
+      "colectare_name": "Focus Autohouse SRL",
+      "cif": "37602390"
+    },
+    {
+      "normalized": "FRY YNNA AUTO SRL",
+      "colectare_name": "Fry Ynna Auto SRL",
+      "cif": "26195739"
+    },
+    {
+      "normalized": "FULL ECO RECYCLING SRL",
+      "colectare_name": "Full Eco Recycling SRL",
+      "cif": "31552919"
+    },
+    {
+      "normalized": "GAB & MET FER SRL",
+      "colectare_name": "GAB & MET. FER. SRL",
+      "cif": "32587630"
+    },
+    {
+      "normalized": "GAL MAT SRL",
+      "colectare_name": "Gal Mat SRL",
+      "cif": "28376260"
+    },
+    {
+      "normalized": "GEANI CONPES SRL",
+      "colectare_name": "Geani Conpes SRL",
+      "cif": "14816158"
+    },
+    {
+      "normalized": "GEL ALEXIL SERVCOM SRL",
+      "colectare_name": "Gel Alexil Servcom SRL",
+      "cif": "11015805"
+    },
+    {
+      "normalized": "GENCO INVESTMENT SRL",
+      "colectare_name": "Genco Investment SRL",
+      "cif": "23131722"
+    },
+    {
+      "normalized": "GEOCAT TURBO SRL",
+      "colectare_name": "Geocat Turbo SRL",
+      "cif": "33314972"
+    },
+    {
+      "normalized": "GEOMA PMG HOLDYNG SRL",
+      "colectare_name": "Geoma Pmg Holdyng SRL",
+      "cif": "24215961"
+    },
+    {
+      "normalized": "GEORDY IMPEX SRL",
+      "colectare_name": "Geordy Impex SRL",
+      "cif": "4782333"
+    },
+    {
+      "normalized": "GEORGIA RECYCLING WMC SRL",
+      "colectare_name": "Georgia Recycling Wmc SRL",
+      "cif": "32440182"
+    },
+    {
+      "normalized": "GEORGIANA SRL",
+      "colectare_name": "Georgiana SRL",
+      "cif": "15278162"
+    },
+    {
+      "normalized": "GIANIFER SRL",
+      "colectare_name": "Gianifer SRL",
+      "cif": "26849698"
+    },
+    {
+      "normalized": "GIGEL ROYAL RECYCLING SRL",
+      "colectare_name": "Gigel Royal Recycling SRL",
+      "cif": "37067581"
+    },
+    {
+      "normalized": "GIGI KENT SRL",
+      "colectare_name": "Gigi Kent SRL",
+      "cif": "29859106"
+    },
+    {
+      "normalized": "GIGIALEX CAR PARTS SRL",
+      "colectare_name": "Gigialex Car Parts SRL",
+      "cif": "31371076"
+    },
+    {
+      "normalized": "GILRUBEN INTERNATIONAL SRL",
+      "colectare_name": "Gilruben International SRL",
+      "cif": "35330168"
+    },
+    {
+      "normalized": "GIOVANNY RECYCLING SRL",
+      "colectare_name": "Giovanny Recycling SRL",
+      "cif": "33695346"
+    },
+    {
+      "normalized": "GKM COLLECT SRL",
+      "colectare_name": "Gkm Collect SRL",
+      "cif": "18370995"
+    },
+    {
+      "normalized": "GLADIOR COLLECT SRL",
+      "colectare_name": "SC GLADIOR COLLECT SRL",
+      "cif": "32897347"
+    },
+    {
+      "normalized": "GLOBAL ECOSYSTEM PARTNERS SRL",
+      "colectare_name": "SC GLOBAL ECOSYSTEM PARTNERS SRL",
+      "cif": "31590394"
+    },
+    {
+      "normalized": "GLOBAL SRL",
+      "colectare_name": "Global SRL",
+      "cif": "642388"
+    },
+    {
+      "normalized": "GOG METAL SRL",
+      "colectare_name": "Gog Metal SRL",
+      "cif": "16819819"
+    },
+    {
+      "normalized": "GOLD ICE METAL SRL",
+      "colectare_name": "Gold Ice Metal SRL",
+      "cif": "27853018"
+    },
+    {
+      "normalized": "GOS TRANS COM SRL",
+      "colectare_name": "Gos Trans Com SRL",
+      "cif": "7850009"
+    },
+    {
+      "normalized": "GRAND ELECTRO SRL",
+      "colectare_name": "Grand Electro SRL",
+      "cif": "24568912"
+    },
+    {
+      "normalized": "GRANDALEXANO SRL",
+      "colectare_name": "SC GRANDALEXANO SRL",
+      "cif": "21317380"
+    },
+    {
+      "normalized": "GRANUPLAST DIRECT SRL",
+      "colectare_name": "Granuplast Direct SRL",
+      "cif": "37944890"
+    },
+    {
+      "normalized": "GRANUTECH RECYCLING SRL",
+      "colectare_name": "Granutech Recycling SRL",
+      "cif": "32707728"
+    },
+    {
+      "normalized": "GREEN COLLECT & RECYCLE SRL",
+      "colectare_name": "GREEN COLLECT & RECYCLE SRL",
+      "cif": "37971924"
+    },
+    {
+      "normalized": "GREEN EUROPE RECYCLING SRL",
+      "colectare_name": "Green Europe Recycling SRL",
+      "cif": "28295530"
+    },
+    {
+      "normalized": "GREEN GLOBAL FUTURE SRL",
+      "colectare_name": "Green Global Future SRL",
+      "cif": "29580321"
+    },
+    {
+      "normalized": "GREEN KISS ECO SRL",
+      "colectare_name": "Green Kiss Eco SRL",
+      "cif": "36137573"
+    },
+    {
+      "normalized": "GREEN LIFE SRL",
+      "colectare_name": "Green Life SRL",
+      "cif": "23400324"
+    },
+    {
+      "normalized": "GREEN OFFICE SRL",
+      "colectare_name": "Green Office SRL",
+      "cif": "18402280"
+    },
+    {
+      "normalized": "GREEN PLASTIC MANAGEMENT SRL",
+      "colectare_name": "Green Plastic Management SRL",
+      "cif": "32154377"
+    },
+    {
+      "normalized": "GREEN TEAM SRL",
+      "colectare_name": "Green Team SRL",
+      "cif": "22420757"
+    },
+    {
+      "normalized": "GREEN VALUES SRL",
+      "colectare_name": "Green Values SRL",
+      "cif": "21763277"
+    },
+    {
+      "normalized": "GREEN WORLD ECO SRL",
+      "colectare_name": "GREEN WORLD ECO S.R.L.",
+      "cif": "31500545"
+    },
+    {
+      "normalized": "GREEN ZONE RECYCLING SRL",
+      "colectare_name": "Green Zone Recycling SRL",
+      "cif": "29105323"
+    },
+    {
+      "normalized": "GREENDAYS SRL",
+      "colectare_name": "Greendays SRL",
+      "cif": "18903400"
+    },
+    {
+      "normalized": "GREENGLASS RECYCLING SA",
+      "colectare_name": "Greenglass Recycling SA",
+      "cif": "31292568"
+    },
+    {
+      "normalized": "GREENTECH SERVICII ECOLOGICE SRL",
+      "colectare_name": "Greentech Servicii Ecologice SRL",
+      "cif": "25562179"
+    },
+    {
+      "normalized": "HANC LUCK SRL",
+      "colectare_name": "SC HANC LUCK SRL",
+      "cif": "29533737"
+    },
+    {
+      "normalized": "HC MASS RECYCLING SRL",
+      "colectare_name": "Hc Mass Recycling SRL",
+      "cif": "33466121"
+    },
+    {
+      "normalized": "HEFAISTOS METAL COM SRL",
+      "colectare_name": "Hefaistos Metal Com SRL",
+      "cif": "15792537"
+    },
+    {
+      "normalized": "HERODOT GRUP SRL",
+      "colectare_name": "Herodot Grup SRL",
+      "cif": "14339466"
+    },
+    {
+      "normalized": "HERPY NOVA SRL",
+      "colectare_name": "SC HERPY NOVA SRL",
+      "cif": "32744998"
+    },
+    {
+      "normalized": "HOLD STEEL SRL",
+      "colectare_name": "Hold Steel SRL",
+      "cif": "17419233"
+    },
+    {
+      "normalized": "HOLDAMNAD COMPANY SRL",
+      "colectare_name": "SC HOLDAMNAD COMPANY SRL",
+      "cif": "26627659"
+    },
+    {
+      "normalized": "HOUSE AUTO FRY SRL",
+      "colectare_name": "SC HOUSE AUTO FRY SRL",
+      "cif": "30908180"
+    },
+    {
+      "normalized": "HOUSE HOLDER SRL",
+      "colectare_name": "House Holder SRL",
+      "cif": "28017843"
+    },
+    {
+      "normalized": "HUSTER ECOSAL SRL",
+      "colectare_name": "Schuster Ecosal SRL",
+      "cif": "10314515"
+    },
+    {
+      "normalized": "IAN METAL PROD SRL",
+      "colectare_name": "Ian Metal Prod SRL",
+      "cif": "28971020"
+    },
+    {
+      "normalized": "ILTA SRL",
+      "colectare_name": "Ilta SRL",
+      "cif": "22982941"
+    },
+    {
+      "normalized": "IMA STAR SRL",
+      "colectare_name": "Ima Star SRL",
+      "cif": "15712430"
+    },
+    {
+      "normalized": "IMEXMET & TO 2000 RECYCLING SRL",
+      "colectare_name": "IMEXMET & TO 2000 RECYCLING SRL",
+      "cif": "36421531"
+    },
+    {
+      "normalized": "INDUSTRIAL PLASTIC RECYCLING SRL",
+      "colectare_name": "Industrial Plastic Recycling SRL",
+      "cif": "15868767"
+    },
+    {
+      "normalized": "INTER OLIDEI SRL",
+      "colectare_name": "Inter Olidei SRL",
+      "cif": "31247133"
+    },
+    {
+      "normalized": "INTERMERIDIAN METAL SRL",
+      "colectare_name": "Intermeridian Metal SRL",
+      "cif": "16571496"
+    },
+    {
+      "normalized": "INTERPLUS NAY SRL",
+      "colectare_name": "Interplus Nay SRL",
+      "cif": "30145372"
+    },
+    {
+      "normalized": "INTEX ECO CONSTRUCT SRL",
+      "colectare_name": "Intex Eco Construct SRL",
+      "cif": "16050404"
+    },
+    {
+      "normalized": "INTRADE ECO SRL",
+      "colectare_name": "SC INTRADE ECO SRL",
+      "cif": "31555605"
+    },
+    {
+      "normalized": "IOLANDA METAL SRL",
+      "colectare_name": "Iolanda Metal SRL",
+      "cif": "23359640"
+    },
+    {
+      "normalized": "IONELA SRL",
+      "colectare_name": "Ionela SRL",
+      "cif": "1074553"
+    },
+    {
+      "normalized": "IONEOM STEEL SRL",
+      "colectare_name": "Ionescom Steel SRL",
+      "cif": "30601061"
+    },
+    {
+      "normalized": "IORAMI SERVICII IMPORT EXPORT SRL",
+      "colectare_name": "Iorami Servicii Import Export SRL",
+      "cif": "3993669"
+    },
+    {
+      "normalized": "IRON RECYCLING SRL",
+      "colectare_name": "Iron Recycling SRL",
+      "cif": "21314707"
+    },
+    {
+      "normalized": "IULICRIS RECYCLING SRL",
+      "colectare_name": "Iulicris Recycling SRL",
+      "cif": "29926728"
+    },
+    {
+      "normalized": "IULMARPLAST SRL",
+      "colectare_name": "Iulmarplast SRL",
+      "cif": "24539267"
+    },
+    {
+      "normalized": "IVGALROM ECOLOGY SRL",
+      "colectare_name": "Ivgalrom Ecology SRL",
+      "cif": "28006062"
+    },
+    {
+      "normalized": "JAN DEZ AUTO SRL",
+      "colectare_name": "Jan Dez Auto SRL",
+      "cif": "33868420"
+    },
+    {
+      "normalized": "JOMAR FIER SRL",
+      "colectare_name": "Jomar Fier SRL",
+      "cif": "17863553"
+    },
+    {
+      "normalized": "JUCARIE SRL",
+      "colectare_name": "Jucarie SRL",
+      "cif": "17455236"
+    },
+    {
+      "normalized": "KALEEA COLECT SRL",
+      "colectare_name": "Kaleea Colect SRL",
+      "cif": "30810009"
+    },
+    {
+      "normalized": "KARO PROD TOTAL SRL",
+      "colectare_name": "Karo Prod Total SRL",
+      "cif": "15893477"
+    },
+    {
+      "normalized": "KARUM COLECT SRL",
+      "colectare_name": "Karum Colect SRL",
+      "cif": "32548134"
+    },
+    {
+      "normalized": "KIVADRA SRL",
+      "colectare_name": "Kivadra SRL",
+      "cif": "27419885"
+    },
+    {
+      "normalized": "KLAUSMADI AUTO SRL",
+      "colectare_name": "SC KLAUSMADI AUTO SRL",
+      "cif": "32671802"
+    },
+    {
+      "normalized": "KROGAN RECICLARE SRL",
+      "colectare_name": "Krogan Reciclare SRL",
+      "cif": "37071388"
+    },
+    {
+      "normalized": "LANPROD SRL",
+      "colectare_name": "Lanprod SRL",
+      "cif": "14858749"
+    },
+    {
+      "normalized": "LARCOMET SRL",
+      "colectare_name": "SC LARCOMET SRL",
+      "cif": "26548296"
+    },
+    {
+      "normalized": "LAUR FERMETAL SRL",
+      "colectare_name": "LAUR FERMETAL S.R.L.",
+      "cif": "27868450"
+    },
+    {
+      "normalized": "LAUR JUNIOR SRL",
+      "colectare_name": "Laur Junior SRL",
+      "cif": "33306430"
+    },
+    {
+      "normalized": "LAVI STAR 2007 SRL",
+      "colectare_name": "LAVI STAR 2007 SRL",
+      "cif": "21224620"
+    },
+    {
+      "normalized": "LEARN TO RECYCLE SRL",
+      "colectare_name": "Learn To Recycle SRL",
+      "cif": "37776710"
+    },
+    {
+      "normalized": "LEGISLAT SRL",
+      "colectare_name": "Legislat SRL",
+      "cif": "9733919"
+    },
+    {
+      "normalized": "LEO RENOVIL TRANS SRL",
+      "colectare_name": "Leo Renovil Trans SRL",
+      "cif": "28634768"
+    },
+    {
+      "normalized": "LEONARD COMPLEX SRL",
+      "colectare_name": "Leonard Complex SRL",
+      "cif": "23957962"
+    },
+    {
+      "normalized": "LER SRL",
+      "colectare_name": "Ler SRL",
+      "cif": "6786854"
+    },
+    {
+      "normalized": "LEVINCO IMPEX SRL",
+      "colectare_name": "Levinco Impex SRL",
+      "cif": "10411534"
+    },
+    {
+      "normalized": "LILI MAV STAR SRL",
+      "colectare_name": "Lili M.A.V. Star SRL",
+      "cif": "27600996"
+    },
+    {
+      "normalized": "LINEO DESIGN SRL",
+      "colectare_name": "Lineo Design SRL",
+      "cif": "15512068"
+    },
+    {
+      "normalized": "LIVA RECICLING SRL",
+      "colectare_name": "Liva Recicling SRL",
+      "cif": "27404949"
+    },
+    {
+      "normalized": "LKV AUTO EXPERT SRL",
+      "colectare_name": "Lkv Auto Expert SRL",
+      "cif": "30731436"
+    },
+    {
+      "normalized": "LOBII FIER SRL",
+      "colectare_name": "Lobii Fier SRL",
+      "cif": "16711751"
+    },
+    {
+      "normalized": "LOHAN MARKET SRL",
+      "colectare_name": "Lohan Market SRL",
+      "cif": "31460360"
+    },
+    {
+      "normalized": "LONDOMET ADR SRL",
+      "colectare_name": "Londomet Adr SRL",
+      "cif": "31101900"
+    },
+    {
+      "normalized": "LUCADO RECYCLE SRL",
+      "colectare_name": "Lucado Recycle SRL",
+      "cif": "28132419"
+    },
+    {
+      "normalized": "LUCKY STAR 2003 SRL",
+      "colectare_name": "Lucky Star 2003 SRL",
+      "cif": "15295201"
+    },
+    {
+      "normalized": "LUG RE MA SRL",
+      "colectare_name": "Lug Re Ma SRL",
+      "cif": "24638961"
+    },
+    {
+      "normalized": "M&G PLUS INTERMED SRL",
+      "colectare_name": "M&G Plus Intermed SRL",
+      "cif": "16891520"
+    },
+    {
+      "normalized": "MA 3R COLECT SRL",
+      "colectare_name": "M.A. 3R Colect SRL",
+      "cif": "18412322"
+    },
+    {
+      "normalized": "MAG COMPANY SRL",
+      "colectare_name": "Mag Company SRL",
+      "cif": "16440806"
+    },
+    {
+      "normalized": "MAGUMET IND SRL",
+      "colectare_name": "Magumet Ind SRL",
+      "cif": "28551980"
+    },
+    {
+      "normalized": "MAIA INTERMED SRL",
+      "colectare_name": "Maia Intermed SRL",
+      "cif": "15764448"
+    },
+    {
+      "normalized": "MALURA BUSINESS SRL",
+      "colectare_name": "Malura Business SRL",
+      "cif": "40229535"
+    },
+    {
+      "normalized": "MANUPLAST SRL",
+      "colectare_name": "Manuplast SRL",
+      "cif": "24466068"
+    },
+    {
+      "normalized": "MAR GROUP SRL",
+      "colectare_name": "Mar Group SRL",
+      "cif": "24533582"
+    },
+    {
+      "normalized": "MAR PRODUCT CONSTRUCT SRL",
+      "colectare_name": "M.A.R. Product Construct SRL",
+      "cif": "21174352"
+    },
+    {
+      "normalized": "MAR-LIONE METAL SRL",
+      "colectare_name": "Mar-Lione Metal SRL",
+      "cif": "28407412"
+    },
+    {
+      "normalized": "MARAL INTERNATIONAL SRL",
+      "colectare_name": "SC MARAL INTERNATIONAL SRL",
+      "cif": "11219333"
+    },
+    {
+      "normalized": "MARETIN MATERIALE RECUPERABILE SRL",
+      "colectare_name": "Maretin Materiale Recuperabile SRL",
+      "cif": "1279273"
+    },
+    {
+      "normalized": "MARI FERICOL SRL",
+      "colectare_name": "SC MARI FERICOL SRL",
+      "cif": "32771704"
+    },
+    {
+      "normalized": "MARIALICE STAR SRL",
+      "colectare_name": "Marialice Star SRL",
+      "cif": "25925622"
+    },
+    {
+      "normalized": "MARIAN METAL 2008 SRL",
+      "colectare_name": "Marian Metal 2008 SRL",
+      "cif": "24118101"
+    },
+    {
+      "normalized": "MARILENA ANTOSOFY SRL",
+      "colectare_name": "Marilena Antosofy SRL",
+      "cif": "34082285"
+    },
+    {
+      "normalized": "MARISA & ELENA SRL",
+      "colectare_name": "MARISA & ELENA SRL",
+      "cif": "36434523"
+    },
+    {
+      "normalized": "MARIUCA IMPEX SRL",
+      "colectare_name": "Mariuca Impex SRL",
+      "cif": "18515913"
+    },
+    {
+      "normalized": "MARKET SISTEM CONTROL SRL",
+      "colectare_name": "MARKET SISTEM CONTROL SRL",
+      "cif": "31429348"
+    },
+    {
+      "normalized": "MAROM ECO SRL",
+      "colectare_name": "Marom Eco SRL",
+      "cif": "30735039"
+    },
+    {
+      "normalized": "MARSEB SRL",
+      "colectare_name": "Marseb SRL",
+      "cif": "16633637"
+    },
+    {
+      "normalized": "MARVIN RECYCLING SRL",
+      "colectare_name": "Marvin Recycling SRL",
+      "cif": "30439416"
+    },
+    {
+      "normalized": "MARYOR MD SERVICE SRL",
+      "colectare_name": "Maryor Md Service SRL",
+      "cif": "9502051"
+    },
+    {
+      "normalized": "MASPLAST SRL",
+      "colectare_name": "Masplast SRL",
+      "cif": "18616195"
+    },
+    {
+      "normalized": "MASTER ECOLOGIC SRL",
+      "colectare_name": "Master Ecologic SRL",
+      "cif": "28075755"
+    },
+    {
+      "normalized": "MAT-GNI 67 SRL",
+      "colectare_name": "Mat-Gni 67 SRL",
+      "cif": "26549291"
+    },
+    {
+      "normalized": "MATFER COMSERV SRL",
+      "colectare_name": "Matfer Comserv SRL",
+      "cif": "19332655"
+    },
+    {
+      "normalized": "MD PRO COLECT SRL",
+      "colectare_name": "Sc MD PRO COLECT SRL",
+      "cif": "31066250"
+    },
+    {
+      "normalized": "MEGA ARGON SRL",
+      "colectare_name": "Mega Argon SRL",
+      "cif": "25227956"
+    },
+    {
+      "normalized": "MEGA CROM SRL",
+      "colectare_name": "Mega Crom SRL",
+      "cif": "15237251"
+    },
+    {
+      "normalized": "MEGA METAL LOGISTICS SRL",
+      "colectare_name": "Mega Metal Logistics SRL",
+      "cif": "27317664"
+    },
+    {
+      "normalized": "MERTUR RECYCLING SRL",
+      "colectare_name": "Mertur Recycling SRL",
+      "cif": "44729398"
+    },
+    {
+      "normalized": "MERY 2000 SRL",
+      "colectare_name": "Mery 2000 SRL",
+      "cif": "1326707"
+    },
+    {
+      "normalized": "METAL & PAPER COLLECT SRL",
+      "colectare_name": "Metal & Paper Collect SRL",
+      "cif": "17600948"
+    },
+    {
+      "normalized": "METAL ALEXANDRA SRL",
+      "colectare_name": "Metal Alexandra SRL",
+      "cif": "27974010"
+    },
+    {
+      "normalized": "METAL COLECT CONSTANTIN SRL",
+      "colectare_name": "Metal Colect Constantin SRL",
+      "cif": "25932492"
+    },
+    {
+      "normalized": "METAL COMPANY SRL",
+      "colectare_name": "METAL COMPANY S.R.L",
+      "cif": "14041450"
+    },
+    {
+      "normalized": "METAL EXPERT SRL",
+      "colectare_name": "Metal Expert SRL",
+      "cif": "21433104"
+    },
+    {
+      "normalized": "METAL FLY GROUP SRL",
+      "colectare_name": "Metal Fly Group SRL",
+      "cif": "17389060"
+    },
+    {
+      "normalized": "METAL MARYFERA SRL",
+      "colectare_name": "Metal Maryfera SRL",
+      "cif": "30290658"
+    },
+    {
+      "normalized": "METAL NETWORK SRL",
+      "colectare_name": "Metal Network SRL",
+      "cif": "24481890"
+    },
+    {
+      "normalized": "METAL RAP COLECT SRL",
+      "colectare_name": "METAL SCRAP COLECT SRL",
+      "cif": "30824101"
+    },
+    {
+      "normalized": "METAL ROM SRL",
+      "colectare_name": "Metal Rom SRL",
+      "cif": "790465"
+    },
+    {
+      "normalized": "METAL SHZ RECYCLING SRL",
+      "colectare_name": "Metal Shz Recycling SRL",
+      "cif": "32879626"
+    },
+    {
+      "normalized": "METAL TOMA SRL",
+      "colectare_name": "Metal Toma SRL",
+      "cif": "29828665"
+    },
+    {
+      "normalized": "METAL TRADING SRL",
+      "colectare_name": "Metal Trading SRL",
+      "cif": "24414751"
+    },
+    {
+      "normalized": "METALCAR COM SRL",
+      "colectare_name": "Metalcar Com SRL",
+      "cif": "11679765"
+    },
+    {
+      "normalized": "METALCOM HOLDING SRL",
+      "colectare_name": "Metalcom Holding SRL",
+      "cif": "24581784"
+    },
+    {
+      "normalized": "METALI RECYCLING SRL",
+      "colectare_name": "Metalisc Recycling SRL",
+      "cif": "31501788"
+    },
+    {
+      "normalized": "METALO VOISIONDUZERO SRL",
+      "colectare_name": "Metalo Voisionduzero SRL",
+      "cif": "27272457"
+    },
+    {
+      "normalized": "METAROVI SRL",
+      "colectare_name": "Metarovi SRL",
+      "cif": "15505508"
+    },
+    {
+      "normalized": "METEOR STAR SRL",
+      "colectare_name": "SC METEOR STAR SRL",
+      "cif": "6698329"
+    },
+    {
+      "normalized": "METEXIM SRL",
+      "colectare_name": "Metexim SRL",
+      "cif": "13318376"
+    },
+    {
+      "normalized": "METTALEX SRL",
+      "colectare_name": "Mettalex SRL",
+      "cif": "23102212"
+    },
+    {
+      "normalized": "METWASH SRL",
+      "colectare_name": "Metwash SRL",
+      "cif": "18236870"
+    },
+    {
+      "normalized": "MF AUTO METAL SRL",
+      "colectare_name": "Mf Auto Metal SRL",
+      "cif": "18431260"
+    },
+    {
+      "normalized": "MF PLAST SERV SRL",
+      "colectare_name": "Mf Plast Serv SRL",
+      "cif": "18485421"
+    },
+    {
+      "normalized": "MG PROD STEEL SRL",
+      "colectare_name": "Mg Prod Steel SRL",
+      "cif": "18179589"
+    },
+    {
+      "normalized": "MGA IMPEX SRL",
+      "colectare_name": "Mga Impex SRL",
+      "cif": "2601040"
+    },
+    {
+      "normalized": "MGD METAL RECYCLING SRL",
+      "colectare_name": "SC MGD METAL RECYCLING SRL",
+      "cif": "25252003"
+    },
+    {
+      "normalized": "MHR SOLUTII RECICLARE SRL",
+      "colectare_name": "MHR SOLUTII RECICLARE SRL",
+      "cif": "35972710"
+    },
+    {
+      "normalized": "MIHAI & GABY SRL",
+      "colectare_name": "MIHAI & GABY SRL",
+      "cif": "19172490"
+    },
+    {
+      "normalized": "MINIAN METAL SRL",
+      "colectare_name": "Minian Metal SRL",
+      "cif": "17582027"
+    },
+    {
+      "normalized": "MIRCEA IMPEX SRL",
+      "colectare_name": "Mircea Impex SRL",
+      "cif": "15701903"
+    },
+    {
+      "normalized": "MIREL & M SRL",
+      "colectare_name": "MIREL & M SRL",
+      "cif": "31806251"
+    },
+    {
+      "normalized": "MIS LORD SRL",
+      "colectare_name": "Mis Lord SRL",
+      "cif": "16727979"
+    },
+    {
+      "normalized": "MIU AUTOFM SRL",
+      "colectare_name": "Miu Autofm SRL",
+      "cif": "34081557"
+    },
+    {
+      "normalized": "MONDIAL GREEN LIFE SRL",
+      "colectare_name": "Mondial Green Life SRL",
+      "cif": "25568902"
+    },
+    {
+      "normalized": "MONDO COMPUTER SRL",
+      "colectare_name": "Mondo Computer SRL",
+      "cif": "13769074"
+    },
+    {
+      "normalized": "MONDO STEEL RECYCLING SRL",
+      "colectare_name": "Mondo Steel Recycling SRL",
+      "cif": "26416368"
+    },
+    {
+      "normalized": "MULTICOM SRL",
+      "colectare_name": "Multicom SRL",
+      "cif": "18035117"
+    },
+    {
+      "normalized": "MURES COLECT SRL",
+      "colectare_name": "Mures Colect SRL",
+      "cif": "38220925"
+    },
+    {
+      "normalized": "MUSTATA CONSTRUCT SRL",
+      "colectare_name": "Mustata Construct SRL",
+      "cif": "22616177"
+    },
+    {
+      "normalized": "MVM RECYCLE SRL",
+      "colectare_name": "Mvm Recycle SRL",
+      "cif": "23966286"
+    },
+    {
+      "normalized": "NADOMET LOGISTIC SRL",
+      "colectare_name": "Nadomet Logistic SRL",
+      "cif": "27760946"
+    },
+    {
+      "normalized": "NAIMAN MOTORS SRL",
+      "colectare_name": "Naiman Motors SRL",
+      "cif": "26634443"
+    },
+    {
+      "normalized": "NANIC PREST 2000 SRL",
+      "colectare_name": "Nanic Prest 2000 SRL",
+      "cif": "31936251"
+    },
+    {
+      "normalized": "NEFERAL SRL",
+      "colectare_name": "NEFERAL SRL",
+      "cif": "18624279"
+    },
+    {
+      "normalized": "NEW COMPANY RECYCLING SRL",
+      "colectare_name": "New Company Recycling SRL",
+      "cif": "9668764"
+    },
+    {
+      "normalized": "NEW ECO RECYCLING SRL",
+      "colectare_name": "New Eco Recycling SRL",
+      "cif": "34263486"
+    },
+    {
+      "normalized": "NEWMAR METAL ROX SRL",
+      "colectare_name": "Newmar Metal Rox SRL",
+      "cif": "33580265"
+    },
+    {
+      "normalized": "NEXT RECYCLE SRL",
+      "colectare_name": "Next Recycle SRL",
+      "cif": "29815819"
+    },
+    {
+      "normalized": "NI & CO CAR PARTS SRL",
+      "colectare_name": "SC NI & CO CAR PARTS SRL",
+      "cif": "30872958"
+    },
+    {
+      "normalized": "NIBRIELL GROUP SRL",
+      "colectare_name": "Nibriell Group SRL",
+      "cif": "34398009"
+    },
+    {
+      "normalized": "NICHIFOR SRL",
+      "colectare_name": "Nichifor SRL",
+      "cif": "6875552"
+    },
+    {
+      "normalized": "NICK & ROXY SRL",
+      "colectare_name": "Nick & Roxy SRL",
+      "cif": "25022551"
+    },
+    {
+      "normalized": "NICOLAS GABRIEL SRL",
+      "colectare_name": "Nicolas Gabriel SRL",
+      "cif": "33057429"
+    },
+    {
+      "normalized": "NICOTI PLAST SRL",
+      "colectare_name": "Nicoti Plast SRL",
+      "cif": "17832980"
+    },
+    {
+      "normalized": "NIDA ECO SRL",
+      "colectare_name": "Nida Eco SRL",
+      "cif": "20849966"
+    },
+    {
+      "normalized": "NON FERRO METALEN SRL",
+      "colectare_name": "SC NON FERRO METALEN SRL",
+      "cif": "30291297"
+    },
+    {
+      "normalized": "NORD COLECT SRL",
+      "colectare_name": "SC NORD COLECT SRL",
+      "cif": "27087816"
+    },
+    {
+      "normalized": "NORDES PRO SRL",
+      "colectare_name": "Nordes Pro SRL",
+      "cif": "37835647"
+    },
+    {
+      "normalized": "NORDIC EURO RECYCLING 2000 SRL",
+      "colectare_name": "Nordic Euro Recycling 2000 SRL",
+      "cif": "32068934"
+    },
+    {
+      "normalized": "NOVA METAL MRF SRL",
+      "colectare_name": "Nova Metal Mrf SRL",
+      "cif": "34082196"
+    },
+    {
+      "normalized": "NOVIM GROUP SRL",
+      "colectare_name": "Novim Group SRL",
+      "cif": "16595487"
+    },
+    {
+      "normalized": "NUŢU DEZMEMBRĂRI SRL",
+      "colectare_name": "Nuţu Dezmembrări SRL",
+      "cif": "29427175"
+    },
+    {
+      "normalized": "OCTOGREEN SRL",
+      "colectare_name": "Octogreen SRL",
+      "cif": "39158490"
+    },
+    {
+      "normalized": "OCTOPUS RECYCLING SRL",
+      "colectare_name": "Octopus Recycling SRL",
+      "cif": "26739024"
+    },
+    {
+      "normalized": "OCTUD SRL",
+      "colectare_name": "Octud SRL",
+      "cif": "33411657"
+    },
+    {
+      "normalized": "OLD OTTO MOBILE SRL",
+      "colectare_name": "SC OLD OTTO MOBILE SRL",
+      "cif": "28715854"
+    },
+    {
+      "normalized": "OLTENIA ELECTRONICS SRL",
+      "colectare_name": "Oltenia Electronics SRL",
+      "cif": "33626982"
+    },
+    {
+      "normalized": "ONDA SRL",
+      "colectare_name": "Onda SRL",
+      "cif": "2164956"
+    },
+    {
+      "normalized": "ORADIA METAL SRL",
+      "colectare_name": "Oradia Metal SRL",
+      "cif": "26642004"
+    },
+    {
+      "normalized": "ORIAN INDUSTRY SRL",
+      "colectare_name": "Orian Industry SRL",
+      "cif": "26936824"
+    },
+    {
+      "normalized": "PAD AUTO HAUS SRL",
+      "colectare_name": "Pad Auto Haus SRL",
+      "cif": "32918229"
+    },
+    {
+      "normalized": "PAFF AUTOMOTIVE SRL",
+      "colectare_name": "Paff Automotive SRL",
+      "cif": "33544815"
+    },
+    {
+      "normalized": "PAMI STYLE SRL",
+      "colectare_name": "Pami Style SRL",
+      "cif": "21998087"
+    },
+    {
+      "normalized": "PAN NOEMI TRUST SRL",
+      "colectare_name": "Pan Noemi Trust SRL",
+      "cif": "17327490"
+    },
+    {
+      "normalized": "PAN RECYCLING SRL",
+      "colectare_name": "Pan Recycling SRL",
+      "cif": "40299514"
+    },
+    {
+      "normalized": "PARFONA SASU SRL",
+      "colectare_name": "Parfona SAsu SRL",
+      "cif": "31117150"
+    },
+    {
+      "normalized": "PAX ECO TRUST SRL",
+      "colectare_name": "Pax Eco Trust SRL",
+      "cif": "18588923"
+    },
+    {
+      "normalized": "PEBOR IMPEX SRL",
+      "colectare_name": "Pebor Impex SRL",
+      "cif": "22213255"
+    },
+    {
+      "normalized": "PETEL BUM SRL",
+      "colectare_name": "Petel Bum SRL",
+      "cif": "31129464"
+    },
+    {
+      "normalized": "PETRI & RAMO COMPANY SRL",
+      "colectare_name": "PETRI & RAMO COMPANY SRL",
+      "cif": "18595041"
+    },
+    {
+      "normalized": "PETROMAR SUD-EST SRL",
+      "colectare_name": "Petromar Sud-Est SRL",
+      "cif": "26538977"
+    },
+    {
+      "normalized": "PHOENIX SLAG SERVICES SRL",
+      "colectare_name": "Phoenix Slag Services SRL",
+      "cif": "26892078"
+    },
+    {
+      "normalized": "PIAFEM INOX SRL",
+      "colectare_name": "PIAFEM INOX SRL",
+      "cif": "28379622"
+    },
+    {
+      "normalized": "PIESE AUTO PAS SRL",
+      "colectare_name": "Piese Auto Pas SRL",
+      "cif": "36608590"
+    },
+    {
+      "normalized": "PIESE SH BMW SRL",
+      "colectare_name": "Piese Sh Bmw SRL",
+      "cif": "40214909"
+    },
+    {
+      "normalized": "PITI SRL",
+      "colectare_name": "Piti SRL",
+      "cif": "22010579"
+    },
+    {
+      "normalized": "PLABIN SRL",
+      "colectare_name": "Plabin SRL",
+      "cif": "17525250"
+    },
+    {
+      "normalized": "PLAST RECYCLING ONE SRL",
+      "colectare_name": "Plast Recycling One SRL",
+      "cif": "33824998"
+    },
+    {
+      "normalized": "PLASTALCOLECT SRL",
+      "colectare_name": "Plastalcolect SRL",
+      "cif": "25241667"
+    },
+    {
+      "normalized": "PLASTCOLECT RECYCLING SRL",
+      "colectare_name": "Plastcolect Recycling SRL",
+      "cif": "38277093"
+    },
+    {
+      "normalized": "PLASTUR ELCIS SRL",
+      "colectare_name": "Plastur Elcis SRL",
+      "cif": "17479740"
+    },
+    {
+      "normalized": "PLATINUM SRL",
+      "colectare_name": "Platinum SRL",
+      "cif": "14926576"
+    },
+    {
+      "normalized": "PMC GREEN ENVIRONMENT SRL",
+      "colectare_name": "Pmc Green Environment SRL",
+      "cif": "27769546"
+    },
+    {
+      "normalized": "PODARO CAR SRL",
+      "colectare_name": "Podaro Car SRL",
+      "cif": "26704336"
+    },
+    {
+      "normalized": "PORA RECYCLING BUSINESS SRL",
+      "colectare_name": "PORA RECYCLING BUSINESS SRL",
+      "cif": "25536730"
+    },
+    {
+      "normalized": "POWER STEEL TRADING SRL",
+      "colectare_name": "Power Steel Trading SRL",
+      "cif": "28104990"
+    },
+    {
+      "normalized": "PREST REMAT SRL",
+      "colectare_name": "Prest Remat SRL",
+      "cif": "22955980"
+    },
+    {
+      "normalized": "PRIM AUTO MATY SRL",
+      "colectare_name": "Prim Auto Maty SRL",
+      "cif": "28710105"
+    },
+    {
+      "normalized": "PRINTOLE SRL",
+      "colectare_name": "Printole SRL",
+      "cif": "26681445"
+    },
+    {
+      "normalized": "PRIOM SRL",
+      "colectare_name": "Priscom SRL",
+      "cif": "22012804"
+    },
+    {
+      "normalized": "PRO AUTO COLLINI SRL",
+      "colectare_name": "Pro Auto Collini SRL",
+      "cif": "27706572"
+    },
+    {
+      "normalized": "PRO RECICLARE SRL",
+      "colectare_name": "Pro Reciclare SRL",
+      "cif": "26547819"
+    },
+    {
+      "normalized": "PROCAR NEVADA SRL",
+      "colectare_name": "Procar Nevada SRL",
+      "cif": "36530768"
+    },
+    {
+      "normalized": "PRODIR SRL",
+      "colectare_name": "Prodir SRL",
+      "cif": "11093366"
+    },
+    {
+      "normalized": "PRODUCTION COMERCIALIZARE SURAJMAR SRL",
+      "colectare_name": "Production Comercializare Surajmar SRL",
+      "cif": "36382890"
+    },
+    {
+      "normalized": "PROFITABIL INVEST COMPANY SRL",
+      "colectare_name": "Profitabil Invest Company SRL",
+      "cif": "18785550"
+    },
+    {
+      "normalized": "PROGREEN TAT SRL",
+      "colectare_name": "Progreen Tat SRL",
+      "cif": "32754894"
+    },
+    {
+      "normalized": "PULSAR IMPEX SRL",
+      "colectare_name": "Pulsar Impex SRL",
+      "cif": "6474267"
+    },
+    {
+      "normalized": "PUR ALIAJ SRL",
+      "colectare_name": "Pur Aliaj SRL",
+      "cif": "32526780"
+    },
+    {
+      "normalized": "PURE METAL TRADE SRL",
+      "colectare_name": "Pure Metal Trade SRL",
+      "cif": "27068890"
+    },
+    {
+      "normalized": "R SI R PROD SRL",
+      "colectare_name": "R si R Prod SRL",
+      "cif": "5868522"
+    },
+    {
+      "normalized": "R3 ECOLOGIC SRL",
+      "colectare_name": "R3 Ecologic SRL",
+      "cif": "21903907"
+    },
+    {
+      "normalized": "RADUTUR DEZ SRL",
+      "colectare_name": "Radutur Dez SRL",
+      "cif": "30915307"
+    },
+    {
+      "normalized": "RAP RECYCLING INDUSTRY SRL",
+      "colectare_name": "Scrap Recycling Industry SRL",
+      "cif": "22850800"
+    },
+    {
+      "normalized": "RCV INDUSTRY SRL",
+      "colectare_name": "Rcv Industry SRL",
+      "cif": "18079750"
+    },
+    {
+      "normalized": "RDD ACTIRON SRL",
+      "colectare_name": "Rdd Actiron SRL",
+      "cif": "18127628"
+    },
+    {
+      "normalized": "RDE HARGHITA SRL",
+      "colectare_name": "Rde Harghita SRL",
+      "cif": "6582234"
+    },
+    {
+      "normalized": "RDF STEEL INVEST SRL",
+      "colectare_name": "Rdf Steel Invest SRL",
+      "cif": "38340956"
+    },
+    {
+      "normalized": "REALDATA SRL",
+      "colectare_name": "Realdata SRL",
+      "cif": "16325998"
+    },
+    {
+      "normalized": "REC OBI PLAST SRL",
+      "colectare_name": "SC REC OBI PLAST SRL",
+      "cif": "27718631"
+    },
+    {
+      "normalized": "RECHORALEX SRL",
+      "colectare_name": "Rechoralex SRL",
+      "cif": "18770908"
+    },
+    {
+      "normalized": "RECICLARE DS SRL",
+      "colectare_name": "Reciclare Ds SRL",
+      "cif": "21850543"
+    },
+    {
+      "normalized": "RECICLARI DE LA A LA Z SRL",
+      "colectare_name": "Reciclari de La A La Z SRL",
+      "cif": "38059625"
+    },
+    {
+      "normalized": "RECICLING CD 2007 SRL",
+      "colectare_name": "Recicling Cd 2007 SRL",
+      "cif": "18078053"
+    },
+    {
+      "normalized": "RECICLYNG SRL",
+      "colectare_name": "Reciclyng SRL",
+      "cif": "18415434"
+    },
+    {
+      "normalized": "RECISEV PLAST SRL",
+      "colectare_name": "Recisev Plast SRL",
+      "cif": "28399034"
+    },
+    {
+      "normalized": "RECMET COMPANY SRL",
+      "colectare_name": "RECMET COMPANY SRL",
+      "cif": "14900541"
+    },
+    {
+      "normalized": "RECOLFER GOLD SRL",
+      "colectare_name": "Recolfer Gold SRL",
+      "cif": "32745411"
+    },
+    {
+      "normalized": "RECOMAR COLECT SRL",
+      "colectare_name": "Recomar Colect SRL",
+      "cif": "27119861"
+    },
+    {
+      "normalized": "RECOSAL ENERGY SRL",
+      "colectare_name": "Recosal Energy SRL",
+      "cif": "27844478"
+    },
+    {
+      "normalized": "RECUPERARE PRODUSE METALICE SRL",
+      "colectare_name": "Recuperare Produse Metalice SRL",
+      "cif": "27610655"
+    },
+    {
+      "normalized": "RECYCLE UNIVERSAL SRL",
+      "colectare_name": "Recycle Universal SRL",
+      "cif": "37416037"
+    },
+    {
+      "normalized": "RECYCLES TRANSYLVANIA SRL",
+      "colectare_name": "Recycles Transylvania SRL",
+      "cif": "37107775"
+    },
+    {
+      "normalized": "RECYCLING 3A SRL",
+      "colectare_name": "Recycling 3A SRL",
+      "cif": "29130823"
+    },
+    {
+      "normalized": "RECYCLING COR INVEST SRL",
+      "colectare_name": "Recycling Cor Invest SRL",
+      "cif": "25747240"
+    },
+    {
+      "normalized": "RECYCLING DENIS SRL",
+      "colectare_name": "SC RECYCLING DENIS SRL",
+      "cif": "20848081"
+    },
+    {
+      "normalized": "RECYCLYNG I & G SRL",
+      "colectare_name": "RECYCLYNG I & G SRL",
+      "cif": "18086269"
+    },
+    {
+      "normalized": "RECYCOND COM SRL",
+      "colectare_name": "RECYCOND COM SRL",
+      "cif": "32107090"
+    },
+    {
+      "normalized": "REIEF NEFERO SRL",
+      "colectare_name": "Reief Nefero SRL",
+      "cif": "30934163"
+    },
+    {
+      "normalized": "REIFEN ECOLECT SRL",
+      "colectare_name": "Reifen Ecolect SRL",
+      "cif": "30573581"
+    },
+    {
+      "normalized": "REMADY RECOVERY RECYCLING SRL",
+      "colectare_name": "Remady Recovery Recycling SRL",
+      "cif": "23202440"
+    },
+    {
+      "normalized": "REMAT A METAL SRL",
+      "colectare_name": "Remat Asc Metal SRL",
+      "cif": "14829425"
+    },
+    {
+      "normalized": "REMAT ALESD SA",
+      "colectare_name": "Remat Alesd SA",
+      "cif": "7245466"
+    },
+    {
+      "normalized": "REMAT ASS SRL",
+      "colectare_name": "Remat Ass SRL",
+      "cif": "31489439"
+    },
+    {
+      "normalized": "REMAT COMPACT SRL",
+      "colectare_name": "Remat Compact SRL",
+      "cif": "36654340"
+    },
+    {
+      "normalized": "REMAT COPPER STEEL SRL",
+      "colectare_name": "Remat Copper Steel SRL",
+      "cif": "26371118"
+    },
+    {
+      "normalized": "REMAT DOBROIEŞTI SRL",
+      "colectare_name": "REMAT DOBROIEŞTI SRL",
+      "cif": "29087464"
+    },
+    {
+      "normalized": "REMAT GREEN SRL",
+      "colectare_name": "Remat Green SRL",
+      "cif": "18992092"
+    },
+    {
+      "normalized": "REMAT HOLDING PROSPER SRL",
+      "colectare_name": "Remat Holding Prosper SRL",
+      "cif": "30831117"
+    },
+    {
+      "normalized": "REMAT ILFOV SRL",
+      "colectare_name": "Remat Ilfov SRL",
+      "cif": "15654640"
+    },
+    {
+      "normalized": "REMAT IZVOARE SRL",
+      "colectare_name": "Remat Izvoare SRL",
+      "cif": "31688768"
+    },
+    {
+      "normalized": "REMAT JIU SRL",
+      "colectare_name": "SC REMAT JIU SRL",
+      "cif": "21112830"
+    },
+    {
+      "normalized": "REMAT METAL ACTIV SRL",
+      "colectare_name": "Remat Metal Activ SRL",
+      "cif": "31398187"
+    },
+    {
+      "normalized": "REMAT MSA RECYCLING SRL",
+      "colectare_name": "REMAT MSA RECYCLING SRL",
+      "cif": "33351610"
+    },
+    {
+      "normalized": "REMAT MUELLER GUTTENBRUNN SRL",
+      "colectare_name": "Remat Mueller Guttenbrunn SRL",
+      "cif": "25562527"
+    },
+    {
+      "normalized": "REMAT RRR TOTAL SRL",
+      "colectare_name": "Remat Rrr Total SRL",
+      "cif": "27697326"
+    },
+    {
+      "normalized": "REMAT SAM SRL",
+      "colectare_name": "SC REMAT SAM SRL",
+      "cif": "31169663"
+    },
+    {
+      "normalized": "REMAT STAR SRL",
+      "colectare_name": "Remat Star SRL",
+      "cif": "36153544"
+    },
+    {
+      "normalized": "REMAT TOP COLONESTI SRL",
+      "colectare_name": "Remat Top Colonesti SRL",
+      "cif": "37270178"
+    },
+    {
+      "normalized": "REMAT VEST SA",
+      "colectare_name": "Remat Vest SA",
+      "cif": "16499110"
+    },
+    {
+      "normalized": "REMATHOLDING CO SRL",
+      "colectare_name": "Rematholding Co SRL",
+      "cif": "16010540"
+    },
+    {
+      "normalized": "REMBIS CENTER GROUP SRL",
+      "colectare_name": "Rembis Center Group SRL",
+      "cif": "16153302"
+    },
+    {
+      "normalized": "REMPLAST SRL",
+      "colectare_name": "Remplast SRL",
+      "cif": "17576246"
+    },
+    {
+      "normalized": "REPLASTICA HDPE SRL",
+      "colectare_name": "Replastica Hdpe SRL",
+      "cif": "22049226"
+    },
+    {
+      "normalized": "RESTART LTD SRL",
+      "colectare_name": "Restart Ltd SRL",
+      "cif": "11103664"
+    },
+    {
+      "normalized": "RESTECO VALOR SRL",
+      "colectare_name": "Resteco Valor SRL",
+      "cif": "30838980"
+    },
+    {
+      "normalized": "RETUC RMN SRL",
+      "colectare_name": "Retuc Rmn SRL",
+      "cif": "29434741"
+    },
+    {
+      "normalized": "RIPEN DOR SRL",
+      "colectare_name": "Ripen Dor SRL",
+      "cif": "31207155"
+    },
+    {
+      "normalized": "RJ METAL TRADE SRL",
+      "colectare_name": "Rj Metal Trade SRL",
+      "cif": "18043519"
+    },
+    {
+      "normalized": "RO PALET SERVICE SRL",
+      "colectare_name": "SC RO PALET SERVICE SRL",
+      "cif": "20245773"
+    },
+    {
+      "normalized": "ROBERYDANILES SRL",
+      "colectare_name": "SC ROBERYDANILES SRL",
+      "cif": "31358298"
+    },
+    {
+      "normalized": "ROBSYLV COM SRL",
+      "colectare_name": "Robsylv Com SRL",
+      "cif": "14565196"
+    },
+    {
+      "normalized": "RODI IMPEX SRL",
+      "colectare_name": "Rodi Impex SRL",
+      "cif": "3594412"
+    },
+    {
+      "normalized": "ROGER RECYCLING SRL",
+      "colectare_name": "Roger Recycling SRL",
+      "cif": "17169870"
+    },
+    {
+      "normalized": "ROM DIVIDIS SRL",
+      "colectare_name": "Rom Dividis SRL",
+      "cif": "33879527"
+    },
+    {
+      "normalized": "ROMECO INTERNATIONAL SERVICE COMPANY SRL",
+      "colectare_name": "SC ROMECO INTERNATIONAL SERVICE COMPANY SRL",
+      "cif": "8257647"
+    },
+    {
+      "normalized": "ROMECOL SRL",
+      "colectare_name": "Romecol SRL",
+      "cif": "12165886"
+    },
+    {
+      "normalized": "ROMETAL CO SRL",
+      "colectare_name": "ROMETAL CO S.R.L",
+      "cif": "23124806"
+    },
+    {
+      "normalized": "ROMMAR PRODIMPEX SRL",
+      "colectare_name": "Rommar Prodimpex SRL",
+      "cif": "1530935"
+    },
+    {
+      "normalized": "ROMPREST ENERGY SRL",
+      "colectare_name": "Romprest Energy SRL",
+      "cif": "22762032"
+    },
+    {
+      "normalized": "ROMRECYCLING COLECT SRL",
+      "colectare_name": "Romrecycling Colect SRL",
+      "cif": "29526250"
+    },
+    {
+      "normalized": "ROMSAR RECYCLING SRL",
+      "colectare_name": "SC ROMSAR RECYCLING SRL",
+      "cif": "30713456"
+    },
+    {
+      "normalized": "RONI TRANS SRL",
+      "colectare_name": "Roni Trans SRL",
+      "cif": "16054350"
+    },
+    {
+      "normalized": "ROUK CARPARTS SRL",
+      "colectare_name": "Rouk Carparts SRL",
+      "cif": "32722574"
+    },
+    {
+      "normalized": "ROXILEN GENIAL FLORY SRL",
+      "colectare_name": "Roxilen Genial Flory SRL",
+      "cif": "15919534"
+    },
+    {
+      "normalized": "ROYAL RECYCLING INTERNATIONAL SRL",
+      "colectare_name": "Royal Recycling International SRL",
+      "cif": "30743554"
+    },
+    {
+      "normalized": "RRR AMBIENT COLECT SRL",
+      "colectare_name": "Rrr Ambient Colect SRL",
+      "cif": "15200066"
+    },
+    {
+      "normalized": "RS VLADUT SRL",
+      "colectare_name": "Rs Vladut SRL",
+      "cif": "26969325"
+    },
+    {
+      "normalized": "RUBEDY SERVICE SRL",
+      "colectare_name": "Rubedy Service SRL",
+      "cif": "39441894"
+    },
+    {
+      "normalized": "RUSELL DEZAUTO SRL",
+      "colectare_name": "Rusell Dezauto SRL",
+      "cif": "31663887"
+    },
+    {
+      "normalized": "RYKY STAR SRL",
+      "colectare_name": "Ryky Star SRL",
+      "cif": "16266352"
+    },
+    {
+      "normalized": "SACALUL AUTO SRL",
+      "colectare_name": "Sacalul Auto SRL",
+      "cif": "25345439"
+    },
+    {
+      "normalized": "SAIZCOLECT METAL 2013 SRL",
+      "colectare_name": "Saizcolect Metal 2013 SRL",
+      "cif": "31458505"
+    },
+    {
+      "normalized": "SALCOMET SRL",
+      "colectare_name": "SC SALCOMET SRL",
+      "cif": "33127834"
+    },
+    {
+      "normalized": "SALPREST RAMPA SA",
+      "colectare_name": "SC SALPREST RAMPA SA",
+      "cif": "13814418"
+    },
+    {
+      "normalized": "SALUBRIS WASTE MANAGEMENT SRL",
+      "colectare_name": "Salubris Waste Management SRL",
+      "cif": "33847100"
+    },
+    {
+      "normalized": "SALUBRITATE APUSENI SRL",
+      "colectare_name": "Salubritate Apuseni SRL",
+      "cif": "27277152"
+    },
+    {
+      "normalized": "SALUBRITATEA IBSV SRL",
+      "colectare_name": "Salubritatea Ibsv SRL",
+      "cif": "25428615"
+    },
+    {
+      "normalized": "SALUBRIZARE SORTIS COM SRL",
+      "colectare_name": "Salubrizare Sortis Com SRL",
+      "cif": "29218217"
+    },
+    {
+      "normalized": "SATOR SRL",
+      "colectare_name": "SC Sator SRL",
+      "cif": "14704340"
+    },
+    {
+      "normalized": "SAVE THE WORLD BY RECYCLING SRL",
+      "colectare_name": "Save The World By Recycling SRL",
+      "cif": "33644288"
+    },
+    {
+      "normalized": "SEBCAN GROUP SRL",
+      "colectare_name": "Sebcan Group SRL",
+      "cif": "18985907"
+    },
+    {
+      "normalized": "SELCOS RECYCLING ACT SRL",
+      "colectare_name": "Selcos Recycling Act SRL",
+      "cif": "36175674"
+    },
+    {
+      "normalized": "SENDA LOGISTIC SRL",
+      "colectare_name": "Senda Logistic SRL",
+      "cif": "35901248"
+    },
+    {
+      "normalized": "SENDA RECYCLING SRL",
+      "colectare_name": "Senda Recycling SRL",
+      "cif": "29833149"
+    },
+    {
+      "normalized": "SEPAX INTERNATIONAL SRL",
+      "colectare_name": "Sepax International SRL",
+      "cif": "30373524"
+    },
+    {
+      "normalized": "SER COM UNIVERSAL SRL",
+      "colectare_name": "Ser Com Universal SRL",
+      "cif": "18165478"
+    },
+    {
+      "normalized": "SERVAUTO DAN SRL",
+      "colectare_name": "Servauto Dan SRL",
+      "cif": "27384744"
+    },
+    {
+      "normalized": "SERVICE PETROLEUM SRL",
+      "colectare_name": "Service Petroleum SRL",
+      "cif": "19198082"
+    },
+    {
+      "normalized": "SERVICII COMUNALE SRL",
+      "colectare_name": "Servicii Comunale SRL",
+      "cif": "24129771"
+    },
+    {
+      "normalized": "SERVICII PUBLICE LOCALE SRL",
+      "colectare_name": "Servicii Publice Locale SRL",
+      "cif": "27456085"
+    },
+    {
+      "normalized": "SERVSAL SA",
+      "colectare_name": "SC SERVSAL SA",
+      "cif": "15371155"
+    },
+    {
+      "normalized": "SESRECO SRL",
+      "colectare_name": "Sesreco SRL",
+      "cif": "34139675"
+    },
+    {
+      "normalized": "SIDAN COLECT SRL",
+      "colectare_name": "Sidan Colect SRL",
+      "cif": "27340420"
+    },
+    {
+      "normalized": "SIF ALEXA SRL",
+      "colectare_name": "Sif Alexa SRL",
+      "cif": "17273870"
+    },
+    {
+      "normalized": "SILNEF TIM SRL",
+      "colectare_name": "Silnef Tim SRL",
+      "cif": "21672349"
+    },
+    {
+      "normalized": "SILREF COMPANY SRL",
+      "colectare_name": "SC SILREF COMPANY SRL",
+      "cif": "18750250"
+    },
+    {
+      "normalized": "SILVAREC SRL",
+      "colectare_name": "Silvarec SRL",
+      "cif": "26196602"
+    },
+    {
+      "normalized": "SILVMAR INTERNATIONAL SRL",
+      "colectare_name": "Silvmar International SRL",
+      "cif": "16799878"
+    },
+    {
+      "normalized": "SIMCOMETAL GRUP SRL",
+      "colectare_name": "Simcometal Grup SRL",
+      "cif": "17116388"
+    },
+    {
+      "normalized": "SIMINOC COLECT JUNIOR SRL",
+      "colectare_name": "Siminoc Colect Junior SRL",
+      "cif": "30583828"
+    },
+    {
+      "normalized": "SIMISIONU SRL",
+      "colectare_name": "Simisionu SRL",
+      "cif": "24041970"
+    },
+    {
+      "normalized": "SIMROFER SRL",
+      "colectare_name": "Simrofer SRL",
+      "cif": "18126096"
+    },
+    {
+      "normalized": "SIRVEX CONSTRUCT SRL",
+      "colectare_name": "Sirvex Construct SRL",
+      "cif": "17696390"
+    },
+    {
+      "normalized": "SMART AUTO INVEST SRL",
+      "colectare_name": "Smart Auto Invest SRL",
+      "cif": "33941327"
+    },
+    {
+      "normalized": "SMART WASTE RECYCLING SRL",
+      "colectare_name": "Smart Waste Recycling SRL",
+      "cif": "38412327"
+    },
+    {
+      "normalized": "SOFI METAL SRL",
+      "colectare_name": "Sofi Metal SRL",
+      "cif": "37284025"
+    },
+    {
+      "normalized": "SOGEMA COM SRL",
+      "colectare_name": "SC SOGEMA COM SRL",
+      "cif": "16964576"
+    },
+    {
+      "normalized": "SOL ECOPLAST SRL",
+      "colectare_name": "Sol Ecoplast SRL",
+      "cif": "27277802"
+    },
+    {
+      "normalized": "SOLUTION TEAM SRL",
+      "colectare_name": "Solution Team SRL",
+      "cif": "14787435"
+    },
+    {
+      "normalized": "SORNUI SRL",
+      "colectare_name": "Sornui SRL",
+      "cif": "32052040"
+    },
+    {
+      "normalized": "SORTING COLLECT SRL",
+      "colectare_name": "Sorting Collect SRL",
+      "cif": "39024269"
+    },
+    {
+      "normalized": "SPORAFAR IMPEX SRL",
+      "colectare_name": "Sporafar Impex SRL",
+      "cif": "14176857"
+    },
+    {
+      "normalized": "STAR ECO SALUBRIS SRL",
+      "colectare_name": "Star Eco SAlubris SRL",
+      "cif": "34390382"
+    },
+    {
+      "normalized": "START RECYCLING SRL",
+      "colectare_name": "Start Recycling SRL",
+      "cif": "18120999"
+    },
+    {
+      "normalized": "STEEL CEMS SRL",
+      "colectare_name": "Steel Cems SRL",
+      "cif": "24064257"
+    },
+    {
+      "normalized": "STEELMETAL STORE SRL",
+      "colectare_name": "STEELMETAL STORE SRL",
+      "cif": "27389741"
+    },
+    {
+      "normalized": "STEELNEF INVESTMENT SRL",
+      "colectare_name": "Steelnef Investment SRL",
+      "cif": "30738060"
+    },
+    {
+      "normalized": "STIC TRANSYL SRL",
+      "colectare_name": "Stic Transyl SRL",
+      "cif": "26530655"
+    },
+    {
+      "normalized": "STIL NEF MG SRL",
+      "colectare_name": "SC STIL NEF MG SRL",
+      "cif": "29033391"
+    },
+    {
+      "normalized": "SUCOS METAL SRL",
+      "colectare_name": "Sucos Metal SRL",
+      "cif": "28574127"
+    },
+    {
+      "normalized": "SUD PLASTIC PROD SRL",
+      "colectare_name": "Sud Plastic Prod SRL",
+      "cif": "26575100"
+    },
+    {
+      "normalized": "SYMREC TOTAL SRL",
+      "colectare_name": "Symrec Total SRL",
+      "cif": "37815950"
+    },
+    {
+      "normalized": "TABINET SRL",
+      "colectare_name": "SC TABINET SRL",
+      "cif": "6288809"
+    },
+    {
+      "normalized": "TANTAL DIVERS SRL",
+      "colectare_name": "SC TANTAL DIVERS SRL",
+      "cif": "32083616"
+    },
+    {
+      "normalized": "TEHNOECOLOGICA SRL",
+      "colectare_name": "Tehnoecologica SRL",
+      "cif": "24679864"
+    },
+    {
+      "normalized": "TEHNOLOGIC ECO GREEN SRL",
+      "colectare_name": "Tehnologic Eco Green SRL",
+      "cif": "37262868"
+    },
+    {
+      "normalized": "TEHNOMETAL TRADING PROJECT SRL",
+      "colectare_name": "Tehnometal Trading Project SRL",
+      "cif": "26876625"
+    },
+    {
+      "normalized": "TEMI PLAST ECOLOGIC SRL",
+      "colectare_name": "Temi Plast Ecologic SRL",
+      "cif": "36541953"
+    },
+    {
+      "normalized": "TEOCAN AUTO SRL",
+      "colectare_name": "Teocan Auto SRL",
+      "cif": "36321818"
+    },
+    {
+      "normalized": "TEOMAR COLECT SRL",
+      "colectare_name": "Teomar Colect SRL",
+      "cif": "38621587"
+    },
+    {
+      "normalized": "TERAPLAST RECYCLING SA",
+      "colectare_name": "Teraplast Recycling SA",
+      "cif": "35674765"
+    },
+    {
+      "normalized": "TERRA AUTOMOBILE SRL",
+      "colectare_name": "Terra Automobile SRL",
+      "cif": "33018233"
+    },
+    {
+      "normalized": "TERRA METAL RECYCLING SRL",
+      "colectare_name": "Terra Metal Recycling SRL",
+      "cif": "31021135"
+    },
+    {
+      "normalized": "TGP - THE GREEN PROJECT SRL",
+      "colectare_name": "Tgp - The Green Project SRL",
+      "cif": "36712336"
+    },
+    {
+      "normalized": "THERMO SALUBVEST SRL",
+      "colectare_name": "Thermo SAlubvest SRL",
+      "cif": "30407970"
+    },
+    {
+      "normalized": "TMC DEMOTRADE SRL",
+      "colectare_name": "Tmc Demotrade SRL",
+      "cif": "32750396"
+    },
+    {
+      "normalized": "TOBIAS JUNIOR SRL",
+      "colectare_name": "Tobias Junior SRL",
+      "cif": "15273530"
+    },
+    {
+      "normalized": "TOBIAS SRL",
+      "colectare_name": "TOBIAS SRL",
+      "cif": "3851796"
+    },
+    {
+      "normalized": "TOMIS-DIA COMPANY SRL",
+      "colectare_name": "Tomis-Dia Company SRL",
+      "cif": "33524397"
+    },
+    {
+      "normalized": "TOP FEROASE SRL",
+      "colectare_name": "Top Feroase SRL",
+      "cif": "22005092"
+    },
+    {
+      "normalized": "TOP MOD CARS SRL",
+      "colectare_name": "Top Mod Cars SRL",
+      "cif": "38673896"
+    },
+    {
+      "normalized": "TOTAL ECO SOLUTION SRL",
+      "colectare_name": "Total Eco Solution SRL",
+      "cif": "31504547"
+    },
+    {
+      "normalized": "TOTAL GREEN METAL SRL",
+      "colectare_name": "TOTAL GREEN METAL SRL",
+      "cif": "28442282"
+    },
+    {
+      "normalized": "TOTAL RECYCLING DEEE SRL",
+      "colectare_name": "Total Recycling Deee SRL",
+      "cif": "37130255"
+    },
+    {
+      "normalized": "TOTAL RECYCLING SRL",
+      "colectare_name": "Total Recycling SRL",
+      "cif": "15783300"
+    },
+    {
+      "normalized": "TOTAL SERV IMPEX SRL",
+      "colectare_name": "Total Serv Impex SRL",
+      "cif": "13606476"
+    },
+    {
+      "normalized": "TOTAL STRONG SRL",
+      "colectare_name": "Total Strong SRL",
+      "cif": "27201421"
+    },
+    {
+      "normalized": "TOTAL TDR GRUP SRL",
+      "colectare_name": "Total Tdr Grup SRL",
+      "cif": "30067363"
+    },
+    {
+      "normalized": "TOTAL WASTE COLLECT SRL",
+      "colectare_name": "Total Waste Collect SRL",
+      "cif": "35964246"
+    },
+    {
+      "normalized": "TRANDUS SRL",
+      "colectare_name": "Trandus SRL",
+      "cif": "28880363"
+    },
+    {
+      "normalized": "TRESTIAN TRANS SRL",
+      "colectare_name": "Trestian Trans SRL",
+      "cif": "686520"
+    },
+    {
+      "normalized": "TRIFOI SRL",
+      "colectare_name": "Trifoi SRL",
+      "cif": "16959847"
+    },
+    {
+      "normalized": "TRYK SRL",
+      "colectare_name": "Tryk SRL",
+      "cif": "17340449"
+    },
+    {
+      "normalized": "TSK METAL SRL",
+      "colectare_name": "Tsk Metal SRL",
+      "cif": "26857496"
+    },
+    {
+      "normalized": "TUDORSAUTO PARCK SRL",
+      "colectare_name": "Tudors Auto Parck SRL",
+      "cif": "34151628"
+    },
+    {
+      "normalized": "ULM CART SRL",
+      "colectare_name": "Ulm Cart SRL",
+      "cif": "28530325"
+    },
+    {
+      "normalized": "UNI TOTAL COLECTED KEY SRL",
+      "colectare_name": "Uni Total Colected Key SRL",
+      "cif": "23008690"
+    },
+    {
+      "normalized": "UNITRANS SRL",
+      "colectare_name": "Unitrans SRL",
+      "cif": "15798572"
+    },
+    {
+      "normalized": "URBAN COMPREST RECYCLING SRL",
+      "colectare_name": "Urban Comprest Recycling SRL",
+      "cif": "9438021"
+    },
+    {
+      "normalized": "V & G RECICLARE 2014 SRL",
+      "colectare_name": "V & G RECICLARE 2014 SRL",
+      "cif": "33280276"
+    },
+    {
+      "normalized": "VALCODOR SRL",
+      "colectare_name": "VALCODOR SRL",
+      "cif": "23871607"
+    },
+    {
+      "normalized": "VANIA SRL",
+      "colectare_name": "Vania SRL",
+      "cif": "11472190"
+    },
+    {
+      "normalized": "VAS REMAT SRL",
+      "colectare_name": "Vas Remat SRL",
+      "cif": "18401714"
+    },
+    {
+      "normalized": "VASTAUTO SRL",
+      "colectare_name": "Vastauto SRL",
+      "cif": "33756753"
+    },
+    {
+      "normalized": "VASTAV AUTOVEST SRL",
+      "colectare_name": "Vastav Autovest SRL",
+      "cif": "38188468"
+    },
+    {
+      "normalized": "VATASOAIA GRUP SRL",
+      "colectare_name": "Vatasoaia Grup SRL",
+      "cif": "27193469"
+    },
+    {
+      "normalized": "VERAMET COM SRL",
+      "colectare_name": "Veramet Com SRL",
+      "cif": "23993779"
+    },
+    {
+      "normalized": "VGA METAL SRL",
+      "colectare_name": "Vga Metal SRL",
+      "cif": "23624941"
+    },
+    {
+      "normalized": "VIC NIK PRODIMPORT SRL",
+      "colectare_name": "Vic Nik Prodimport SRL",
+      "cif": "3710983"
+    },
+    {
+      "normalized": "VIITOR FEROMAR SRL",
+      "colectare_name": "Viitor Feromar SRL",
+      "cif": "28018016"
+    },
+    {
+      "normalized": "VINCENT SRL",
+      "colectare_name": "Vincent SRL",
+      "cif": "12790647"
+    },
+    {
+      "normalized": "VIOMAR COLECTOR SRL",
+      "colectare_name": "Viomar Colector SRL",
+      "cif": "37298489"
+    },
+    {
+      "normalized": "VITRO RECYCLING SRL",
+      "colectare_name": "Vitro Recycling SRL",
+      "cif": "32941116"
+    },
+    {
+      "normalized": "VMG PLAST RECYCLING SRL",
+      "colectare_name": "Vmg Plast Recycling SRL",
+      "cif": "28624772"
+    },
+    {
+      "normalized": "VRG AUTOMOBILE SRL",
+      "colectare_name": "Vrg Automobile SRL",
+      "cif": "28005253"
+    },
+    {
+      "normalized": "WASTE FACTORY SRL",
+      "colectare_name": "Waste Factory SRL",
+      "cif": "40137067"
+    },
+    {
+      "normalized": "YMY ECOLOGIC PARTENER SRL",
+      "colectare_name": "Ymy Ecologic Partener SRL",
+      "cif": "29297490"
+    },
+    {
+      "normalized": "YORA DINAMIC AUTO SRL",
+      "colectare_name": "Yora Dinamic Auto SRL",
+      "cif": "36757818"
+    },
+    {
+      "normalized": "YULLY FERVEX SRL",
+      "colectare_name": "Yully Fervex SRL",
+      "cif": "27014369"
+    },
+    {
+      "normalized": "ZALEX IMPEX SRL",
+      "colectare_name": "Zalex Impex SRL",
+      "cif": "5091093"
+    },
+    {
+      "normalized": "ZONA 1 SRL",
+      "colectare_name": "Zona 1 SRL",
+      "cif": "14460165"
+    }
+  ]
+}

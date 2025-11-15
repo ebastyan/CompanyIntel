@@ -1,0 +1,29 @@
+================================================================================
+CIF ENRICHMENT STATISTICS
+================================================================================
+
+enriched_cifs: 5,306
+matches_2442.xlsx: 0
+matches_2443.xlsx: 1
+matches_2444.xlsx: 0
+matches_2445.xlsx: 0
+matches_3811.xlsx: 1,461
+matches_3812.xlsx: 117
+matches_3821.xlsx: 157
+matches_3831.xlsx: 698
+matches_3832.xlsx: 1,450
+matches_4677.xlsx: 1,445
+matches_aluminiu.xlsx: 0
+matches_metale.xlsx: 0
+matches_neferoase.xlsx: 0
+matches_q_importator_profile_aluminiu.xlsx: 0
+matches_q_inox.xlsx: 0
+total_cifs: 8,390
+with_address: 5,306
+with_capital: 2,543
+with_cod_caen: 3,139
+with_company_name: 5,306
+with_coordinates: 9
+with_email: 0
+with_j_number: 5,306
+with_phone: 1,578
