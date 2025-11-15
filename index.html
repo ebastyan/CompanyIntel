@@ -56,6 +56,72 @@
             color: #f78153;
         }
 
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #0F7CC0;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        .nav-links a:hover {
+            background: #0F7CC0;
+            color: white;
+        }
+
+        /* Analytics CTA Button */
+        .analytics-cta {
+            background: linear-gradient(135deg, #f78153 0%, #d65a2c 100%);
+            padding: 40px 20px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .analytics-cta .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #f78153;
+            padding: 20px 50px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            margin-top: 15px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            background: #fff5f0;
+        }
+
+        .analytics-cta h2 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .analytics-cta p {
+            color: rgba(255,255,255,0.9);
+            font-size: 16px;
+        }
+
         /* Search Section */
         .search-section {
             background: linear-gradient(135deg, #0F7CC0 0%, #0a5a8f 100%);
@@ -524,6 +590,10 @@
             <div class="logo">
                 <h1>Company<span class="highlight">Intel</span>.ro</h1>
             </div>
+            <div class="nav-links">
+                <a href="index.html">🏠 Acasă</a>
+                <a href="analitica.html">📊 Analiză Sector</a>
+            </div>
         </div>
     </div>
 
@@ -534,6 +604,17 @@
                 <input type="text" id="cifInput" placeholder="Introduceți CIF (ex: 29036053)" required>
                 <button type="submit">Căutare</button>
             </form>
+        </div>
+    </div>
+
+    <!-- Analytics CTA -->
+    <div class="analytics-cta">
+        <div class="container">
+            <h2>📊 Analiză Completă Sector Deșeuri România</h2>
+            <p>Explorați tendințe, sănătate financiară, segmentare, analiză geografică și predicții pentru 8,390 companii</p>
+            <a href="analitica.html" class="cta-button">
+                Vezi Analiză Completă →
+            </a>
         </div>
     </div>
 
